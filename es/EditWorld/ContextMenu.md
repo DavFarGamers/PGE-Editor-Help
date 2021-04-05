@@ -1,19 +1,19 @@
-# Context Menu features
-Every item has its context menu. It can be opened by clicking the right mouse button (lefthander mouse - by left mouse button) while the cursor is over an item on the scene, or over a selected group.
+# Funciones del menú contextual
+Cada elemento tiene su menú contextual. Se puede abrir haciendo clic con el botón derecho del mouse (mouse izquierdo - con el botón izquierdo del mouse) mientras el cursor está sobre un elemento de la escena o sobre un grupo seleccionado.
 
-By a context menu, you can change some of the basic settings of one item or of all selected items. You can change the layer of the current item(s). Also, you will find the ability for the quick creation of a new layer for a selected group of item(s). Context menu of warp points allows you to quickly jump to the opposite side of a warp entry.
+Mediante un menú contextual, puede cambiar algunas de las configuraciones básicas de un elemento o de todos los elementos seleccionados. Puede cambiar la capa de los elementos actuales. Además, encontrará la capacidad para la creación rápida de una nueva capa para un grupo seleccionado de elementos. El menú contextual de puntos de deformación le permite saltar rápidamente al lado opuesto de una entrada de deformación.
 
 
-## Common Features
-Apply to item group by same type.
-- **Copy preferences** - Copy some internal item data as a plain text.
-- **Copy** - Copy selected items into the internal clipboard.
-- **Cut** - Copy selected items into the internal clipboard and remove them.
-- **Remove** - Selected items will be removed.
-- **Remove all ITEM-X** - Remove all items of the same type and the same ID from the world map.
-- **Transform into** - gives ability to replace type of item (for example one block with another). Available for Terrain tiles, Scenery, Paths, Levels points, and Music Boxes.
-- **Transform all ITEM-X into** - gives ability to replace type of all items with same ID on the map. Available for Terrain , Scenery, Paths, Level points, and Music Boxes.
-- **Properties** - will open the item properties' dialog for selected item group.
+## Características comunes
+Aplicar al grupo de artículos del mismo tipo.
+- **Copiar preferencias**: - copia algunos datos internos de elementos como texto sin formato.
+- **Copiar**: - copia los elementos seleccionados en el portapapeles interno.
+- **Cortar**: - copia los elementos seleccionados en el portapapeles interno y elimínalos.
+- **Eliminar**: - los elementos seleccionados se eliminarán.
+- **Eliminar todo ITEM-X**: - elimina todos los elementos del mismo tipo y la misma ID del mapa mundial.
+- **Transformar en**: - permite reemplazar el tipo de elemento (por ejemplo, un bloque con otro). Disponible para mosaicos de terreno, paisajes, caminos, puntos de niveles y cajas de música.
+- **Transforma todos los ITEM-X en**: - permite reemplazar el tipo de todos los elementos con la misma ID en el mapa Disponible para terreno, paisaje, caminos, puntos de nivel y cajas de música.
+- **Propiedades**: - abrirá el cuadro de diálogo de propiedades del elemento para el grupo de elementos seleccionado.
 
 
 <ImageZoom
@@ -26,11 +26,11 @@ url="screenshots/WorldEditing/Items/ContextMenu_tl_pt_ps.png"
 :border="false"
 />
 
-## Level Entrance point features
-* **Open target file** - you will open the target level file in the new tab.
-* **Background path** - under level point image will be displayed path image
-* **Big Background path** - under level point image will be displayed same path image, but with larger size
-* **Always visible** - with this option the level point will be displayed always. If this flag disabled, level point will be shown only when player open path to them.
+## Características del punto de entrada de nivel
+* **Abrir archivo de destino**: - abrirá el archivo de nivel de destino en la nueva pestaña.
+* **Ruta de fondo**: - la imagen del punto bajo el nivel se mostrará como la imagen de la ruta
+* **Ruta de fondo grande**: - la imagen del punto bajo el nivel se mostrará con la misma imagen de ruta, pero con un tamaño más grande
+* **Siempre visible**: - con esta opción, el punto de nivel se mostrará siempre. Si esta bandera está desactivada, el punto de nivel se mostrará solo cuando el jugador abra el camino hacia ellos.
 
 <ImageZoom
 alt="ContextMenu_lvl"
@@ -38,8 +38,8 @@ url="screenshots/WorldEditing/Items/ContextMenu_lvl.png"
 :border="false"
 />
 
-## Music Box features
-* **Play this** - will start playing of this music point
+## Funciones de Music Box
+* **Play this**: - comenzará a reproducir este punto de música
 
 <ImageZoom
 alt="ContextMenu_musicbox"
@@ -48,6 +48,6 @@ url="screenshots/WorldEditing/Items/ContextMenu_musicbox.png"
 />
 
 
-## See also
-* [General context menu](/Editing/ContextMenu)
-* [Level specific context menu](/EditLevel/ContextMenu)
+## Ver también
+* [Menú contextual general](/Editing/ContextMenu)
+* [Menú contextual específico del nivel](/EditLevel/ContextMenu)

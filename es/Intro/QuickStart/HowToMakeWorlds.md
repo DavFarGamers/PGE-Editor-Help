@@ -1,57 +1,57 @@
-# How to make world maps
+# Cómo hacer mapas del mundo
 
 ![HowToWorlds](Intro/QuickStart/HowToMakeWorlds.png)
 
-**World map** - is the interactive list of levels available for a player(s) to play.
+**Mapa del mundo**: - es la lista interactiva de niveles disponibles para que juegue un jugador.
 
-World map - is a main unit of the game or an episode!
+Mapa del mundo: - ¡es una unidad principal del juego o un episodio!
 
-World maps also can be a hub-styled, I.e. world map will not be
-used. Instead, the special level will be used as the list of levels for play,
-which is called as a HUB. In the hub player can enter into levels though warps.
+Los mapas del mundo también pueden tener un estilo de centro, es decir, el mapa del mundo no será
+usado. En cambio, el nivel especial se utilizará como lista de niveles para jugar,
+que se llama HUB. En el centro, el jugador puede entrar en niveles a través de warps.
 
-To start building the world map, first of all you need open the
-`"File" -> "New" -> "World"` menuitem. When you did it you will
-see the main editing interface which contains editing space
-where you will need to place objects.
+Para comenzar a construir el mapa del mundo, primero debe abrir el
+`"File" -> "New" -> "World"` opción del menú. Cuando lo hiciste, lo harás
+ver la interfaz de edición principal que contiene espacio de edición
+donde deberá colocar los objetos.
 
-If you wish to work with existing world map, you can open the "File" -> "Open"
-menu and select necessary file in the explorer. To open file, you also can 
-drag & drop a file into the window of the Editor directly. You can associate
-all supported by PGE Editor files with the Editor inside of the
-`"Tools" -> "Application Settings"` menu to open them from a file manager by
-double-clicking on them.
+Si desea trabajar con un mapa del mundo existente, puede abrir el "Archivo" -> "Abrir"
+menú y seleccione el archivo necesario en el explorador. Para abrir el archivo, también puede
+arrastre y suelte un archivo en la ventana del Editor directamente. Puedes asociar
+todo compatible con archivos PGE Editor con el editor dentro del
+`"Tools" -> "Application Settings"` menú para abrirlos desde un administrador de archivos por
+haciendo doble clic en ellos.
 
-To make a world map you need to place any items which you can found
-in the special item toolbox. The world map also settings of
-your episode.
+Para hacer un mapa del mundo, debe colocar cualquier elemento que pueda encontrar
+en la caja de herramientas de elementos especiales. El mapa del mundo también la configuración de
+tu episodio.
 
-The important items are levels and paths. Levels are entrances
-of your levels. Paths giving able to walk between levels or
-walk over world map. Don't forget, paths are not connectable
-images, there are simple squares which giving able to walk between
-them when they near to each other.
+Los elementos importantes son niveles y caminos. Los niveles son entradas
+de tus niveles. Caminos que dan la posibilidad de caminar entre niveles o
+caminar sobre el mapa del mundo. No olvides que los caminos no se pueden conectar.
+imágenes, hay cuadrados simples que permiten caminar entre
+ellos cuando se acercan el uno al otro.
 
 
-**Each world map should have**:
+** Cada mapa del mundo debe tener **:
 
-* **Title of episode** - this is a name of world map which showing
-in the main menu. If you will not define it and when you will try
-to play it in the SMBX, you will see the blank title of episode!
-* **Game start point** - The any level item with "Game start" flag.
-If you will not place it, the player will start game from 0x0
-coordinates of world map. If you will put multiple levels with
-"Game start" flag, you will start game from oldest of them.
-* **All levels should be connected with paths** - if you will don't
-connect levels with paths you will not be able walk over world map.
-Path items - alone type of items which giving able to walk over
-world map. Even if you will build chain of levels which placed
-together, next level will be opened only if you will successfully
-complete it (level is successful only if player end them by getting
-of exit item. If player lose (killed by enemy/boss, fall down into pit,
-lose level mission, etc), exit is failed and you should replay level)!
+* **Título del episodio**: - este es el nombre del mapa del mundo que muestra
+en el menú principal. Si no lo definirás y cuando lo intentarás
+para reproducirlo en SMBX, verá el título del episodio en blanco.
+* **Punto de inicio del juego**: - el elemento de cualquier nivel con la bandera "Inicio del juego".
+Si no lo coloca, el jugador comenzará el juego desde 0x0
+coordenadas del mapa del mundo. Si pones varios niveles con
+Bandera de "Inicio del juego", comenzará el juego desde el más antiguo de ellos.
+* **Todos los niveles deben estar conectados con caminos** - si no lo hace
+conecte niveles con caminos que no podrá caminar sobre el mapa del mundo.
+Elementos de la ruta: solo tipo de elementos que permiten caminar
+mapa del mundo. Incluso si construyes una cadena de niveles que colocan
+juntos, el siguiente nivel se abrirá solo si logras
+completarlo (el nivel es exitoso solo si el jugador los termina obteniendo
+del elemento de salida. Si el jugador pierde (asesinado por el enemigo / jefe, cae al pozo,
+perder nivel de misión, etc.), la salida ha fallado y deberías volver a jugar el nivel).!
 
-_World map editor interface_
+_Interfaz del editor de mapas del mundo_
 
 <ImageZoom 
   alt="WorldMapInterface"
@@ -60,26 +60,26 @@ _World map editor interface_
 />
 
 
-## World map items
+## Elementos del mapa mundial
 
-**[Terrain tiles](../../EditWorld/Items#terrain-tiles)** - the main design units which are using for creation
-of a design of the world map. Terrain tiles aren't communicating with
-other items.
+**[mosaicos de terreno](../../EditWorld/Items#terrain-tiles)** - las principales unidades de diseño que se utilizan para la creación
+de un diseño del mapa del mundo. Los mosaicos de terreno no se comunican con
+otros elementos.
 
-**[Scenery](../../EditWorld/Items#sceneries)** - there are secondary design unit. Sceneries will hide when
-path cells that placed over sceneries gets opened.
+**[Scenery](../../EditWorld/Items#sceneries)** - hay una unidad de diseño secundaria. Los paisajes se esconderán cuando
+Se abren las celdas de ruta que se colocaron sobre los paisajes.
 
-**[Paths cells](../../EditWorld/Items#paths)** - are units that allows player to move between different
-level points and map locations. Usually, paths cells are hidden by default, and appearing when player passes
-the level which placed nearly to them.
+**[Celdas de rutas](../../EditWorld/Items#rutas)** - son unidades que permiten al jugador moverse entre diferentes
+puntos de nivel y ubicaciones del mapa. Por lo general, las celdas de ruta están ocultas de forma predeterminada y aparecen cuando el jugador pasa
+el nivel que colocó cerca de ellos.
 
-**[Level entrances](../../EditWorld/Items#level-entrances)** - there are
-a special units, which allows player to enter into specified level or
-teleport player to other map coordinates. Levels are can have multiple entrances,
-but can have different warp points inside a level. Also, level point using as a
-game start point. If start point wasn't placed (world map has no
-level entrance point with the "Game start" flag enabled), player will start game
-at the 0:0 position.
+**[Entradas de nivel](../../EditWorld/Items#nivel-entradas)** - hay
+una unidad especial, que permite al jugador entrar en un nivel específico o
+Teletransportar al jugador a otras coordenadas del mapa. Los niveles pueden tener múltiples entradas,
+pero puede tener diferentes puntos de deformación dentro de un nivel. Además, el punto de nivel se utiliza como
+punto de inicio del juego. Si no se colocó el punto de inicio (el mapa del mundo no tiene
+punto de entrada de nivel con la bandera de "Inicio del juego" habilitada), el jugador comenzará el juego
+en la posición 0: 0.
 
-**[Music Boxes](../../EditWorld/Items#music-boxes)** - there are a special units that switching a playing
-music when playable character stands on them.
+**[Music Boxes](../../EditWorld/Items#music-boxes)** - hay unidades especiales que cambian una reproducción
+música cuando el personaje jugable está sobre ellos.

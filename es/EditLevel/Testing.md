@@ -1,26 +1,26 @@
-# Testing
-## Overview
-While you work on your levels, you would want to run your level file in action to verify the behavior.
+# Prueba
+## Visión de conjunto
+Mientras trabaja en sus niveles, querrá ejecutar su archivo de nivel en acción para verificar el comportamiento.
 
 ![testMenu](screenshots/menus/005_test.png)
 
-The editor has the support of level testing via different run-time engines. You may use any of the supported engines and optionally change their settings by a special sub-menu.
+El editor tiene el apoyo de pruebas de nivel a través de diferentes motores de tiempo de ejecución. Puede utilizar cualquiera de los motores compatibles y, opcionalmente, cambiar su configuración mediante un submenú especial.
 
 <Note type="warning">
-Depending on the configure pack used, a different engine may use as the default run time. Also, it may prevent the choose any other runtime engine than the default for level testing.
+Según el paquete de configuración utilizado, se puede utilizar un motor diferente como tiempo de ejecución predeterminado. Además, puede evitar la elección de cualquier otro motor de tiempo de ejecución que no sea el predeterminado para las pruebas de nivel.
 </Note>
 
-To start a level testing, open the **Test** menu, select the **Test level** menu item, or press the **F5** key on your keyboard. Alternatively, you can use a menu of each supported engine to run a level test on a different runtime engine instead of the default.
+Para iniciar una prueba de nivel, abra el menú **Prueba**, seleccione el elemento de menú **Nivel de prueba** o presione la tecla **F5** en su teclado. Alternativamente, puede usar un menú de cada motor compatible para ejecutar una prueba de nivel en un motor de tiempo de ejecución diferente en lugar del predeterminado.
 
-For some cases, you may want to **Test a saved file**: you will run testing of a level file from the state on a disk. This option doesn't support an Editor integration.
+En algunos casos, es posible que desee **Probar un archivo guardado**: ejecutará la prueba de un archivo de nivel desde el estado de un disco. Esta opción no admite la integración de un editor.
 
-You may want to **Start Game** if you desire to change your game control setup or run an episode playing.
+Es posible que desee **Iniciar juego** si desea cambiar la configuración de control del juego o ejecutar un episodio de reproducción.
 
-If needed, you can tune your **Testing options** to select playable characters, count players, enable some cheating or debug features, set a specific state of playable characters, etc.
+Si es necesario, puede ajustar sus **Opciones de prueba** para seleccionar personajes jugables, contar jugadores, habilitar algunas funciones de trampa o depuración, establecer un estado específico de personajes jugables, etc.
 
-For Windows-only engines, Editor has support for an IPC bridge that can work on Wine. When Editor works on a non-Windows operating system, you will find an extra menu item in the menus of LunaTester and SMBX-38A, which allows you to configure Wine usage and even choose a different Wine installation (see [Wine Settings](#wine-settings)).
+Para los motores solo para Windows, Editor tiene soporte para un puente IPC que puede funcionar en Wine. Cuando Editor funciona en un sistema operativo que no es Windows, encontrará un elemento de menú adicional en los menús de LunaTester y SMBX-38A, que le permite configurar el uso de Wine e incluso elegir una instalación de Wine diferente (consulte [Wine Settings](#wine-settings)).
 
-## Test settings
+## Configuración de prueba
 <ImageZoom
   alt="eventsList"
   url="screenshots/Testing/test_settings.png"
@@ -28,104 +28,104 @@ For Windows-only engines, Editor has support for an IPC bridge that can work on 
   :border="true"
 />
 
-It's a dialog of generic settings that allows you to configure some features: choose 1 or 2 players game, select playable characters and their states, add vehicles/mounts, etc.
+Es un diálogo de configuraciones genéricas que te permite configurar algunas características: elegir juego de 1 o 2 jugadores, seleccionar personajes jugables y sus estados, agregar vehículos / monturas, etc.
 
-**There are some extra settings:**
-- **God Mode** - Makes your playable character being invincible to dangerous NPCs and surfaces.
-- **Unlimited Flight** - Gives an ability for your playable character to fly up by using the "Alt-Jump" key (PGE Engine only).
-- **Bulldozer mode** - Allows your playable character to destroy any nearest objects by Alt-Run key (PGE Engine only).
-- **Walk Anywhere** - Allows your playable character to walk on a world map out of paths (PGE Engine only).
-- **Debug info** - Enables printing of various to debug information on the screen (PGE Engine only).
-- **Show frame speed** - Enables printing of FPS count at the left-top corner (SMBX-38A and TheXTech only).
-- **Physics debug** - Enables drawing of hitboxes of all objects include invisible (PGE Engine only).
+**Hay algunas configuraciones adicionales:**
+- **Modo Dios** - Hace que tu personaje jugable sea invencible ante peligrosos PNJ y superficies.
+- **Vuelo ilimitado** - Otorga una habilidad para que tu personaje jugable vuele usando la tecla "Alt-Jump" (solo motor PGE).
+- **Modo Bulldozer**: permite a tu personaje jugable destruir cualquier objeto más cercano con la tecla Alt-Run (solo motor PGE).
+- **Camina en cualquier lugar**: permite que tu personaje jugable camine en un mapa del mundo fuera de los caminos (solo motor PGE).
+- **Información de depuración**: permite la impresión de varios datos de depuración en la pantalla (solo motor PGE).
+- **Mostrar velocidad de fotogramas**: permite imprimir el recuento de FPS en la esquina superior izquierda (solo SMBX-38A y TheXTech).
+- **Depuración de física**: permite dibujar los hitboxes de todos los objetos, incluidos los invisibles (solo motor PGE).
 
-## PGE Engine
+## Motor PGE
 <Note type="warning">
-Be careful: the Engine part is under construction. It has many features that are weren't implemented yet.
+Tenga cuidado: la pieza del motor está en construcción. Tiene muchas características que aún no se implementaron.
 </Note>
 
 ![testMenu](screenshots/menus/005_test_pge_engine.png)
 
-It's an own run-time engine of the PGE Project. This engine has full integration with Editor and supports all main features. You can run testing of new-made or unsaved files on the fly. While the test work, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly.
+Es un motor de tiempo de ejecución propio del Proyecto PGE. Este motor tiene una integración completa con el editor y es compatible con todas las funciones principales. Puede ejecutar pruebas de archivos nuevos o no guardados sobre la marcha. Mientras funciona la prueba, puede seleccionar cualquiera de los elementos en el cuadro de conjunto de mosaicos del Editor o en el navegador de búsqueda de elementos y colocarlos directamente en la ventana del juego en ejecución.
 
-We recommend reading the manual written in the [Engine.Readme.txt](https://raw.githubusercontent.com/Wohlhabend-Networks/PGE-Project/master/Content/readmes/Engine.Readme.txt) file included with PGE Engine.
+Recomendamos leer el manual escrito en el [Engine.Readme.txt](https://raw.githubusercontent.com/Wohlhabend-Networks/PGE-Project/master/Content/readmes/Engine.Readme.txt) archivo incluido con PGE Engine.
 
-**Menu options:**
-- **Test level/world** - Start the direct testing of currently loaded level data even file is unsaved.
-- **Test saved level/world** - Starts testing of current opened level by opening it from a disk.
-- **Start Game** - Start a game by using a currently loaded configuration package.
+**Opciones del menú:**
+- **Prueba de nivel/mundo**: inicia la prueba directa de los datos de nivel cargados actualmente, incluso si el archivo no está guardado.
+- **Prueba de nivel guardado/mundo**: inicia la prueba del nivel abierto actual abriéndolo desde un disco.
+- **Iniciar juego**: inicia un juego utilizando un paquete de configuración cargado actualmente.
 
 ## TheXTech
 ![testMenu](screenshots/menus/005_test_thextech.png)
 
-It's the full C++ port of SMBX Engine 1.3, created from the source code published on February 2, 2020. It's the accurate replica of the vanilla SMBX engine with the full Editor integration support and some other PGE standard extras. You can run testing of new-made or unsaved files on the fly. While the test is running, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly. You can pick-up elements by mouse click on elements inside of the running game. Use a middle mouse button to turn on the eraser to remove elements around.
+It's the full C++ port of SMBX Engine 1.3, created from the source code published on February 2, 2020. It's the accurate replica of the vanilla SMBX engine with the full Editor integration support and some other PGE standard extras. You can run testing of new-made or unsaved files on the fly. While the test is running, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly. You can pick-up elements by mouse click on elements inside of the running game. Use a middle mouse button to turn on the eraser to remove elements around.Es el puerto C ++ completo de SMBX Engine 1.3, creado a partir del código fuente publicado el 2 de febrero de 2020. Es la réplica precisa del motor vanilla SMBX con el soporte completo de integración del Editor y algunos otros extras estándar de PGE. Puede ejecutar pruebas de archivos nuevos o no guardados sobre la marcha. Mientras se ejecuta la prueba, puede seleccionar cualquiera de los elementos en el cuadro de conjunto de mosaicos del Editor o el navegador de búsqueda de elementos y colocarlos directamente en la ventana del juego en ejecución. Puede recoger elementos haciendo clic con el mouse en elementos dentro del juego de carrera. Use un botón central del mouse para encender el borrador y eliminar elementos alrededor.
 
-**Menu options:**
-- **Test level** - Start a direct testing of currently loaded level data even file is unsaved.
-- **Test level in battle mode** - Start a level testing in battle mode.
-- **Test saved level** - Starts a testing of currently opened level by opening it from a disk.
-- **Graphics type** - Select a graphical sub-system for use.
-  - **Default** - Graphical sub-system will be automatically detected.
-  - **Software rendering** - Use a software rendering without acceleration. Use this if hardware acceleration does not work, or it works incorrectly and glitchy. May work slow on some systems.
-  - **Accelerated** - Use a hardware-accelerated rendering sub-system. Used by default.
-  - **Accelerated with V-Sync** - Use a hardware-accelerated rendering sub-system with using of 
-  vertical synchronization to make a smoother rendering. May slow-down the game process, suggested to switch the monitor refresh rate into 75 hz if possible.
-- **Enable magic hand** - Allows to use a mouse to pick-up elements from a working game directly. As well as placing new elements taken in tile sets and item browsers.
-- **Enabme max FPS** - disables limit on FPS count and turns on the free rendering. In some cases may look like Fast-Forwarding of a video cassette.
-- **Enable grab all** - Allows playable character to grab any NPC without exceptions.
-- **Change the path to TheXTech** - Allows you to select the executable path to make testing work. You may choice a different assembly of TheXTech to use for some moment.  
-- **Start Game** - Start a normal game with using of a currently loaded configuration package. 
+**Opciones del menú:**
+- **Nivel de prueba**: - inicia una prueba directa de los datos del nivel cargados actualmente, incluso si el archivo no está guardado.
+- **Nivel de prueba en el modo batalla**: - comienza una prueba de nivel en el modo batalla.
+- **Prueba de nivel guardado**: - inicia una prueba del nivel abierto actualmente abriéndolo desde un disco.
+- **Tipo de gráficos**: - seleccione un subsistema gráfico para su uso.
+  - **Predeterminado**: - el subsistema gráfico se detectará automáticamente.
+  - **Renderizado por software**: - utilice un renderizado por software sin aceleración. Use esto si la aceleración de hardware no funciona, o si funciona incorrectamente y tiene fallas. Puede funcionar lento en algunos sistemas.
+  - **Acelerado**: - utiliza un subsistema de renderizado acelerado por hardware. Usado por defecto.
+  - **Acelerado con V-Sync** - Utilice un subsistema de renderizado acelerado por hardware con el uso de
+  sincronización vertical para hacer un renderizado más suave. Puede ralentizar el proceso del juego, se sugiere cambiar la frecuencia de actualización del monitor a 75 hz si es posible.
+- **Habilitar mano mágica**: - permite usar un mouse para recoger elementos de un juego en funcionamiento directamente. Además de colocar nuevos elementos tomados en conjuntos de mosaicos y navegadores de elementos.
+- **Activabme max FPS**: - desactiva el límite en el recuento de FPS y activa el renderizado gratuito. En algunos casos, puede parecer el avance rápido de un videocasete.
+- **Habilitar agarrar todo**: - permite al personaje jugable agarrar a cualquier NPC sin excepciones.
+- **Cambiar la ruta a TheXTech** - Le permite seleccionar la ruta ejecutable para que las pruebas funcionen. Puede elegir un ensamblaje diferente de TheXTech para usar por algún momento.
+- **Iniciar juego**: - inicia un juego normal usando un paquete de configuración cargado actualmente.
 
 ## LunaTester
 ![testMenu](screenshots/menus/005_test_luna.png)
 
-It's a bridge proxy which allows you to use LunaLua equipped vanilla SMBX to run level tests on it.
+Es un proxy puente que le permite usar SMBX vanilla equipado con LunaLua para ejecutar pruebas de nivel en él.
 
-**Pre-requirements:**
-* LunaLua 0.7.3.1 or newer is required. If you have to use SMBX2 packages, you need to have an SMBX 2.0 Beta 3 or higher.
-* Windows 7 or higher, or Wine (3.0 and higher is recommended) with installed DirectX 9 or 11, MSVC2015 runtime, quartz, dsound, and VB6RUN.
-* Video drivers installed in your system, otherwise, game will not work or at least will lag.
+**Pre requisitos:**
+* Se requiere LunaLua 0.7.3.1 o más reciente. Si tiene que utilizar paquetes SMBX2, debe tener un SMBX 2.0 Beta 3 o superior.
+* Windows 7 o superior, o Wine (se recomienda 3.0 y superior) con DirectX 9 u 11, tiempo de ejecución MSVC2015, quartz, dsound y VB6RUN instalados.
+* Controladores de video instalados en su sistema; de lo contrario, el juego no funcionará o al menos se retrasará.
 
-You can run testing of new-made or unsaved files on the fly.
+Puede ejecutar pruebas de archivos nuevos o no guardados sobre la marcha.
 
-**Menu options:**
-- **Test level** - Start a direct testing of currently loaded level data even file is unsaved.
-- **Test saved level/world** - Starts a testing of currently opened level or world map by opening it from a disk.
-- **Reset checkpoints** - Resets state of checkpoints in a condition that background instance is running.
-- **Disable OpenGL** - Enforce using of software render.
-- **Keep running in background** - Game will keep running in background even you will close window to allow quick running of a game.
-- **Terminate running process** - Kills the working background process. Use this in a condition when the game does not respond a long time.
-- **Change the path to LunaTester** - Allows you to select the path to LunaLua-SMBX or SMBX2 data directory to make LunaTester work. You may choice a different assembly of LunaLua-SMBX to use for some moment.
-- **[Wine settings...](#Wine-settings)** - (non-Windows operating systems only) Allows you to configure settings of Wine or choose a different Wine installation (for example, import from a PlayOnLinux / PlayOnMac tool chain).
-- **Start Game** - Start a normal game of LunaLua-SMBX or SMBX2.
+**Opciones del menú:**
+- **Nivel de prueba**: - Inicia una prueba directa de los datos del nivel cargados actualmente, incluso si el archivo no está guardado.
+- **Prueba de nivel/mundo guardado**: - Inicia una prueba del nivel o mapa mundial actualmente abierto abriéndolo desde un disco.
+- **Restablecer puntos de control **: - Restablece el estado de los puntos de control en una condición en la que se está ejecutando la instancia en segundo plano.
+- **Desactivar OpenGL**: - Hacer cumplir el uso del procesamiento de software.
+- **Sigue ejecutándose en segundo plano** - El juego seguirá ejecutándose en segundo plano incluso si cierras la ventana para permitir la ejecución rápida de un juego.
+- **Terminar proceso en ejecución** - Elimina el proceso de trabajo en segundo plano. Úselo en una condición en la que el juego no responda durante mucho tiempo.
+- **Cambiar la ruta a LunaTester** - Le permite seleccionar la ruta al directorio de datos LunaLua-SMBX o SMBX2 para que LunaTester funcione. Puede elegir un ensamblaje diferente de LunaLua-SMBX para usar por algún momento.
+- **[Ajustes de Wine ...] (# ajustes de Wine)** - (solo sistemas operativos que no sean Windows) Le permite configurar los ajustes de Wine o elegir una instalación de Wine diferente (por ejemplo, importar desde un PlayOnLinux / PlayOnMac cadena de herramientas).
+- **Iniciar partida**: - Inicia una partida normal de LunaLua-SMBX o SMBX2.
 
 
 ## SMBX-38A
 ![testMenu](screenshots/menus/005_test_38a.png)
 
-It's a bridge proxy which allows you to use SMBX-38A engine to run level tests on it.
+Es un proxy de puente que le permite usar el motor SMBX-38A para ejecutar pruebas de nivel en él.
 
-**Pre-requirements:**
-* Windows XP or higher, or Wine (3.0 and higher is recommended) with installed DirectX 9, quartz, dsound, and VB6RUN.
-* Video drivers installed in your system, otherwise, game will not work. 
-* SMBX-38A v1.4.3 and higher.
+**Pre requisitos:**
+* Windows XP o superior, o Wine (se recomienda 3.0 y superior) con DirectX 9, quartz, dsound y VB6RUN instalados.
+* Controladores de video instalados en su sistema; de lo contrario, el juego no funcionará.
+* SMBX-38A v1.4.3 y superior.
 
 
-**Menu options:**
-- **Test level** - Start a direct testing of currently loaded level data even file is unsaved.
-- **Test level in battle mode** - Start a level testing in battle mode.
-- **Test saved level/world** - Starts a testing of currently opened level or world map by opening it from a disk.
-- **Reset checkpoints** - Resets state of checkpoints left after the last test playing.
-- **Enable magic hand** - Allows to use a mouse to pick-up elements from a working game directly. As well as 
-placing new elements taken in tile sets and item browsers.
-- **Don't auto-suspend game** - Makes game never suspend when game window is unfocused.
-- **Change the path to SMBX-38A** - Allows you to select the path to SMBX-38A executable to make the testing work. 
-You may choice a different assembly of SMBx-38A to use for some moment.
-- **[Wine settings...](#Wine-settings)** - (non-Windows operating systems only) Allows you to configure settings of Wine or choose 
-a different Wine installation (for example, import from a PlayOnLinux / PlayOnMac toolchain).
-- **Start Game** - Start a normal game of SMBX-38A
+**Opciones del menú:**
+- **Nivel de prueba**: - Inicia una prueba directa de los datos del nivel cargados actualmente, incluso si el archivo no está guardado.
+- **Nivel de prueba en el modo batalla**: - Comienza una prueba de nivel en el modo batalla.
+- **Prueba de nivel/mundo guardado**: - Inicia una prueba del nivel o mapa mundial actualmente abierto abriéndolo desde un disco.
+- **Restablecer puntos de control** - Restablece el estado de los puntos de control que quedaron después de la última prueba de reproducción.
+- **Habilitar mano mágica**: - Permite usar un mouse para recoger elementos de un juego en funcionamiento directamente. Así como también
+colocar nuevos elementos tomados en conjuntos de mosaicos y navegadores de elementos.
+- **No suspender automáticamente el juego**: - Hace que el juego nunca se suspenda cuando la ventana del juego está desenfocada.
+- **Cambiar la ruta a SMBX-38A ** - Le permite seleccionar la ruta al ejecutable SMBX-38A para que la prueba funcione.
+Puede elegir un ensamblaje diferente de SMBX-38A para usar por algún momento.
+- **[Wine settings ...] (# Wine-settings)** - (solo sistemas operativos que no sean Windows) Le permite configurar los ajustes de Wine o elegir
+una instalación de Wine diferente (por ejemplo, importar desde una cadena de herramientas PlayOnLinux / PlayOnMac).
+- **Start Game** - Inicia un juego normal de SMBX-38A
 
-## Wine settings
+## Configuración de vino
 <ImageZoom
   alt="eventsList"
   url="screenshots/Testing/wine_settings.png"
@@ -133,16 +133,16 @@ a different Wine installation (for example, import from a PlayOnLinux / PlayOnMa
   :border="true"
 />
 
-This dialog allows you to configure a work of Wine on non-Windows operating system to make a proper work of LunaTester and SMBX-38A engines.
+Este cuadro de diálogo le permite configurar un trabajo de Wine en un sistema operativo que no sea Windows para que los motores LunaTester y SMBX-38A funcionen correctamente.
 
-**Location of Wine**
+**Ubicación del vino**
 
-Here you should to choose which Wine installation to use: installed into your operating system, or select a different one (for example, one of builds installed into your PlayOnLinux/PlayOnMac toolchain).
+Aquí debe elegir qué instalación de Wine usar: instalada en su sistema operativo, o seleccionar una diferente (por ejemplo, una de las compilaciones instaladas en su cadena de herramientas PlayOnLinux / PlayOnMac).
 
-**Enable Wine debug printing into "WineDebug" console** - allows you to get all Wine debug output messages into Editor's development console which you can open in **Help** -> **Show development console** menu.
+**Habilite la impresión de depuración de Wine en la consola "WineDebug"**: le permite obtener todos los mensajes de salida de depuración de Wine en la consola de desarrollo del Editor, que puede abrir en el menú **Ayuda** -> **Mostrar consola de desarrollo**.
 
-**Specify a custom environment (PlayOnLinux/Mac)** - allows you to configure some default locations used by Wine (for example, a home prefix where are your c_drive and registry data stored).
+**Especifique un entorno personalizado (PlayOnLinux/Mac)**: le permite configurar algunas ubicaciones predeterminadas utilizadas por Wine (por ejemplo, un prefijo de inicio donde se almacenan sus datos de registro y c_drive).
 
-**Import setup from PlayOnLinux/PlayOnMac** - a help tool which allows you to select an existing PlayOnLinux/Mac profile and import Wine paths and settings from it to use in Editor to run level tests and episode playing.
+**Importar configuración de PlayOnLinux/PlayOnMac** - una herramienta de ayuda que le permite seleccionar un perfil existente de PlayOnLinux / Mac e importar rutas y configuraciones de Wine para usar en el Editor para ejecutar pruebas de nivel y reproducción de episodios.
 
-**Test** - a helpful utility which allows you to verify the work of selected Wine tool-chain.
+**Prueba**: una utilidad útil que le permite verificar el trabajo de la cadena de herramientas Wine seleccionada.

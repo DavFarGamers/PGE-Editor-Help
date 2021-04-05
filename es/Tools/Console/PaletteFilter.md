@@ -1,29 +1,29 @@
-# Palette Filter
+# Filtro de paleta
 ![PalleteFilter](screenshots/Tools/console/pallete_filter_128.png)
 
-**Palette filter** - a tool for color adjuction of images into the pallete of a reference picture.
+**Filtro de paleta**: una herramienta para la adjudicación de color de imágenes en la paleta de una imagen de referencia.
 
-## How it works
+## Cómo funciona
 
-This utility can be used to adjust the palette of any images you have into the given reference picture that
-contains the set of colors of your palette.
+Esta utilidad se puede utilizar para ajustar la paleta de cualquier imagen que tenga en la imagen de referencia dada que
+contiene el conjunto de colores de su paleta.
 
-This is an example of the reference image that defines the target palette:
+Este es un ejemplo de la imagen de referencia que define la paleta de destino:
 
 ![Ref](screenshots/Tools/console/PalleteFilter/reference_example.png)
 
-This is the source image before the filtering:
+Esta es la imagen de origen antes del filtrado:
 
 ![Ref](screenshots/Tools/console/PalleteFilter/example_src.png)
 
-After you run the utility, you will get the next result:
+Después de ejecutar la utilidad, obtendrá el siguiente resultado:
 
 ![Ref](screenshots/Tools/console/PalleteFilter/example_dst.png)
 
 
-## Usage
-This is a console utility. To use it you need to run the Terminal at the directory where the PaletteFilter executable
-located. Alternatively, you can use this utility from your scripts and utilities and run this utility externally.
+## Uso
+Esta es una utilidad de consola. Para usarlo, debe ejecutar la Terminal en el directorio donde el ejecutable PaletteFilter
+situado. Alternativamente, puede usar esta utilidad desde sus scripts y utilidades y ejecutar esta utilidad externamente.
 ```
 USAGE: 
 

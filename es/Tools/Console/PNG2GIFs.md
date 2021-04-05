@@ -2,27 +2,27 @@
 
 ![CatPGE2GIFs](screenshots/Tools/console/cat_png2gif_128.png)
 
-**PNG to masked GIFs converter** (Known as PNG2GIFs) is a graphical conversion tool that converts a transparent 
-PNG image into a SMBX64 compatible GIF with the transparency mask format. This tool allows you to save a lot of time
-when creating a transparency masks for use in the SMBX game engine.
+**Convertidor de PNG a GIF enmascarado** (conocido como PNG2GIF) es una herramienta de conversión gráfica que convierte una imagen transparente
+Imagen PNG en un GIF compatible con SMBX64 con el formato de máscara de transparencia. Esta herramienta te permite ahorrar mucho tiempo
+al crear máscaras de transparencia para su uso en el motor de juego SMBX.
 
-## How it works
+## Cómo funciona
 
-This is a common PNG image with own transparency: 
+Esta es una imagen PNG común con transparencia propia:
 
 ![src](screenshots/Tools/console/GIFs2PNG/example_dst1.png)
 
 
-After running the tool, the front and it's mask will be generated:
+Después de ejecutar la herramienta, se generarán el frente y su máscara:
 
 ![dst](screenshots/Tools/console/GIFs2PNG/example_src1.gif) ![dstm](screenshots/Tools/console/GIFs2PNG/example_src1m.gif)
 
-Result can be freely used with the vanilla SMBX game and will work properly.
+El resultado se puede utilizar libremente con el juego vanilla SMBX y funcionará correctamente.
 
 
-## Usage
-This is a console utility. To use it you need to run the Terminal at the directory where the PNG2GIFs executable 
-located. Alternatively, you can use this utility from your scripts and utilities and run this utility externally.
+## Uso
+Esta es una utilidad de consola. Para usarlo, debe ejecutar la Terminal en el directorio donde el ejecutable PNG2GIFs
+situado. Alternativamente, puede usar esta utilidad desde sus scripts y utilidades y ejecutar esta utilidad externamente.
 
 ```
 USAGE: 

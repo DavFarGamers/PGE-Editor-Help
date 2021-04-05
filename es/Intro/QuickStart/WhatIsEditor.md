@@ -1,35 +1,35 @@
-# Editor Overview
+# Descripción general del editor
 
 ![PgeEditor](Intro/QuickStart/WhatIsPGEEditor.png)
 
-**Moondust Editor** - is a flexible and universal editor for levels,
-world maps, and NPC configurations. With them, you can build your levels,
-world maps, episodes, and even whole games!
+**Moondust Editor**: - es un editor flexible y universal para niveles,
+mapas del mundo y configuraciones NPC. Con ellos, puedes construir tus niveles,
+mapas del mundo, episodios e incluso juegos completos.
 
-The Editor has various tools which will help you to create your levels
-and worlds convenient, fast, progressive, and qualitative!
+El Editor tiene varias herramientas que te ayudarán a crear tus niveles.
+¡y mundos convenientes, rápidos, progresivos y cualitativos!
 
-**Editor** - is the part of the Moondust Project development kit. 
-Moondust focused on making of 2d side-scrolling platform games.
+**Editor**: - es parte del kit de desarrollo del Proyecto Moondust.
+Moondust se centró en la creación de juegos de plataformas de desplazamiento lateral en 2D.
 
-## How to use Editor
+## Cómo usar el Editor
 
-The Editor can sometimes be a tricky UI to navigate. If you know where to look, however, 
-you will be able to find what you need fairly quickly. The Editor uses a multi-selection 
-model that allows you to quickly manage elements in the scene of Level or World Map. 
-You can easily find the rest of the important features on the toolbars and 
-in the window menu bar. To manage elements, you will need to use a context menu. 
-**[Read more about context menu here](../../Editing/ContextMenu)**.
+El editor a veces puede ser una interfaz de usuario complicada de navegar. Sin embargo, si sabe dónde buscar,
+podrá encontrar lo que necesita con bastante rapidez. El editor utiliza una selección múltiple
+modelo que le permite administrar rápidamente elementos en la escena de Nivel o Mapa Mundial.
+Puede encontrar fácilmente el resto de las funciones importantes en las barras de herramientas y
+en la barra de menú de la ventana. Para administrar elementos, necesitará utilizar un menú contextual.
+**[Lea más sobre el menú contextual aquí](../../Editing/ContextMenu)**.
 
-## Important buttons and options
+## Botones y opciones importantes
 
-The following options in the editor are among the most commonly used ones.
-You can learn about the functions of the buttons that are not listed by hovering over 
-them for a second.
+Las siguientes opciones del editor se encuentran entre las más utilizadas.
+Puede obtener información sobre las funciones de los botones que no están en la lista colocando el cursor sobre
+ellos por un segundo.
 
 <Note type="tip">
-Icons look may depend on the current theme. All represented screenshots in this manual
-do use the internal icon theme of the Editor. You can change the theme via 
+El aspecto de los iconos puede depender del tema actual. Todas las capturas de pantalla representadas en este manual
+utilice el tema de iconos internos del Editor. Puedes cambiar el tema a través de
 <a href="#/Tools/ApplicationSettings#view">Application Settings</a>.
 </Note>
 
@@ -37,111 +37,111 @@ do use the internal icon theme of the Editor. You can change the theme via
 -----
 
 ![tilesetbox](images/icons/tileset_box.png)<br/>
-The button with this icon opens the **Tileset Itembox**,
-one of two main methods of adding objects to a level. Its functionality 
-is further explained in a later segment.
+El botón con este icono abre **Tileset Itembox**,
+uno de los dos métodos principales para agregar objetos a un nivel. Su funcionalidad
+se explica con más detalle en un segmento posterior.
 
 -----
 
 ![browserLevel](images/icons/item_browser_level.png) ![browserLevel](images/icons/item_browser_world.png)<br/>
-The button with this icon opens the **Item Browser / Search Browser**,
-the main method of adding objects to a level. Its functionality is
-further explained in a later segment.
+El botón con este icono abre el **Navegador de artículos / Navegador de búsqueda**,
+el método principal de agregar objetos a un nivel. Su funcionalidad es
+explicado con más detalle en un segmento posterior.
 
 -----
 
 ![p1](images/icons/player1_start.png)![p2](images/icons/player2_start.png)<br />
-Before you can test your level, you need to place a
-start point for the first player. Green Mario’s start point is
-optional.
+Antes de poder probar su nivel, debe colocar un
+punto de partida para el primer jugador. El punto de partida de Green Mario es
+Opcional.
 
 -----
 
 ![water](images/icons/draw_water.png)![sand](images/icons/draw_sand.png)<br />
-These buttons are used to draw zones of water and
-quicksand respectively. These zones can be moved and resized after
-placement, too.
+Estos botones se utilizan para dibujar zonas de agua y
+arenas movedizas respectivamente. Estas zonas se pueden mover y cambiar de tamaño después
+colocación también.
 
 -----
 
 ![warps](images/icons/doors.png)<br />
-Opens the “Warps and Doors” window, in which warps can
-be configured. There are various unsupported features in this window,
-all of which are further detailed in the “Unsupported Features” segment
-below.
+Abre la ventana "Deformaciones y puertas", en la que las deformaciones pueden
+ser configurado. Hay varias funciones no admitidas en esta ventana,
+todos los cuales se detallan con más detalle en el segmento "Funciones no admitidas"
+debajo.
 
 -----
 
 ![section](images/icons/section.png)<br />
-Opens the “Section Settings” window, in which various
-section-specific properties can be configured. Unsupported features of
-this window are listed in the “unsupported Features” segment.
+Abre la ventana "Configuración de sección", en la que varios
+se pueden configurar propiedades específicas de la sección. Funciones no admitidas de
+esta ventana se enumeran en el segmento "Funciones no admitidas".
 
 -----
 
 ![layers](images/icons/layers.png)![events](images/icons/events.png)<br />
-Open the “Layers” and “Events” windows respectively.
-Together, these can be used to create moving layers and toggle layer
-visibility. Events can further be used to play sound effects, lock
-player input, manipulate the section and even execute lua code (using
-LunaLua’s onEvent event).
+Abra las ventanas "Capas" y "Eventos" respectivamente.
+Juntos, estos se pueden utilizar para crear capas móviles y alternar capa
+visibilidad. Los eventos se pueden utilizar para reproducir efectos de sonido, bloquear
+entrada del jugador, manipular la sección e incluso ejecutar código lua (usando
+Evento onEvent de LunaLua).
 
 -----
 
 ![sectionBar](images/icons/sections_bar.png)<br />
-The section buttons transport you to the specified
-section instantly. 
+Los botones de sección lo transportan a la
+sección al instante.
 
 <Note type="warning">
-Although there is a button to the right for adding sections beyond Section 20, 
-such extended sections are not currently supported by vanilla SMBX, by SMBX-38A, and by SMBX2.
-Adding sections beyond Section 20 is only supported by <strong>PGE Engine</strong> and 
-by <strong>TheXTech</strong> engines.
+Aunque hay un botón a la derecha para agregar secciones más allá de la Sección 20,
+estas secciones extendidas no son compatibles actualmente con vanilla SMBX, SMBX-38A y SMBX2.
+Agregar secciones más allá de la Sección 20 solo es compatible con <strong>Motor PGE</strong> y
+por <strong>TheXTech</strong> motores.
 </Note>
 
 -----
 
 ![lock](images/icons/item_lockers.png)<br />
-Enabling a lock will prevent any of the tiles of that
-type to be interacted with. From left to right, the locks are: Blocks,
-Background Objects, NPCs, Warps, Liquids.
+Habilitar un bloqueo evitará que cualquiera de los mosaicos de ese
+tipo con el que se interactuará. De izquierda a derecha, las cerraduras son: Bloques,
+Objetos de fondo, PNJ, deformaciones, líquidos.
 
 ![wld](images/icons/item_lockers_wld.png)<br />
-The same for world map editing. From left to right, the locks are: Terrain tiles,
-Scenery, Path cells, Level entrance points, Music change boxes.
+Lo mismo para la edición de mapas del mundo. De izquierda a derecha, las cerraduras son: baldosas de terreno,
+Escenografía, celdas de ruta, puntos de entrada de nivel, cajas de cambio de música.
 
 -----
 
 ![snaptogrid](screenshots/focus/menu-snap-to-grid.png)<br />
-“Snap to grid” and manipulation of grid size can be
-used for more granular placement of elements such as blocks and
-background objects. “Default by item” describes the default grid
-alginment option.
+"Ajustar a la cuadrícula" y la manipulación del tamaño de la cuadrícula se pueden
+utilizado para una colocación más granular de elementos como bloques y
+objetos de fondo. "Predeterminado por elemento" describe la cuadrícula predeterminada
+opción de alineación.
 
 -----
 
 ![animation](images/icons/animation.png)<br />
-If you are starting to notice that the editor is
-lagging, disabling the animation with a click of this button should
-help\!
+Si empieza a notar que el editor está
+retrasado, la desactivación de la animación con un clic de este botón debería
+ayuda\!
 
 -----
 
 ![lang](screenshots/focus/menu-language.png)<br />
-Changes the editor’s language. Translations may not always be perfectly accurate, 
-but if English doesn’t do the job for you, hopefully you will be able to 
-find your way around more easily with a different language\!
+Cambia el idioma del editor. Es posible que las traducciones no siempre sean perfectamente precisas,
+pero si el inglés no funciona por ti, con suerte podrás
+encontrar su camino más fácilmente con un idioma diferente \!
 
-## Using item sets
+## Uso de conjuntos de elementos
 
-Item sets are the main method of adding objects to a level or world map. 
-The Editor has two different item sets that can be used for objects adding:
+Los conjuntos de elementos son el método principal para agregar objetos a un nivel o mapa del mundo.
+El editor tiene dos conjuntos de elementos diferentes que se pueden usar para agregar objetos:
 
-* ![tilesetbox](images/icons/tileset_box.png) **[Tilesets item box](../../Tools/TilesetBox)** - The organized group of item sets that gives an 
-organized and sorted look at available elements. You also can make your tilesets of 
-the most often used items to organize your work. We suggest using this toolbox by 
-newbies who aren't familiar with the available items set. Also, this toolbox will
-be useful for users who want to keep their work organized.
+*![Tilesetbox](images/icons/tileset_box.png)**[Tilesets item box](../../Tools/TilesetBox)** - El grupo organizado de conjuntos de elementos que da un
+mirada organizada y ordenada a los elementos disponibles. También puede hacer sus mosaicos de
+los elementos más utilizados para organizar su trabajo. Sugerimos usar esta caja de herramientas por
+novatos que no están familiarizados con el conjunto de elementos disponibles. Además, esta caja de herramientas
+ser útil para los usuarios que desean mantener su trabajo organizado.
 
 <ImageZoom
     alt="TilesetBox"
@@ -156,10 +156,10 @@ be useful for users who want to keep their work organized.
 />
 
 * ![browserLevel](images/icons/item_browser_level.png)![browserLevel](images/icons/item_browser_world.png) 
-**[Search Browser / Items Browser](../../EditLevel/ItemBrowser)** - The complete database of available elements 
-for placement. It has the filtering by groups and a category, and the flexible 
-search of any specific item at the whole database. We suggest using this toolbox 
-by experienced users who want the full overlook of all available elements.
+**[Explorador de búsqueda/Explorador de elementos](../../ EditLevel/ItemBrowser)** - La base de datos completa de elementos disponibles
+para la colocación. Tiene el filtrado por grupos y una categoría, y el flexible
+búsqueda de cualquier artículo específico en toda la base de datos. Sugerimos usar esta caja de herramientas
+por usuarios experimentados que quieren pasar por alto todos los elementos disponibles.
 
 <ImageZoom
     alt="SearchBrowser"
@@ -169,39 +169,39 @@ by experienced users who want the full overlook of all available elements.
 />
 
 
-## Compare to SMBX 1.3 Editor
+## Comparar con el editor SMBX 1.3
 
-Compare to the built-in editor of SMBX 1.3 game.
+Compare con el editor incorporado del juego SMBX 1.3.
 
-Unlike the old editor of SMBX, the Moondust Editor uses the multi-selection 
-model that gives an ability to work with multiple items at the same time.
-Instead of each item dragging to change their properties, you can use a 
-context menu. You also can set the same properties to multiple items
-at one moment! You can copy, you can paste your stuff into another level/world,
-you can undo any accidental changes (and redo them too if needed). Together with
-a classic placing mode, you have special tools like a line drawing, rectangular
-placement, ellipse, and a flood-fill tool that makes the group item placement
-easy and faster. The "Overwrite mode" allows you to replace existing elements on 
-a map faster!
+A diferencia del antiguo editor de SMBX, Moondust Editor utiliza la selección múltiple
+modelo que permite trabajar con varios elementos al mismo tiempo.
+En lugar de arrastrar cada elemento para cambiar sus propiedades, puede utilizar un
+Menú de contexto. También puede establecer las mismas propiedades para varios elementos
+en un momento! Puedes copiar, puedes pegar tus cosas en otro nivel / mundo,
+puede deshacer cualquier cambio accidental (y rehacerlo también si es necesario). Juntos con
+un modo de colocación clásico, tiene herramientas especiales como un dibujo lineal, rectangular
+ubicación, elipse y una herramienta de relleno de inundación que hace que la ubicación del elemento del grupo
+fácil y rápido. El "modo de sobrescritura" le permite reemplazar elementos existentes en
+un mapa más rápido!
 
 
-### Bugs of SMBX Editor absent in Moondust Editor:</u>
+### Errores de SMBX Editor ausentes en Moondust Editor:</u>
 
-- you have the full freedom with using decimal values in the npc.txt files
-(crash won't happen)
-- you have the full freedom to use custom sceneries in range 32-65 on the world
-map with a correct saving of file (SMBX Editor will crash when you try to save 
-a world map having those items).
+- Tiene total libertad para usar valores decimales en los archivos npc.txt
+(el accidente no sucederá)
+- tiene total libertad para usar escenarios personalizados en el rango 32-65 en el mundo
+mapa con un guardado correcto del archivo (SMBX Editor se bloqueará cuando intente guardar
+un mapa del mundo con esos elementos).
 
-- you will don't flood with vines or with sceneries when you try
-to put them on the map.
+- No se inundará de enredaderas o paisajes cuando lo intente
+para ponerlos en el mapa.
 
-- flood-fill is safe: if you did an accidental flood fill of outer space,
-the flood-filling process stops after 3 sec. You can undo this and fix your
-mistake without Editor reload.
+- El llenado por inundación es seguro: si realizó un llenado por inundación accidental del espacio exterior,
+el proceso de llenado por inundación se detiene después de 3 seg. Puede deshacer esto y arreglar su
+error sin la recarga del Editor.
 
-- you will never get the "overflow" message because Moondust Editor has more
-space to keep all your items. If you try to save the level or world map into
-the legacy format, you will get the warning message that tells you about
-exciting limits. It should help you to be sure your file will be compatible
-with a legacy game.
+- Nunca obtendrá el mensaje "desbordamiento" porque Moondust Editor tiene más
+espacio para guardar todos tus artículos. Si intentas guardar el nivel o el mapa del mundo en
+el formato heredado, obtendrá el mensaje de advertencia que le informa sobre
+límites emocionantes. Debería ayudarlo a asegurarse de que su archivo sea compatible
+con un juego de legado.

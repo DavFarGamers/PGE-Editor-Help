@@ -1,7 +1,7 @@
-# Level Settings
+# Configuración de nivel
 
-You can set the level title in the level settings. You need to open the `Level > Properties` menu, and then you can enter the level title. Depending on a configuration package, there are may some level-wide settings.
+Puede establecer el título del nivel en la configuración del nivel. Necesitas abrir el `Level > Properties` menú, y luego puede ingresar el título del nivel. Dependiendo de un paquete de configuración, puede haber algunas configuraciones de nivel.
 
-_Set level title dialog_
+_Diálogo de título de nivel de configuración_
 
 ![005_levelEditingSpace](screenshots/LevelEditing/Menu_Level_title.png)

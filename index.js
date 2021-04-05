@@ -438,10 +438,10 @@ new Docute({
         },
         '/es/' : {
             language: 'Español',
-            editLinkText: 'Edit this page on GitHub ',
+            editLinkText: 'Edita esta página en GitHub ',
             sidebar: [
                 {
-                    title: 'Main',
+                    title: 'Principal',
                     children: [
                         {
                             title: 'Intro',
@@ -450,57 +450,57 @@ new Docute({
                     ]
                 },
                 {
-                    title: 'Getting started',
+                    title: 'Empezando',
                     children: [
                         {
-                            title: 'Quick Start',
+                            title: 'Inicio rápido',
                             link: '/es/Intro/QuickStart',
                         },
                         {
-                            title: 'About',
+                            title: 'Acerca de',
                             link: '/es/Intro/About'
                         }
                     ]
                 },
                 {
-                    title: "Quick start",
+                    title: "Inicio rápido",
                     children: [
                         {
-                            title: 'What is Moondust Editor?',
+                            title: '¿Qué es Moondust Editor?',
                             link: '/es/Intro/QuickStart/WhatIsEditor'
                         },
                         {
-                            title: 'How to make levels',
+                            title: 'Cómo hacer niveles',
                             link: '/es/Intro/QuickStart/HowToMakeLevels'
                         },
                         {
-                            title: 'How to make world maps',
+                            title: 'Cómo hacer mapas del mundo',
                             link: '/es/Intro/QuickStart/HowToMakeWorlds'
                         }
                     ]
                 },
                 {
                     collapsable: true,
-                    title: "Editing",
+                    title: "Edición",
                     children: [
                         {
-                            title: 'Items placing',
+                            title: 'Colocación de artículos',
                             link: '/es/Editing/Placing'
                         },
                         {
-                            title: 'Items removing',
+                            title: 'Eliminacion de elementos',
                             link: '/es/Editing/RemoveItems'
                         },
                         {
-                            title: 'Context menu',
+                            title: 'Menú de contexto',
                             link: '/es/Editing/ContextMenu'
                         },
                         {
-                            title: 'Item Properties',
+                            title: 'Propiedades del artículo',
                             link: '/es/Editing/ItemProperties'
                         },
                         {
-                            title: 'Search',
+                            title: 'Búsqueda',
                             link: '/es/Editing/Search'
                         }
                     ]
@@ -510,196 +510,196 @@ new Docute({
                     title: 'Editor GUI',
                     children: [
                         {
-                            title: 'Toolboxes, Toolbars, panels',
+                            title: 'Cajas de herramientas, barras de herramientas, paneles',
                             link: '/es/EditorUI/Tools'
                         },
                         {
-                            title: 'Switch application language',
+                            title: 'Cambiar el idioma de la aplicación',
                             link: '/es/EditorUI/Language'
                         },
                         {
-                            title: 'History (Undo/Redo)',
+                            title: 'Historial (deshacer/rehacer)',
                             link: '/es/EditorUI/HistoryManager'
                         },
                         {
-                            title: 'Clipboard',
+                            title: 'Portapapeles',
                             link: '/es/EditorUI/Clipboard'
                         },
                         {
-                            title: 'Document view',
+                            title: 'Vista de documento',
                             link: '/es/EditorUI/SubWindow'
                         },
                         {
-                            title: 'Menu bar',
+                            title: 'Barra de menús',
                             link: '/es/EditorUI/Menubar'
                         },
                         {
-                            title: 'Hot keys',
+                            title: 'Teclas de acceso rápido',
                             link: '/es/EditorUI/HotKeys'
                         }
                     ]
                 },
                 {
                     collapsable: true,
-                    title: 'Level editing',
+                    title: 'Edición de nivel',
                     children: [
                         {
-                            title: 'About',
+                            title: 'Acerca de',
                             link: '/es/EditLevel/About'
                         },
                         {
-                            title: 'Set level title',
+                            title: 'Establecer título de nivel',
                             link: '/es/EditLevel/SetTitle'
                         },
                         {
-                            title: 'Sections',
+                            title: 'Secciones',
                             link: '/es/EditLevel/Sections'
                         },
                         {
-                            title: 'Item browser',
+                            title: 'Explorador de artículos',
                             link: '/es/EditLevel/ItemBrowser'
                         },
                         {
-                            title: 'Level Items',
+                            title: 'Elementos de nivel',
                             link: '/es/EditLevel/Items'
                         },
                         {
-                            title: 'Layers',
+                            title: 'Capas',
                             link: '/es/EditLevel/Layers'
                         },
                         {
-                            title: 'Events',
+                            title: 'Eventos',
                             link: '/es/EditLevel/Events'
                         },
                         {
-                            title: 'Items placing',
+                            title: 'Colocación de artículos',
                             link: '/es/Editing/Placing'
                         },
                         {
-                            title: 'Items removing',
+                            title: 'Eliminacion de elementos',
                             link: '/es/Editing/RemoveItems'
                         },
                         {
-                            title: 'Context menu',
+                            title: 'Menú de contexto',
                             link: '/es/EditLevel/ContextMenu'
                         },
                         {
-                            title: 'Properties box',
+                            title: 'Cuadro de propiedades',
                             link: '/es/EditLevel/PropertiesBox'
                         },
                         {
-                            title: 'Item search',
+                            title: 'Búsqueda de artículos',
                             link: '/es/Editing/Search'
                         },
                         {
-                            title: 'Testing',
+                            title: 'Pruebas',
                             link: '/es/EditLevel/Testing.md'
                         }
                     ]
                 },
                 {
-                    title: 'World map editing',
+                    title: 'Edición de mapas del mundo',
                     children: [
                         {
-                            title: 'About',
+                            title: 'Acerca de',
                             link: '/es/EditWorld/About'
                         },
                         {
-                            title: 'World Settings',
+                            title: 'Configuración mundo',
                             link: '/es/EditWorld/WorldSettings'
                         },
                         {
-                            title: 'Item Toolbox',
+                            title: 'Caja de herramientas de artículos',
                             link: '/es/EditWorld/ItemToolbox'
                         },
                         {
-                            title: 'Items',
+                            title: 'Artículos',
                             link: '/es/EditWorld/Items'
                         },
                         {
-                            title: 'Context Menu',
+                            title: 'Menú de contexto',
                             link: '/es/EditWorld/ContextMenu'
                         },
                         {
-                            title: 'Placing tools',
+                            title: 'Colocación de herramientas',
                             link: '/es/Editing/Placing'
                         },
                         {
-                            title: 'Remove items',
+                            title: 'Eliminar elementos',
                             link: '/es/Editing/RemoveItems'
                         },
                     ]
                 },
                 {
-                    title: 'Custom NPC configuration editing',
+                    title: 'Edición de configuración personalizada de NPC',
                     children: [
                         {
-                            title: 'What is NPC.txt?',
+                            title: '¿Qué es NPC.txt?',
                             link: '/es/EditNPCConfiguration/About'
                         },
                         {
-                            title: 'NPC.txt Editor features',
+                            title: 'Funciones del editor de texto NPC',
                             link: '/es/EditNPCConfiguration/EditorFeature'
                         }
                     ]
                 },
                 {
-                    title: 'Customizing',
+                    title: 'Personalización',
                     children: [
                         {
-                            title: 'How to use custom graphics',
+                            title: 'Cómo utilizar gráficos personalizados',
                             link: '/es/Customizing/CustomGraphics'
                         },
                         {
-                            title: 'Music and SFX formats',
+                            title: 'Formatos de música y SFX',
                             link: '/es/Customizing/CustomAudio'
                         },
                         {
-                            title: 'Bit masks (for Vanilla SMBX)',
+                            title: 'Máscaras de bits (para Vanilla SMBX)',
                             link: '/es/Customizing/BitMasks'
                         },
                         {
-                            title: 'Editor Themes',
+                            title: 'Temas del editor',
                             link: '/es/Customizing/EditorThemes'
                         }
                     ]
                 },
                 {
-                    title: 'Configurations',
+                    title: 'Configuraciones',
                     children: [
                         {
-                            title: 'Configuration manager',
+                            title: 'Gerente de configuración',
                             link: '/es/Configuration/ConfigManager'
                         }
                     ]
                 },
                 {
-                    title: 'Tools',
+                    title: 'Herramientas',
                     children: [
                         {
-                            title: 'Application settings',
+                            title: 'Configuraciones de la aplicación',
                             link: '/es/Tools/ApplicationSettings'
                         },
                         {
-                            title: 'Development console',
+                            title: 'Consola de desarrollo',
                             link: '/es/Tools/DevConsole'
                         },
                         {
-                            title: 'Debugger',
+                            title: 'Depurador',
                             link: '/es/Tools/Debugger'
                         },
                         {
-                            title: 'Tileset item box',
+                            title: 'Caja de elementos de mosaico',
                             link: '/es/Tools/TilesetBox'
                         },
                         {
-                            title: 'Custom data helper tools',
+                            title: 'Herramientas de ayuda de datos personalizadas',
                             link: '/es/Tools/CustomData'
                         }
                     ]
                 },
                 {
-                    title: 'Console tools',
+                    title: 'Herramientas de consola',
                     children: [
                         {
                             title: 'GIFs2PNG',
@@ -720,15 +720,15 @@ new Docute({
                     ]
                 },
                 {
-                    title: 'FAQ',
+                    title: 'Preguntas más frecuentes',
                     link: 'https://wohlsoft.ru/pgewiki/Frequently_Asked_Questions'
                 },
                 {
-                    title: 'License',
+                    title: 'Licencia',
                     link: '/GPLv3'
                 },
                 {
-                    title: 'Our friends',
+                    title: 'Nuestros amigos',
                     children: [
                         {
                             title: 'Hedgewars',

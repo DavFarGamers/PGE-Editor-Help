@@ -1,17 +1,17 @@
-# About world maps
+# Acerca de los mapas del mundo
 
-**World map** - the interactive list of levels available to the player(s) for play. World map - is a key unit of game or episode.
+**Mapa del mundo**: la lista interactiva de niveles disponibles para que los jugadores jueguen. Mapa del mundo: es una unidad clave del juego o episodio.
 
-World map also can be a hub-styled, I.e. world map will not be used. Instead of the world map, a special level will be used. That level is called a hub level. The hub level gives a player to enter into levels like it going between levels.
+El mapa del mundo también puede tener un estilo de centro, es decir, no se utilizará el mapa del mundo. En lugar del mapa del mundo, se utilizará un nivel especial. Ese nivel se denomina nivel de concentrador. El nivel del centro le permite al jugador ingresar a niveles como si estuviera yendo entre niveles.
 
 
-* **Terrain tiles** - the main design unit which used for creating the common design of the world map. Terrain tiles are not communicating with other elements.
-* **Scenery** - the secondary design unit. The scenery can be hidden when did open a path which is placed over them.
-* **Paths** - This allows the player to move between level points and map locations. Usually, paths are hidden by default and appearing when a player passes the level placed nearly to them.
-* **Level points** - The special units, which allowing entering into defined level or teleport player to other map coordinates. Levels can have multiple entrances but can have different warp points inside a level. Also, level point using as the game start point. If the start point wasn't defined, a player will start from 0x0 coordinates.
-* **Music Boxes** - The special units which switching playing music when the player character stands on them.
+* **Mosaicos de terreno**: - La unidad de diseño principal que se utilizó para crear el diseño común del mapa del mundo. Los mosaicos de terreno no se comunican con otros elementos.
+* **Escenografía**: - La unidad de diseño secundaria. El paisaje se puede ocultar cuando se abre un camino que se coloca sobre ellos.
+* **Rutas**: - Esto permite al jugador moverse entre los puntos de nivel y las ubicaciones del mapa. Por lo general, los caminos están ocultos de forma predeterminada y aparecen cuando un jugador pasa el nivel ubicado cerca de ellos.
+* **Puntos de nivel** - Las unidades especiales, que permiten entrar en un nivel definido o teletransportar al jugador a otras coordenadas del mapa. Los niveles pueden tener múltiples entradas pero pueden tener diferentes puntos de deformación dentro de un nivel. Además, el uso del punto de nivel como punto de inicio del juego. Si no se definió el punto de inicio, un jugador comenzará desde las coordenadas 0x0.
+* **Music Boxes**: - Las unidades especiales que cambian la reproducción de música cuando el personaje del jugador se para sobre ellas.
 
-_World map editor interface_
+_Interfaz del editor de mapas del mundo_
 
 <ImageZoom
 alt="WorldEdit_Workspace"
@@ -19,8 +19,8 @@ url="screenshots/WorldEditing/WorldEdit_Workspace.png"
 :border="true"
 />
 
-**Each world map should have:**
+**Cada mapa del mundo debe tener:**
 
-* **Title of episode** - this is the name of the world map which showing in the main menu. If you will not define it and when you will try to play it in the SMBX, you will see the blank title of the episode!
-* **Game start point** - Any level item with a "Game start" flag. If you will not place it, the player will start the game from the 0x0 coordinates of the world map. If you will put multiple levels with the "Game start" flag, you will start the game from the oldest of them.
-* **All levels should be connected with paths** - if you will don't connect levels with paths you will not be able to walk over the world map. Path items - only one type of item that giving an ability to walk over the world map. Even if you will build a chain of levels which placed together, the next level will be opened only if you will complete it (level is successful only if player end them by getting the exit item. If a player got lose the level (killed by enemy/boss, fell into a pit, lose a level mission, etc), the exit will give the failure result, and you should replay level)!
+* **Título del episodio**: - Este es el nombre del mapa mundial que se muestra en el menú principal. Si no lo define y cuando intenta reproducirlo en SMBX, ¡verá el título en blanco del episodio!
+* **Punto de inicio del juego**: - Cualquier elemento de nivel con una bandera de "Inicio del juego". Si no lo colocas, el jugador comenzará el juego desde las coordenadas 0x0 del mapa mundial. Si coloca varios niveles con la bandera "Inicio del juego", comenzará el juego desde el más antiguo de ellos.
+* **Todos los niveles deben estar conectados con caminos** - Si no conecta niveles con caminos, no podrá caminar sobre el mapa del mundo. Elementos de ruta: solo un tipo de elemento que permite caminar sobre el mapa mundial. Incluso si construyes una cadena de niveles que se colocan juntos, el siguiente nivel se abrirá solo si lo completas (el nivel es exitoso solo si el jugador los termina obteniendo el elemento de salida. Si un jugador pierde el nivel (asesinado por enemigo / jefe, cayó en un pozo, perdió una misión de nivel, etc.), la salida dará el resultado de falla, ¡y debe volver a jugar el nivel)!

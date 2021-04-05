@@ -1,9 +1,9 @@
-# History Manager
+# Gerente de Historia
 
-This editor records all actions in a history manager. You can undo and redo the remembered actions you made.
+Este editor registra todas las acciones en un administrador de historial. Puede deshacer y rehacer las acciones recordadas que realizó.
 
-**Note:** There are some types of actions that may be not tracked. Please [report them as a bug](https://github.com/WohlSoft/PGE-Project/issues/new/choose).
+**Nota:** Hay algunos tipos de acciones que pueden no ser rastreadas. Por favor [report them as a bug](https://github.com/WohlSoft/PGE-Project/issues/new/choose).
 
-_History manager in action_
+_Gestor de historia en acción_
 
 ![HistoryInAct](demos/demo-history.gif)

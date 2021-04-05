@@ -1,24 +1,24 @@
-# LazyFix tool
+# Herramienta LazyFix
 ![CatGlasses](screenshots/Tools/console/cat_glasses_128.png)
 
-The **LazyFix Tool** is a tool that fixes masks considered invalid or improper (such as when the mask is the 
-same as the front image). 
+La **Herramienta LazyFix** es una herramienta que corrige las máscaras consideradas inválidas o inadecuadas (como cuando la máscara es la
+igual que la imagen frontal).
 
-## How it works
-This is an example of invalid mask (which was made with a lazy effort by a simple copying of the picture):
+## Cómo funciona
+Este es un ejemplo de máscara inválida (que se hizo con un esfuerzo perezoso mediante una simple copia de la imagen):
 
 ![lazyFront](screenshots/Tools/console/LazyFix/example_src1.gif) ![lazyBack](screenshots/Tools/console/LazyFix/example_src1m.gif)
 
-After processing, you will get the next result:
+Después del procesamiento, obtendrá el siguiente resultado:
 
 ![lazyFront](screenshots/Tools/console/LazyFix/example_src1.gif) ![lazyBack](screenshots/Tools/console/LazyFix/example_dst1m.gif)
 
-For the proper bit-mask based sprite, the mask defines the pixel transparency level, and it should never contain the
-copy of original sprite.
+Para el sprite basado en máscara de bits adecuado, la máscara define el nivel de transparencia de píxeles y nunca debe contener la
+copia del sprite original.
 
-## Usage
-This is a console utility. To use it you need to run the Terminal at the directory where the LazyFixTool executable
-located. Alternatively, you can use this utility from your scripts and utilities and run this utility externally.
+## Uso
+Esta es una utilidad de consola. Para usarlo, debe ejecutar la Terminal en el directorio donde se encuentra el ejecutable LazyFixTool
+situado. Alternativamente, puede usar esta utilidad desde sus scripts y utilidades y ejecutar esta utilidad externamente.
  
 ```
 USAGE: 

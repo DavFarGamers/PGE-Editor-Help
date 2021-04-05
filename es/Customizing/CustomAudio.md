@@ -1,25 +1,25 @@
-# Music and sound formats support
+# Soporte de formatos de música y sonido
 
-The PGE supports next audio-formats:
+El PGE admite los siguientes formatos de audio:
 
-| Format (Common) | Description |
+| Formato (común) | Descripción |
 |---------|-------------|
-| WAV | Microsoft PCM, Uncompressed audio (hardcoded), has loop support (by SMPL chunk). |
-| VOC | Creative Labs Audio File (hardcoded). Supported for SFX only. |
-| MP3 | MPEG-1/2 Layer 3, Lossy data compressed audio.<br>**Usage of MP3 is DEPRECATED.** This format is inconvenient, damages the quality, does the compression ineffectively, doesn't support loop points at all. Suggested to use OGG format instead. Use the Maintainer utility to convert your old MP3 files into OGG Vorbis. |
-| OGG | OGG Vorbis, Lossy data compressed audio (libOGG, libVorbis), has loop support (by LOOPSTART/LOOPEND/LOOPLENGTH meta tags, also LOOP_START and LOOP_END). |
-| OPUS | OPUS, Lossy data compressed audio (libOpus) (Support was added Since June 18, 2018), has loop support (by LOOPSTART/LOOPEND/LOOPLENGTH meta tags, also LOOP_START and LOOP_END). |
-| FLAC | Free Lossless Audio Codec, Loss-less compressed (libFLAC), has loop support (by LOOPSTART/LOOPEND/LOOPLENGTH meta tags, also LOOP_START and LOOP_END (Support for FLAC loop was added Since November 17, 2019)). |
-| MIDI | Music Instrument Digital Interface, commands list (libADLMIDI, Timidity (hardcoded), Fluidsynth (Usually not built with SDL Mixer X, but possible to use it) ), has loop support (by loopStart/loopEnd markers and by CC111 like RPG Maker). |
+| WAV | Microsoft PCM, audio sin comprimir (codificado), tiene soporte de bucle (by SMPL chunk). |
+| VOC | Archivo de audio de Creative Labs (hardcoded). Compatible solo con SFX. |
+| MP3 | MPEG-1/2 Layer 3, Audio comprimido con pérdida de datos.<br>**El uso de MP3 está anulado.** Este formato es inconveniente, daña la calidad, hace la compresión de manera ineficaz, no admite puntos de bucle en absoluto. Se sugiere usar el formato OGG en su lugar. Utilice la utilidad Maintainer para convertir sus archivos MP3 antiguos en OGG Vorbis. |
+| OGG | OGG Vorbis, Audio comprimido con pérdida de datos (libOGG, libVorbis), tiene soporte de bucle (by LOOPSTART/LOOPEND/LOOPLENGTH meta tags, ademas LOOP_START y LOOP_END). |
+| OPUS | OPUS, Audio comprimido con pérdida de datos (libOpus) (Se agregó soporte desde el 18, de junio de 2018), tiene soporte de bucle (by LOOPSTART/LOOPEND/LOOPLENGTH meta tags, ademas LOOP_START y LOOP_END). |
+| FLAC | Códec de audio sin pérdida gratuito, Loss-less comprimido (libFLAC), tiene soporte de bucle(by LOOPSTART/LOOPEND/LOOPLENGTH meta tags, ademas LOOP_START y LOOP_END (Soporte para FLAC loop fue agregado desde el 17, de noviembre de 2019)). |
+| MIDI | Interfaz digital de instrumentos musicales, lista de comandos (libADLMIDI, Timidity (hardcoded), Fluidsynth (Por lo general, no se construye con SDL Mixer X, pero es posible usarlo) ), tiene soporte de bucle (por loopStart/loopEnd markers y por CC111 like RPG Maker). |
 
-| Format (Extra) | Description |
+| Formato (extra) | Descripción |
 |---------|-------------|
-| XMI | MIDI-like format used in AIL library and was widely used in many DOS games. Can be played by ADLMIDI and OPNMIDI synthesizers only. Has loop support (by CC116 and CC117). |
-| MUS | MIDI-like format used in DMX library and known by Doom and Raptor game series are used DMX sound library. Can be played with ADLMIDI and OPNMIDI synthesizers only. |
-| IMF | Id-Software Music File (will work only if ADLMIDI MIDI device will be toggled). Supported IMF-files which are has length chunk in begin and uses 700Hz of the ticks rate. (Tip: If your IMF-files are playing with wrong tempo or rejecting as invalid files, you have to use this utility to convert frequency and automatically add length chunk into file begin). |
-| CMF | Creative Music Format, A MIDI file mixed with OPL2 FM instruments, widely used in many DOS games. Can be played with ADLMIDI synthesizer only. |
+| XMI | MIDI-like formato utilizado en la biblioteca AIL y ampliamente utilizado en muchos juegos de DOS. Solo se puede reproducir con sintetizadores ADLMIDI y OPNMIDI. Tiene soporte de bucle (por CC116 y CC117). |
+| MUS | MIDI-like El formato utilizado en la biblioteca DMX y conocido por las series de juegos Doom y Raptor se utiliza en la biblioteca de sonido DMX. Se puede reproducir solo con sintetizadores ADLMIDI y OPNMIDI. |
+| IMF | Archivo de música de Id-Software (solo funcionará si se activa el dispositivo MIDI ADLMIDI). Archivos IMF compatibles que tienen una longitud inicial y utilizan 700Hz de la tasa de ticks. (Sugerencia: si sus archivos IMF se reproducen con un tiempo incorrecto o se rechazan como archivos no válidos, debe usar esta utilidad para convertir la frecuencia y agregar automáticamente un fragmento de longitud al comienzo del archivo) . |
+| CMF | Creative Music Format, Un archivo MIDI mezclado con instrumentos OPL2 FM, ampliamente utilizado en muchos juegos de DOS. Se puede reproducir solo con el sintetizador ADLMIDI. |
 
-| Format (Modules music formats) | Description |
+| Formato (Módulos de formatos de música) | Descripción |
 |---------|-------------|
 | 669 | Composer 669, Unis 669 |
 | AMF | DSMI Advanced Module Format |

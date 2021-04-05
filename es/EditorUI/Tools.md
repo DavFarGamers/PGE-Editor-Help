@@ -1,8 +1,8 @@
-# Toolboxes, Toolbars, Panels
+# Cajas de herramientas, barras de herramientas, paneles
 
-Editor's interface has draggable and sizable toolboxes and toolbars. You can drag and drop any toolboxes and toolbars wherever you like.
+La interfaz del editor tiene cajas de herramientas y barras de herramientas de tamaño considerable y que se pueden arrastrar. Puede arrastrar y soltar cualquier caja de herramientas y barra de herramientas donde quiera.
 
-*Toolbars*
+*Barras de herramientas*
 
 <ImageZoom 
   alt="toolbars"
@@ -10,7 +10,7 @@ Editor's interface has draggable and sizable toolboxes and toolbars. You can dra
   :border="true" 
 />
 
-*Toolbox and Toolbar placement zones*
+*Zonas de ubicación de la caja de herramientas y la barra de herramientas*
 
 <ImageZoom 
   alt="toolbars"

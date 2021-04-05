@@ -1,8 +1,8 @@
-# Search
+# Búsqueda
 
-Using this toolbox, you can find on the level map the necessary item by known properties. Search toolbox available at the toolbar and have the next icon:  ![S](screenshots/LevelEditing/Search/SearchIcon.png). You can use this toolbox to select all found items and perform actions using a [context menu](ContextMenu).
+Con esta caja de herramientas, puede encontrar en el mapa de niveles el elemento necesario por propiedades conocidas. Caja de herramientas de búsqueda disponible en la barra de herramientas y tiene el siguiente icono:  ![S](screenshots/LevelEditing/Search/SearchIcon.png). Puede usar esta caja de herramientas para seleccionar todos los elementos encontrados y realizar acciones usando un [context menu](ContextMenu).
 
-_Blocks search_
+_Búsqueda de bloques_
 
 <ImageZoom
   alt="SearchBlock"
@@ -12,7 +12,7 @@ _Blocks search_
 />
 
 
-_NPC search_
+_Búsqueda de PNJ_
 
 <ImageZoom
   alt="SearchNPC"

@@ -1,12 +1,12 @@
-# Document view
+# Vista de documento
 
-The Editor can specify the preferred document view mode: Tabs or Sub-Windows. The tabs mode is the default. Content of opened files gets maximized inside the main window and the list of opened files shown at the top row as tabs. The sub-windows mode represents opened files as windows inside of the main window. A sub-windows view is an option for users who prefer the classic look of Editor more closed to SMBX Editor.
+El editor puede especificar el modo de visualización del documento preferido: pestañas o subventanas. El modo de pestañas es el predeterminado. El contenido de los archivos abiertos se maximiza dentro de la ventana principal y la lista de archivos abiertos se muestra en la fila superior como pestañas. El modo de subventanas representa los archivos abiertos como ventanas dentro de la ventana principal. Una vista de subventanas es una opción para los usuarios que prefieren el aspecto clásico del Editor más cerrado al Editor SMBX.
 
 ![Tabs](screenshots/Interface/TabView.png)
 
-You have three ways to switch between sub-windows and tabs view mode:
-* In the "Window" menu, you can select the item "Sub Windows" or
-  "Tab Windows" to switch the necessary view mode.
-* In application settings in the "Main" tab, you can check/uncheck
-  "Document view".
-* In the "Help" menu, you can choose the "Legacy GUI" to use the sub-windows mode together with other elements displaying, and the "Modern GUI" to use the tabs mode.
+Tiene tres formas de cambiar entre las subventanas y el modo de vista de pestañas:
+* En el menú "Ventana", puede seleccionar el elemento "Subventanas" o
+   "Pestaña de Windows" para cambiar el modo de vista necesario.
+* En la configuración de la aplicación en la pestaña "Principal", puede marcar / desmarcar
+   "Vista de documento".
+* En el menú "Ayuda", puede elegir la "GUI heredada" para usar el modo de subventanas junto con la visualización de otros elementos, y la "GUI moderna" para usar el modo de pestañas.

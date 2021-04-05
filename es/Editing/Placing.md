@@ -1,33 +1,32 @@
-# Items placing
+# Colocación de artículos
 
-Placing new elements on the level or world map can be done in multiple various ways.
+La colocación de nuevos elementos en el mapa de nivel o mundial se puede realizar de varias formas.
 
-**Available placing ways**
-- **Brush placing** - the standard placing tool. Individual items are placing by mouse click or by "drawing" curves while moving the mouse cursor with a hold button.
+** Formas de colocación disponibles **
+- **Brush placing** - la herramienta de colocación estándar. Los elementos individuales se colocan haciendo clic con el mouse o "dibujando" curvas mientras se mueve el cursor del mouse con un botón de retención.
 
-- **[Rectangle](#rectangle)** - the tool which places items by filling rectangle zones. This tool is useful for drawing big walls or fill a lot of holes.
+- **[Rectangle](#rectangle)** - la herramienta que coloca elementos llenando zonas rectangulares. Esta herramienta es útil para dibujar paredes grandes o rellenar muchos huecos.
 
-- **[Circle](#circle)** - the tool which placing the items by filling circular zones. It works like a rectangular placing.
+- **[Circle](#circle)** - la herramienta que coloca los artículos llenando zonas circulares. Funciona como una colocación rectangular.
 
-- **[Line](#line)** - the tool which allows draw line of items. This tool useful for slope drawing, columns, and long platforms.
+- **[Line](#line)** - la herramienta que permite dibujar una línea de elementos. Esta herramienta es útil para dibujar pendientes, columnas y plataformas largas..
 
-- **[Flood fill](#flood-fill)** - this tool gives you the ability to fill a closed range of random shapes. This tool useful if you need to fill with items in the zone of random-shape.
+- **[Flood fill](#flood-fill)** - esta herramienta le brinda la capacidad de llenar un rango cerrado de formas aleatorias. Esta herramienta es útil si necesita rellenar con elementos en la zona de forma aleatoria.
 
-- **[Overwrite mode](#overwrite-mode)** - This feature gives an ability to replace items already placed on the map.
+- **[Overwrite mode](#overwrite-mode)** - Esta función ofrece la posibilidad de reemplazar elementos ya colocados en el mapa..
 
 
 ![PI](screenshots/LevelEditing/Items/PlacingTools.png)
 
 
-## Rectangle
+## Rectángulo
 
-It's a tool that allows quick placing of item groups on the map.
+Es una herramienta que permite colocar rápidamente grupos de elementos en el mapa.
 
-This feature available for BGO and Blocks. And in the world map editor available for any items.
+Esta función está disponible para BGO y Blocks. Y en el editor de mapas del mundo disponible para cualquier elemento.
+Para utilizar esta función, debe presionar el icono "Rectángulo" y, para colocar grupos de elementos, debe dibujar el rectángulo en el mapa. Una vez que suelte el botón del mouse, el área seleccionada se llenará con un grupo de elementos.
 
-To use this feature, you need to press on the "Rectangle" icon, and to place item groups, you need to draw the rectangle on the map. Once you release your mouse button, the selected area will be filled with an item group.
-
-_Placing items by rectangle tool_
+_Colocación de elementos mediante la herramienta de rectángulo_
 
 <ImageZoom
   alt="demo-place-rect"
@@ -36,15 +35,15 @@ _Placing items by rectangle tool_
 />
 
 
-## Circle
+## Circulo
 
-It's a tool that allows quick placing of item groups on the map.
+Es una herramienta que permite colocar rápidamente grupos de elementos en el mapa.
 
-This feature available for BGO and Blocks. And in the world map editor available for any items.
+Esta función está disponible para BGO y Blocks. Y en el editor de mapas del mundo disponible para cualquier elemento.
 
-To use this feature, you need to press on the "Circle" icon, and to place item groups, you need to draw the circle on the map. Once you release your mouse button, the selected area will be filled with an item group.
+Para utilizar esta función, debe presionar el icono "Círculo" y, para colocar grupos de elementos, debe dibujar el círculo en el mapa. Una vez que suelte el botón del mouse, el área seleccionada se llenará con un grupo de elementos.
 
-_Placing blocks with circle tool_
+_Colocar bloques con la herramienta círculo_
 
 <ImageZoom
   alt="demo-place-circle"
@@ -53,15 +52,15 @@ _Placing blocks with circle tool_
 />
 
 
-## Line
+## Línea
 
-It's a tool that allows quick placing of item groups on the map.
+Es una herramienta que permite colocar rápidamente grupos de elementos en el mapa.
 
-This feature available for BGO, Blocks, and NPCs. And in the world map editor available for any items.
+Esta función está disponible para BGO, Bloques y NPC. Y en el editor de mapas del mundo disponible para cualquier elemento.
 
-To use this feature, you need to press on the "Line" icon, and to place item groups, you need to draw the circle on the map. Once you release your mouse button, the linear area will be filled with an item group.
+Para utilizar esta función, debe presionar el icono "Línea" y, para colocar grupos de elementos, debe dibujar el círculo en el mapa. Una vez que suelte el botón del mouse, el área lineal se llenará con un grupo de elementos.
 
-_Placing items with line tool_
+_Colocación de elementos con la herramienta de línea_
 
 <ImageZoom
   alt="demo-place-line"
@@ -69,19 +68,19 @@ _Placing items with line tool_
   :border="true"
 />
 
-## Flood fill
+## Relleno de inundación
 
-It's a tool that allows the filling of closed areas built by items.
+Es una herramienta que permite el llenado de áreas cerradas construidas por elementos.
 
-This feature available for BGO and Blocks. And in the world map editor available for any items.
+Esta función está disponible para BGO y Blocks. Y en el editor de mapas del mundo disponible para cualquier elemento.
 
-To use this feature, you need to press on the "Fill" icon, and to place item groups, you need to click on the empty area you want to fill.
+Para usar esta función, debe presionar el ícono "Rellenar" y, para colocar grupos de elementos, debe hacer clic en el área vacía que desea llenar.
 
-**Notes:**
-- For safety reasons, the flood filling process will stop after 3 seconds. If you accidentally filled the whole map, you can undo them.
-- You can limit flood-fill with section boundaries if you will enable flag in the `Edit -> Don't fill out of section` menu.
+** Notas: **
+- Por razones de seguridad, el proceso de llenado por inundación se detendrá después de 3 segundos. Si llenó accidentalmente todo el mapa, puede deshacerlos.
+- Puede limitar el relleno por inundación con límites de sección si habilita la bandera en el`Edit -> Don't fill out of section` menu.
 
-_Filling with blocks_
+_Llenar con bloques_
 
 <ImageZoom
   alt="demo-place-flood"
@@ -90,11 +89,11 @@ _Filling with blocks_
 />
 
 
-## Overwrite mode
+## Modo de sobrescritura
 
-This feature allows you to replace items placed on the map. To use them, switch the "Overwrite mode" icon on the toolbar. All new-placed items will cause a removal of all collided items which was placed at the position place before.
+Esta función le permite reemplazar elementos colocados en el mapa. Para usarlos, cambie el icono "Modo de sobrescritura" en la barra de herramientas. Todos los elementos nuevos colocados provocarán la eliminación de todos los elementos colisionados que se colocaron en el lugar de posición anterior.
 
-_Draw with overwrite mode_
+_Dibujar con modo de sobrescritura_
 
 <ImageZoom
   alt="demo-override-mode"

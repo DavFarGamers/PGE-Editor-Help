@@ -1,10 +1,10 @@
-# Sections
+# Secciones
 
-## About sections
+## Acerca de las secciones
 
-**Section** - is the separated sub-area of a level. It has its settings such as background music, background images, physics, etc. A player can move between sections by the special points called warps. All sections are in the united space, and you can see many sections at the same time, however, you can change settings of only one section at one time.
+**Sección**: es la subárea separada de un nivel. Tiene sus configuraciones tales como música de fondo, imágenes de fondo, física, etc. Un jugador puede moverse entre secciones por puntos especiales llamados warps. Todas las secciones están en el espacio unido y puede ver muchas secciones al mismo tiempo; sin embargo, puede cambiar la configuración de una sola sección a la vez.
 
-_Section switch panel. here you can quickly switch to another section_
+_Cuadro seccionador. aquí puede cambiar rápidamente a otra sección_
 
 <ImageZoom
 alt="Section_Switch"
@@ -12,25 +12,25 @@ url="screenshots/LevelEditing/Section_Switch.png"
 :border="true"
 />
 
-If you list in huge level space, you can immediately return to the left-bottom, left-top, right-top, or right-bottom corner of the current section. While switching between different sections, your last position will be kept. Оnce you switch the previous section back the last position will be restored at the same coordinates.
+Si enumera en un gran espacio de nivel, puede volver inmediatamente a la esquina inferior izquierda, superior izquierda, superior derecha o inferior derecha de la sección actual. Mientras cambia entre diferentes secciones, se mantendrá su última posición. Una vez que cambie la sección anterior hacia atrás, la última posición se restaurará en las mismas coordenadas.
 
-## Change settings
+## Cambiar ajustes
 
-<u>Each section have next individual settings</u>:
+<u>Cada sección tiene la siguiente configuración individual</u>:
 
-- **Music** - Choose background music for this section.
-- **Custom music file** - Choose an external music file to use as background music.
-- **Background** - It's a picture that will appear at the back of this section.
-- **Connect left-right sides (Level Warp)** - All objects gone out of section boundaries horizontally will come back from the opposite side of this section.
-- **Offscreen exit** - Gives the ability player exit from the level by walking off boundaries.
-- **One-way scrolling (No turn back)**: allows moving player only to the right direction. The camera will don't scroll left.
-- **Underwater**: sets the default physical environment of the section to be water. When this option is unchecked, the default physical environment of the section is air.
+- **Música**: elija música de fondo para esta sección.
+- **Archivo de música personalizado**: elija un archivo de música externo para usarlo como música de fondo.
+- **Fondo**: es una imagen que aparecerá al final de esta sección.
+- **Conecte los lados izquierdo-derecho (deformación de nivel)** - Todos los objetos que salieron de los límites de la sección horizontalmente volverán desde el lado opuesto de esta sección.
+- **Salida fuera de la pantalla** - Le da al jugador la habilidad de salir del nivel caminando fuera de los límites.
+- **Desplazamiento unidireccional (sin retroceso)**: permite mover al jugador solo en la dirección correcta. La cámara no se desplazará hacia la izquierda.
+- **Submarino**: establece que el entorno físico predeterminado de la sección sea agua. Cuando esta opción no está marcada, el entorno físico predeterminado de la sección es el aire.
 
-To open the section settings toolbox, click the icon on the toolbox or `View -> Section settings` menu item.
+Para abrir la caja de herramientas de configuración de la sección, haga clic en el icono en la caja de herramientas o `View -> Section settings` opción del menú.
 
-Here you can change all section settings and resize the section.
+Aquí puede cambiar todas las configuraciones de la sección y cambiar el tamaño de la sección.
 
-_Section settings toolbox_
+_Caja de herramientas de configuración de sección_
 
 <ImageZoom
 alt="0toolbox_section"
@@ -38,9 +38,9 @@ url="screenshots/LevelEditing/Section/0toolbox_section.png"
 :border="true"
 />
 
-You can set background music from the list, or you can use your custom music files. You must place these files into the same folder with the level file of any sub-directory inside directory with your level file.
+Puede configurar la música de fondo de la lista o puede utilizar sus archivos de música personalizados. Debe colocar estos archivos en la misma carpeta con el archivo de nivel de cualquier subdirectorio dentro del directorio con su archivo de nivel.
 
-_Music list window (Displaying all music files, even inside sub-directories)_
+_Ventana de lista de música (mostrando todos los archivos de música, incluso dentro de los subdirectorios)_
 
 <ImageZoom
 alt="0toolbox_section_musiclist"
@@ -49,33 +49,33 @@ url="screenshots/LevelEditing/Section/0toolbox_section_musiclist.png"
 />
 
 
-**Custom** checkbox will be automatically enabled when you select the "Custom" item at the music list. Then, when you enable the "custom" checkbox, the "Custom" entry at the music list will automatically appear.
+La casilla de verificación **Personalizado** se habilitará automáticamente cuando seleccione el elemento "Personalizado" en la lista de música. Luego, cuando habilites la casilla de verificación "personalizada", aparecerá automáticamente la entrada "Personalizada" en la lista de música.
 
-**Custom music** field must contain the filename of custom music. You can use relative paths, but recommend using the "/" separator instead of "\\".
+El campo **Música personalizada** debe contener el nombre de archivo de la música personalizada. Puede utilizar rutas relativas, pero se recomienda utilizar el separador "/" en lugar de "\\".
 
-_Custom music field_
+_Campo de música personalizado_
 
 ![0toolbox_section_musicPath](screenshots/LevelEditing/Section/0toolbox_section_musicPath.png)
 
-## Resizing
+## Cambio de tamaño
 
-Sections can have any size. You can resize the section from the section properties toolbox by clicking the "Resize" button. After this, the big green rectangle will appear. Drag and move it by its corners to set the necessary size. Once you completed the resizing, press the ENTER key to accept the resizing or ESC key to cancel resizing (same buttons on the section settings toolbox).
+Las secciones pueden tener cualquier tamaño. Puede cambiar el tamaño de la sección desde la caja de herramientas de propiedades de la sección haciendo clic en el botón "Cambiar tamaño". Después de esto, aparecerá el gran rectángulo verde. Arrástrelo y muévalo por sus esquinas para establecer el tamaño necesario. Una vez que haya completado el cambio de tamaño, presione la tecla ENTER para aceptar el cambio de tamaño o la tecla ESC para cancelar el cambio de tamaño (los mismos botones en la caja de herramientas de configuración de la sección).
 
-The <u>minimal default section size</u> is 800x600. This value may depend on the configuration package settings.
+El <u>tamaño mínimo de sección predeterminado</u> es 800x600. Este valor puede depender de los valores del paquete de configuración.
 
 <Note type="tip">
-Note: If you want to get more features from the resizer box (green net which defined the new size of the section), click it by the right mouse button.
+Nota: Si desea obtener más funciones del cuadro de cambio de tamaño (red verde que definió el nuevo tamaño de la sección), haga clic en él con el botón derecho del mouse.
 </Note>
 
-The context menu has the next actions:
-* **Cut top here** - move the top boundary of the box to the current mouse position.
-* **Cut left here** - move the left boundary of the box to the current mouse position.
-* **Cut right here** - move the right boundary of the box to the current mouse position.
-* **Cut bottom here** - move the bottom boundary of the box to the current mouse position.
-* **Don't snap to grid** - disables grid snapping on moving of box boundaries.
-* **Disable minimal size limit** - gives the ability to set size less than minimally available size.
+El menú contextual tiene las siguientes acciones:
+* **Cortar la parte superior aquí**: mueve el límite superior del cuadro a la posición actual del mouse.
+* **Cortar a la izquierda aquí**: mueve el límite izquierdo del cuadro a la posición actual del mouse.
+* **Cortar aquí**: mueve el límite derecho del cuadro a la posición actual del mouse.
+* **Cortar la parte inferior aquí**: mueve el límite inferior del cuadro a la posición actual del mouse.
+* **No ajustar a la cuadrícula**: deshabilita el ajuste de la cuadrícula al mover los límites del cuadro.
+* **Deshabilitar el límite de tamaño mínimo**: brinda la posibilidad de establecer un tamaño menor que el tamaño mínimo disponible.
 
-_Section resizing process_
+_Proceso de cambio de tamaño de sección_
 
 <ImageZoom
 alt="0toolbox_section_resize"

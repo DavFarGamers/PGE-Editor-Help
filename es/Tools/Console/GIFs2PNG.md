@@ -2,23 +2,23 @@
 
 ![CatGIFs2PNG](screenshots/Tools/console/cat_gif2png_128.png)
 
-**Masked GIFs to PNG Converter** (Known as GIFs2PNG) is a graphical conversion tool that converts SMBX64 GIF images 
-(source image with transparency mask) to PNG images with support to alpha-channel and true color palette. 
+**Convertidor de GIF a PNG enmascarado** (conocido como GIFs2PNG) es una herramienta de conversión gráfica que convierte imágenes GIF SMBX64
+(imagen de origen con máscara de transparencia) a imágenes PNG con soporte para canal alfa y paleta de colores verdaderos.
 
-## How it works
-This is the bit-mask ready pair: the front picture with a black background, and the bit mask that defines the 
-transparency level:
+## Cómo funciona
+Este es el par listo de máscara de bits: la imagen frontal con un fondo negro y la máscara de bits que define la
+nivel de transparencia:
 
 ![src](screenshots/Tools/console/GIFs2PNG/example_src1.gif) ![srcm](screenshots/Tools/console/GIFs2PNG/example_src1m.gif)
 
-After running the tool, the front and mask will be merged into united PNG image that has own transparency: 
+Después de ejecutar la herramienta, el frente y la máscara se fusionarán en una imagen PNG unida que tiene su propia transparencia:
 
 ![dst](screenshots/Tools/console/GIFs2PNG/example_dst1.png)
 
-## Usage
+## Uso
 
-This is a console utility. To use it you need to run the Terminal at the directory where the GIFs2PNG executable
-located. Alternatively, you can use this utility from your scripts and utilities and run this utility externally.
+Esta es una utilidad de consola. Para usarlo, debe ejecutar la Terminal en el directorio donde se encuentra el ejecutable GIFs2PNG.
+situado. Alternativamente, puede usar esta utilidad desde sus scripts y utilidades y ejecutar esta utilidad externamente.
 ```
 USAGE:
 

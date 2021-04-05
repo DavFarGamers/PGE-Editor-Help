@@ -1,17 +1,17 @@
-# Layers
-**Layers** - there are special item groups that giving direct access to all its members. Layers can be used to attach a group of blocks to a moving NPC, for example, to make a moving bridge. Also, layers can be controlled by event actions: hide, show, move with speed to direction, etc.
+# Capas
+**Capas**: hay grupos de elementos especiales que dan acceso directo a todos sus miembros. Las capas se pueden usar para unir un grupo de bloques a un NPC en movimiento, por ejemplo, para hacer un puente en movimiento. Además, las capas se pueden controlar mediante acciones de eventos: ocultar, mostrar, mover con velocidad a la dirección, etc.
 
-Layers can be added by the "add" button and by a context menu with add to them all selected items.
+Las capas se pueden agregar mediante el botón "agregar" y mediante un menú contextual con agregar a ellas todos los elementos seleccionados.
 
 <Note type="tip">
-    You can drag layers items in a list to change their order
+    Puede arrastrar elementos de capas en una lista para cambiar su orden
 </Note>
 
 <Note type="tip">
-You can rename a layer by a double click on the layer name. The new name of the layer will be set to all member items and to all events, what using them.
+Puede cambiar el nombre de una capa haciendo doble clic en el nombre de la capa. El nuevo nombre de la capa se establecerá para todos los elementos miembros y para todos los eventos, lo que los usa.
 </Note>
 
-_Layers toolbox and example of layer members:_
+_Caja de herramientas de capas y ejemplo de miembros de capa:_
 
 <ImageZoom
 alt="layersBox"
@@ -21,10 +21,10 @@ width="200px"
 />
 
 
-# Visibly of layers
-You can hide all members of the layer if you uncheck its checkbox:
+# Visible de capas
+Puede ocultar todos los miembros de la capa si desmarca su casilla de verificación:
 
-_Layer "Water" is hidden_
+_La capa "Agua" está oculta_
 
 <ImageZoom
 alt="hideLayer"

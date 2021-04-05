@@ -1,63 +1,63 @@
-# Hot keys
+# Teclas de acceso rápido
 
-## Common
-| Hotkey | Description | Extras |
+## Común
+| Tecla de acceso directo | Descripción | Extras |
 |---------|-------------|--------|
-| Ctrl+O |Open exist file ||
-| Ctrl+S |Save current file ||
-| Ctrl+Shift+S |Save current file as... || 
-| Ctrl+Alt+S |Save all files ||
-| Ctrl+Alt+Q |Exit from application || 
-| Ctrl+C |Copy selected items to clipboard | [Clipboard](Clipboard.md) |
-| Ctrl+X |Copy selected items to clipboard and remove them. | [Clipboard](Clipboard.md) |
-| Ctrl+V |Switch to Paste mode | [Clipboard](Clipboard.md) |
-| Ctrl+Z |Cancel recent action | [History Manager](HistoryManager.md) |
-| Ctrl+Y |Repeat cancelled action | [History Manager](HistoryManager.md) |
-| Ctrl+F |Search items on level ||
-| Alt+Enter(Return) |Switch between fullscreen and normal mode ||
+| Ctrl+O |Abrir archivo existente ||
+| Ctrl+S |Guardar archivo actual ||
+| Ctrl+Shift+S |Guardar el archivo actual como ... || 
+| Ctrl+Alt+S |Guardar todos los archivos ||
+| Ctrl+Alt+Q |Salir de la aplicación || 
+| Ctrl+C |Copiar los elementos seleccionados al portapapeles | [Clipboard](Clipboard.md) |
+| Ctrl+X |Copie los elementos seleccionados al portapapeles y elimínelos. | [Clipboard](Clipboard.md) |
+| Ctrl+V |Cambiar al modo Pegar | [Clipboard](Clipboard.md) |
+| Ctrl+Z |Cancelar acción reciente | [History Manager](HistoryManager.md) |
+| Ctrl+Y |Repetir acción cancelada | [History Manager](HistoryManager.md) |
+| Ctrl+F |Buscar elementos en el nivel ||
+| Alt+Enter(Return) |Cambiar entre modo de pantalla completa y normal ||
 
-## Level/World Editing
-| Hotkey | Description | Extras |
+## Edición de nivel / mundo
+| Tecla de acceso directo | Descripción | Extras |
 |---------|-------------|--------|
-|Mouse Wheel |Scroll vertically ||
-|Ctrl+Mouse Wheel |Scroll horizontally ||
-|Shift+Mouse Wheel |Scroll vertically faster ||
-|Shift+Ctrl+Mouse Wheel |Scroll horizontally faster ||
-|Alt+Mouse Wheel |Zoom in/out ||
-|Arrow keys |Scroll map ||
-|Shift+Arrow keys |Scroll map faster ||
-|Ctrl + '+' |Zoom in ||
-|Ctrl + '-' |Zoom out ||
-|Ctrl + '0' |Reset zoom ||
-|Right Mouse Button |Fast switch into 'Select' mode | |
-|Ctrl |Show coordinates hint on mouse move | |
-|Esc |Clear selection / Fast switch into 'Select' mode | |
-|S |Switch to Select mode | |
-|W |Switch to "Select only" mode | |
-|D |Switch to Drag Scrolling mode | |
-|E |Switch to Rubber (Erase) tool | |
-|Del |Remove selected items from map ||
-|Ctrl+L |Show/Hide Layers toolbox ||
-|Ctrl+E |Show/Hide Events toolbox | |
-|Ctrl+D |Show/Hide Wars and Doors toolbox | |
-|Shift+S |Toggle a rectangle place mode ||
-|Shift+C |Toggle a circle place mode | |
-|Shift+D |Toggle a line place mode | |
-|Shift+F |Toggle a flood-fill place mode ||
+|Mouse Wheel |Desplazarse verticalmente ||
+|Ctrl+Mouse Wheel |Desplazarse horizontalmente ||
+|Shift+Mouse Wheel |Desplácese verticalmente más rápido ||
+|Shift+Ctrl+Mouse Wheel |Desplácese horizontalmente más rápido ||
+|Alt+Mouse Wheel |Acercar / alejar ||
+|Arrow keys |Desplazarse por el mapa ||
+|Shift+Arrow keys |Desplazarse por el mapa más rápido ||
+|Ctrl + '+' |Acercarse ||
+|Ctrl + '-' |Disminuir el zoom ||
+|Ctrl + '0' |Restablecer zoom ||
+|Right Mouse Button |Cambio rápido al modo 'Seleccionar' | |
+|Ctrl |Mostrar sugerencia de coordenadas al mover el mouse | |
+|Esc |Borrar selección / cambio rápido al modo 'Seleccionar' | |
+|S |Cambiar al modo Seleccionar | |
+|W |Cambiar al modo "Seleccionar solo" | |
+|D |Cambiar al modo de desplazamiento por arrastre | |
+|E |Cambiar a la herramienta Goma (borrar) | |
+|Del |Eliminar elementos seleccionados del mapa ||
+|Ctrl+L |Caja de herramientas Mostrar / Ocultar capas ||
+|Ctrl+E |Caja de herramientas Mostrar/Ocultar eventos | |
+|Ctrl+D |Mostrar/Ocultar caja de herramientas de Guerras y Puertas | |
+|Shift+S |Alternar un modo de lugar rectangular ||
+|Shift+C |Alternar un modo de lugar circular | |
+|Shift+D |Alternar un modo de posición de línea | |
+|Shift+F |Alternar un modo de lugar de llenado por inundación ||
 
-## Functional keys
-| Hotkey | Description | Extras |
+## Teclas funcionales
+| Tecla de acceso directo | Descripción | Extras |
 |---------|-------------|--------|
-|F1 |Help contents ||
-|F5 |Launch a testing of current level ||
-|F8 |Reload current file ||
-|F9 |Disable/Enable collisions ||
-|F10 |Disable/Enable animations ||
-|F11 |Play/Stop music ||
-|F12 |Export selected fragment of Level or World map into the image file||
+|F1 |Contenidos de ayuda ||
+|F5 |Lanzar una prueba de nivel actual ||
+|F8 |Recargar archivo actual ||
+|F9 |Deshabilitar/habilitar colisiones ||
+|F10 |Deshabilitar/habilitar animaciones ||
+|F11 |Reproducir/detener música ||
+|F12 |Exportar el fragmento seleccionado de nivel o mapa mundial al archivo de imagen||
 
-## Resizing process hor keys
-| Hotkey | Description | Extras |
+## Cambiar el tamaño de las teclas hor del proceso
+| Tecla de acceso directo | Descripción | Extras |
 |---------|-------------|--------|
-|Enter |Accept new size and return to select mode ||
-|Esc |Cancel resizing, keep current size, and switch back to the selecting mode ||
+|Enter |Acepta el nuevo tamaño y vuelve al modo de selección ||
+|Esc |Cancelar el cambio de tamaño, mantener el tamaño actual y volver al modo de selección ||

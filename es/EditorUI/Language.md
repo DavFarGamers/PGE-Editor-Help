@@ -1,6 +1,6 @@
-# Switch application language
+# Cambiar el idioma de la aplicación
 
-You can switch between these languages:
+Puede cambiar entre estos idiomas:
 
 * <u>English (Default)</u>
 * <u>Chinese (Simplified)</u>
@@ -16,8 +16,8 @@ You can switch between these languages:
 * <u>Ukrainian</u>
 * etc.
 
-To switch a language go to the `Help -> Language -> [the language]` menu.
+Para cambiar de idioma, vaya a la `Help -> Language -> [the language]` menú.
 
-_Languages list_
+_Lista de idiomas_
 
 ![LangsList](screenshots/Interface/003_langChange.png)

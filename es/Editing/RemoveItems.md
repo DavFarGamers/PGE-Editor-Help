@@ -1,22 +1,21 @@
-# Items removing
+# Elementos eliminados
 
-You can remove unnecessary items from a map. You have three ways of item removal:
+Puede eliminar elementos innecesarios de un mapa. Tiene tres formas de eliminar elementos:
 
-## By context menu
+## Por menú contextual
 
-You can remove the item group by the context menu. There are only items of the
-same type as the clicked item will be removed.
+Puede eliminar el grupo de elementos mediante el menú contextual. Solo hay elementos del
+se eliminará el mismo tipo que el elemento en el que se hizo clic.
 
+## Caucho
 
-## Rubber
+Para cambiar al modo de borrado, seleccione la herramienta Goma "![Rubber](screenshots/LevelEditing/rubber.png)".
+Luego, el cursor cambiará de apariencia a goma.: ![EC](screenshots/LevelEditing/cur_rubber.png).
 
-To switch into erasing mode, select the Rubber tool "![Rubber](screenshots/LevelEditing/rubber.png)".
-Then, the cursor will change look into rubber: ![EC](screenshots/LevelEditing/cur_rubber.png).
+Haga clic en un elemento para eliminarlo. Puede mantener presionado el botón del mouse y moverlo
+para eliminar cualquier elemento tocado por el cursor.
 
-Click on an item to remove it. You can hold a mouse button and move your mouse
-to remove any items touched by the cursor.
-
-_Erasing by brush (Activated by holding the mouse button down and moving the mouse)_
+_Borrado con pincel (se activa manteniendo pulsado el botón del ratón y moviendo el ratón) _
 
 <ImageZoom
   alt="Removing_brush"
@@ -25,6 +24,6 @@ _Erasing by brush (Activated by holding the mouse button down and moving the mou
   :border="true"
 />
 
-## By Keyboard
+## Por teclado
 
-You also can remove selected items by DEL key.
+También puede eliminar elementos seleccionados con la tecla SUPR.

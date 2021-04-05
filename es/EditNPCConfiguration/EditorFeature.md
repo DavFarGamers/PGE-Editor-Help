@@ -1,16 +1,16 @@
-# NPC.txt Editor features
-The Editor have own powerful NPC editor which can emulate the NPC in a real time which helps you with configuring and debugging process.
+# Funciones del editor NPC.txt
+El editor tiene un potente editor de NPC que puede emular el NPC en tiempo real, lo que le ayuda con el proceso de configuración y depuración.
 
-Each NPC config basing on the global configuration and using for customize already configured NPC.
+Cada configuración de NPC se basa en la configuración global y se utiliza para personalizar el NPC ya configurado.
 
-* **Selecting "New" NPC Config**																						
+* **Seleccionando "Nueva" Configuración NPC**																					
 <ImageZoom 
   alt="NPC_CreateNew"
   url="screenshots/NPCtxtEdit/NPC_CreateNew.png" 
   :border="true" 
 />
 
-* **Selecting NPC base for your config**																				
+* **Seleccionando la base de NPC para tu configuración**																				
 <ImageZoom 
   alt="NPC_SelectBase"
   url="screenshots/NPCtxtEdit/NPC_SelectBase.png" 
@@ -18,7 +18,7 @@ Each NPC config basing on the global configuration and using for customize alrea
 />
 
 
-* **NPC Editor workspace**																								
+* **Espacio de trabajo del editor NPC**																						
 <ImageZoom 
   alt="NPC_EditorBox"
   url="screenshots/NPCtxtEdit/NPC_EditorBox.png" 

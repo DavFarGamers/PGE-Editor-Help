@@ -1,71 +1,71 @@
-# Items
-## Overview
-Main content and part of any world maps. There are construction materials, sceneries, level entrances, paths, etc.
-## Terrain tiles
-The main design units are used for the creation of the terrain design of the world map. Terrain tiles are not communicating with other elements, there are always static. (except water terrain tiles)
+# Artículos
+## Visión de conjunto
+Contenido principal y parte de cualquier mapa del mundo. Hay materiales de construcción, paisajes, entradas a nivel, caminos, etc.
+## Baldosas de terreno
+Las principales unidades de diseño se utilizan para la creación del diseño del terreno del mapa mundial. Las baldosas de terreno no se comunican con otros elementos, siempre hay estática. (excepto casillas de terreno acuático)
 
 <ImageZoom
 alt="wld_tiles"
 url="screenshots/WorldEditing/Items/wld_tiles.png"
 :border="true"
 />
-## Sceneries
-The second design unit. Sceneries are can be hidden when the player had to open the path that goes through them.
+## Escenografías
+La segunda unidad de diseño. Los escenarios se pueden ocultar cuando el jugador tuvo que abrir el camino que los atraviesa.
 
 <ImageZoom
 alt="wld_sceneries"
 url="screenshots/WorldEditing/Items/wld_sceneries.png"
 :border="true"
 />
-## Paths
-Allow a player to move between level points and map locations. Usually, paths are hidden and appearing when players pass the level which is placed nearly to them.
+## Rutas
+Permita que un jugador se mueva entre los puntos de nivel y las ubicaciones del mapa. Por lo general, los caminos están ocultos y aparecen cuando los jugadores pasan el nivel que se encuentra cerca de ellos.
 
 <ImageZoom
 alt="wld_paths"
 url="screenshots/WorldEditing/Items/wld_paths.png"
 :border="true"
 />
-## Level entrances
-There are special units, which are allowing you to enter into a defined level or teleport player to other map coordinates. Levels can have multiple entrances but can have different warp points inside a level. Also, level point using as the game start point. If the point is not defined, the player will start from 0x0 coordinates.
+## Entradas de nivel
+Hay unidades especiales que te permiten ingresar a un nivel definido o teletransportar al jugador a otras coordenadas del mapa. Los niveles pueden tener múltiples entradas pero pueden tener diferentes puntos de deformación dentro de un nivel. Además, el uso del punto de nivel como punto de inicio del juego. Si el punto no está definido, el jugador comenzará desde las coordenadas 0x0.
 
 <ImageZoom
 alt="wld_levels"
 url="screenshots/WorldEditing/Items/wld_levels.png"
 :border="true"
 />
-### Level Entrance Properties
+### Propiedades de entrada de nivel
 <ImageZoom
 alt="wld_levels"
 url="screenshots/WorldEditing/LevelItemProps.png"
 :border="false"
 />
 
-**Position** - Displaying currently coordinated with the selected item.
+**Posición**: - muestra la coordinación actual con el elemento seleccionado.
 
-**Level ID** - ID of a level item defined in the global configuration.
+**ID de nivel**: - ID de un elemento de nivel definido en la configuración global.
 
-**Array ID** - the connection nodes of the selected item.
+**Array ID**: - los nodos de conexión del elemento seleccionado.
 
-**Background path** - under level point image will be displayed path image
+**Ruta de fondo**: - la imagen del punto bajo el nivel se mostrará como la imagen de la ruta
 
-**Big Background path** - under level point image will be displayed same path image, but with the larger size
+**Ruta de fondo grande**: - la imagen del punto bajo el nivel se mostrará con la misma imagen de ruta, pero con el tamaño más grande
 
-**Always visible** - with this option the level point will be displayed always. If this flag is disabled, the level point will be shown only when the player opens a path to them.
+**Siempre visible**: - con esta opción, el punto de nivel se mostrará siempre. Si esta bandera está deshabilitada, el punto de nivel se mostrará solo cuando el jugador abra un camino hacia ellos.
 
-**Game start point** - the important option needed for the definition of the player's initial position on the game begins. This point must exist on the world map if you creating the world map based episode (if you creating a hub-based episode, this point is not needed).
+**Punto de inicio del juego**: - comienza la opción importante necesaria para definir la posición inicial del jugador en el juego. Este punto debe existir en el mapa mundial si crea el episodio basado en el mapa mundial (si crea un episodio basado en el centro, este punto no es necesario).
 
-**Level file** - defining the target level file.
+**Archivo de nivel**: - definición del archivo de nivel de destino.
 
-**Level Title** - This is a level title that will be displayed in the game process when the player stands over this level item.
+**Título de nivel**: - este es un título de nivel que se mostrará en el proceso del juego cuando el jugador se pare sobre este elemento de nivel.
 
-**Enter to door #** - defining the warp Array ID, where the player will be entered after start level. If the value is 0, the player starts level from its default start point.
+**Ingrese a la puerta #** - definiendo el ID de matriz de warp, donde se ingresará al jugador después del nivel de inicio. Si el valor es 0, el jugador comienza el nivel desde su punto de inicio predeterminado.
 
-**Open paths by exits** - defining the <span class="ref_result">condition for open path per each side of level point.</span>
+**Rutas abiertas por salidas**: - define la condición <span class="ref_result"> para ruta abierta por cada lado del punto de nivel. </span>
 
-**Goto coordinates** - If these values are set, this point will teleport the playable character to a defined location. Also, you can select a target point in the interactive mode when you press the "Set" button.
+**Ir a coordenadas**: - si se establecen estos valores, este punto teletransportará al personaje jugable a una ubicación definida. Además, puede seleccionar un punto de destino en el modo interactivo cuando presiona el botón "set".
 
-## Music Boxes
-There are special units that are switching playing music when the player character stands on them.
+## Cajas de música
+Hay unidades especiales que cambian la reproducción de música cuando el personaje del jugador se para sobre ellas.
 
 <ImageZoom
 alt="wld_musicboxes"

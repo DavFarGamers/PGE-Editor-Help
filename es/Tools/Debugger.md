@@ -1,12 +1,12 @@
-# Debugger
-## Overview
+# Depurador
+## Visión de conjunto
 
-Debugger, is a small informative toolbox which displaying some debug information, for example, mouse coordinated. 
-Also, with debugger tool you can jump into specific X:Y position (relative to view's center).
+Debugger, es una pequeña caja de herramientas informativa que muestra información de depuración, por ejemplo, coordinada con el mouse.
+Además, con la herramienta de depuración puede saltar a una posición X:Y específica (relativa al centro de la vista).
 
-Also in the debugger you will see counters of placed items on the level or on the world map. 
+También en el depurador verá contadores de elementos colocados en el nivel o en el mapa mundial.
 
-To show the debugger box, open the `View -> Debugger` menuitem.
+Para mostrar el cuadro del depurador, abra el `View -> Debugger` opción del menú.
 
 <ImageZoom
   alt="DebugBox"
@@ -15,19 +15,19 @@ To show the debugger box, open the `View -> Debugger` menuitem.
 />
 
 
-## Custom counters
+## Contadores personalizados
 
-This is a special feature which allow count all items of target bunch of ID's.
+Esta es una característica especial que permite contar todos los elementos del grupo de identificaciones de destino.
 
-You can add and remove any counters in this list by your wish. **To edit or remove counter use the context menu**.
+Puede agregar y eliminar cualquier contador en esta lista según lo desee. **Para editar o eliminar el contador use el menú contextual**.
 
 <Note type="tip">
-Note: Due to performance reasons custom counters don't updating automatically. You should refresh custom counters 
-manually by a "refresh" button!
+Nota: debido a razones de rendimiento, los contadores personalizados no se actualizan automáticamente. Deberías actualizar los contadores personalizados
+manualmente con un botón "actualizar"!
 </Note>
 
 
-_Custom counter editor dialog_
+_Cuadro de diálogo del editor de contador personalizado_
 
 <ImageZoom
   alt="DebugCCEdit"

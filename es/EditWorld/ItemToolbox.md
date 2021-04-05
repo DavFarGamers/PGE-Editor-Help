@@ -1,13 +1,13 @@
-# Search Browser
+# Navegador de búsqueda
 
-**Search browser** - The toolbox that contains a list of available items to add to the current level section or the world map.
+**Explorador de búsqueda**: - La caja de herramientas que contiene una lista de elementos disponibles para agregar a la sección de nivel actual o al mapa mundial.
 
-Click a necessary object in the list to pick it up for adding to the level or world map.
+Haga clic en un objeto necesario de la lista para recogerlo y agregarlo al nivel o al mapa del mundo.
 
-Unlike the Search Browser at the Level Editor, the Search Browser at the World Editor has no filtering.
+A diferencia del navegador de búsqueda en el editor de niveles, el navegador de búsqueda en el editor mundial no tiene filtros.
 
 <Note type="tip">
-You can play music through the music boxes list when you click any music list item. If the music player is enabled, the music playing will be started once you will select it from the item box.
+Puede reproducir música a través de la lista de cajas de música cuando hace clic en cualquier elemento de la lista de música. Si el reproductor de música está habilitado, la reproducción de música se iniciará una vez que la seleccione en el cuadro de elementos.
 </Note>
 
 <ImageZoom 

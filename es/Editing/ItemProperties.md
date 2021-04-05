@@ -1,8 +1,8 @@
-# Item properties toolbox
+# Caja de herramientas de propiedades de elementos
 
-It's a toolbox that gives access to all supported properties of items. You can open this toolbox through a context menu only. This toolbox also can appear while placing new items on the map: you can specify properties of new-placed items in this toolbox.
+Es una caja de herramientas que da acceso a todas las propiedades admitidas de los elementos. Puede abrir esta caja de herramientas solo a través de un menú contextual. Esta caja de herramientas también puede aparecer al colocar nuevos elementos en el mapa: puede especificar las propiedades de los elementos nuevos colocados en esta caja de herramientas.
 
-_Item properties tool boxes: Block, BGO and NPC_
+_Item cajas de herramientas de propiedades: Bloque, BGO y NPC_
 
 <ImageZoom
   alt="Props_Block"

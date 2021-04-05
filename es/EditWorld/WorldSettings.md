@@ -1,21 +1,21 @@
-# World Settings
-## Overview
-It's the main toolbox that allows you to configure the world map and episode settings.
+# Configuración mundial
+## Visión de conjunto
+Es la caja de herramientas principal que le permite configurar el mapa mundial y la configuración del episodio.
 
-* **World Title** - the episode name will be displayed in the episode list of the game menu.
-* **Hub-styled world map** - this option disables using of the world map, but you must set intro-level which will be used as the main hub.
-* **Restart the last level after fail** - If a player failed on some level, it will be restarted without kicking into the world map or the hub level.
+* **Título mundial**: - el nombre del episodio se mostrará en la lista de episodios del menú del juego.
+* **Mapa del mundo con estilo de centro**: - esta opción desactiva el uso del mapa del mundo, pero debe establecer el nivel de introducción que se utilizará como centro principal.
+* **Reinicia el último nivel después de fallar**: - si un jugador falla en algún nivel, se reiniciará sin ingresar al mapa mundial o al nivel central.
 
-* **Intro level** - the level which will start before the world map will be shown.
-* **Total stars** - this value defining the total number of stars that will be displayed in the game menu in a game save slot choosing menu.
+* **Nivel de introducción**: - el nivel que comenzará antes de que se muestre el mapa del mundo.
+* **Estrellas totales**: - este valor define el número total de estrellas que se mostrarán en el menú del juego en un menú de selección de espacios para guardar juegos.
 
-* **Credits** - the special field which allows adding credit list will be shown in the credits screen after the end of the game.
+* ** Créditos **: el campo especial que permite agregar una lista de créditos se mostrará en la pantalla de créditos después del final del juego.
   <Note type="danger">
-  If you save a world map into SMBX64-WLD and older, all lines after the 5th are will be lost.
+ Si guarda un mapa del mundo en SMBX64-WLD y versiones anteriores, se perderán todas las líneas posteriores a la quinta.
   </Note>
-* **Disable character** - these flags disabling possibles for select the character in the game menu.
+* **Deshabilitar personaje**: - estas banderas deshabilitan las posibilidades de seleccionar el personaje en el menú del juego.
 
-_World map settings toolbox_
+_Caja de herramientas de configuración del mapa mundial_
 
 <ImageZoom
 alt="wset"
@@ -23,5 +23,5 @@ url="screenshots/WorldEditing/WorldSettings.png"
 :border="true"
 />
 
-## Star Counter
-This feature will help you to count all-stars that exist on the levels defined on this map. After counting, the value will be stored in the stars number field. The counter counts all Star NPC's which are existing on the map as free objects, containing inside the NPV-Containers, Included into blocks. Friendly Star NPCs are not counting because there are non-collectible while there are has a friendly flag.
+## Contador de estrellas
+Esta función le ayudará a contar todas las estrellas que existen en los niveles definidos en este mapa. Después de contar, el valor se almacenará en el campo de número de estrellas. El contador cuenta todos los NPC estrella que existen en el mapa como objetos libres, que contienen dentro de los contenedores NPV, incluidos en bloques. Los NPC estrella amistosos no cuentan porque no son coleccionables, mientras que hay una bandera amiga.

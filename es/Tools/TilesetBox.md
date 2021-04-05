@@ -1,6 +1,6 @@
-# Tileset item box
-## Overview
-This is the universal and customizable item set, the main container for almost all elements.
+# Cuadro de elementos de mosaico
+## Visión de conjunto
+Este es el conjunto de elementos universal y personalizable, el contenedor principal para casi todos los elementos.
 
 <ImageZoom
   alt="TilesetBox"
@@ -8,13 +8,13 @@ This is the universal and customizable item set, the main container for almost a
   :border="true"
 />
 
-By switching between the different tabs, you are able to navigate to the items you want to place in your level.
+Al cambiar entre las diferentes pestañas, puede navegar a los elementos que desea colocar en su nivel.
 
-Tabs at the top row are **categories**, and the tabs at the second row are <u>tileset groups</u>.
+Las pestañas de la fila superior son **categorías** y las pestañas de la segunda fila son <u>tileset groups</u>.
 
-## Custom tilesets
-Even though quick access to all features is nice, there is still a lot of clicking involved in 
-order to get to the items you want to access. This is where the “**Custom**” tab is helpful.
+## Conjuntos de mosaicos personalizados
+Aunque el acceso rápido a todas las funciones es bueno, todavía hay muchos clics involucrados en
+para acceder a los elementos a los que desea acceder. Aquí es donde la pestaña "**Personalizado**" resulta útil.
 
 <ImageZoom
   alt="CustomTilesetBox"
@@ -23,14 +23,14 @@ order to get to the items you want to access. This is where the “**Custom**”
 />
 
 ![newTileset](screenshots/Tools/TilesetBox_customNew.png)<br />
-With a press of this button, you will be brought into a Tileset Editor, 
-in which you can create your own tilesets of any kind.
+Con solo presionar este botón, accederá a un editor de conjuntos de mosaicos,
+en el que puede crear sus propios conjuntos de mosaicos de cualquier tipo.
 
-The editor features a search bar, with which you can search by an item’s name, 
-as well as its ID. You can also filter tiles in order to only show sprites with 
-custom assets, or sprites without. After giving the tileset a name and hitting "**Save**", 
-it will be saved into the level folder, and the tileset will automatically be 
-displayed as part of the "**Custom**" tab in the Tileset Itembox.
+El editor cuenta con una barra de búsqueda, con la que puede buscar por el nombre de un elemento,
+así como su ID. También puede filtrar mosaicos para mostrar solo sprites con
+activos personalizados o sprites sin. Después de darle un nombre al conjunto de mosaicos y presionar "**Guardar**",
+se guardará en la carpeta de nivel y el conjunto de mosaicos se guardará automáticamente
+se muestra como parte de la pestaña "**Personalizado**" en Tileset Itembox.
 
 <ImageZoom
   alt="CustomTilesetEditor"
@@ -46,40 +46,40 @@ displayed as part of the "**Custom**" tab in the Tileset Itembox.
 
 
 <Note type="warning">
-Note for SMBX2 users: Certain features have been specifically removed from the 
-Tileset Itembox for this build. This is because these NPCs, Blocks, BGOs, etc. are 
-unfinished and likely to behave unexpectedly, or cause crashes or errors. If an NPC you 
-are looking for is not in the Tileset Itembox, please avoid using it in your levels, as
-it is very likely to behave differently in future releases.
+Nota para los usuarios de SMBX2: Ciertas funciones se han eliminado específicamente del
+Tileset Itembox para esta construcción. Esto se debe a que estos NPC, Bloques, BGO, etc.
+sin terminar y es probable que se comporte de manera inesperada o cause fallas o errores. Si un NPC
+que estás buscando no está en el Tileset Itembox, evita usarlo en tus niveles, ya que
+es muy probable que se comporte de manera diferente en futuras versiones.
 </Note>
 
 
-More about Tileset Editor features:
+Más sobre las características del Tileset Editor:
  
-* To add an item, do drag it from the `Items` list and drop at any free cell in the white grid.
-* To remove an item from the grid, click it by the `right mouse button`.
-* You can arrange items in the grid as you want by simple dragging.
-* Every tileset allows you to put items of the same type only. You can't mix objects 
-of different types on the same tileset.
-* The **Show custom only** check box will hide all elements that weren't customized by 
-any way of local setup or custom graphics.
-* The **Show default only** will show only items that weren't customized by any way of 
-local setup or custom graphics.
-* The **Current Level/World specific** checkbox will tell Tileset Editor to store 
-tileset in the level/world local directory. That means the tileset will not be 
-accessible from other levels and world map files.
+* Para agregar un elemento, arrástrelo desde la lista `Elementos` y suéltelo en cualquier celda libre de la cuadrícula blanca.
+* Para eliminar un elemento de la cuadrícula, haga clic en él con el `botón derecho del mouse`.
+* Puede organizar los elementos en la cuadrícula como desee simplemente arrastrándolos.
+* Cada juego de fichas te permite colocar elementos del mismo tipo únicamente. No puedes mezclar objetos
+de diferentes tipos en el mismo conjunto de mosaicos.
+* La casilla de verificación **Mostrar solo personalizado** ocultará todos los elementos que no fueron personalizados por
+cualquier forma de configuración local o gráficos personalizados.
+* El **Mostrar solo predeterminado** mostrará solo los elementos que no fueron personalizados de ninguna manera
+configuración local o gráficos personalizados.
+* La casilla de verificación **Nivel actual/Específico mundial** le indicará al Tileset Editor que almacene
+tileset en el directorio local level/world. Eso significa que el juego de fichas no será
+accesible desde otros niveles y archivos de mapas del mundo.
 
 
-## Global tilesets
-If you want to modify any config pack global tilesets, you can edit them through 
-the `Tools -> Tilesets and pallets` menu.
+## Conjuntos de mosaicos globales
+Si desea modificar cualquier conjunto de mosaicos globales de paquetes de configuración, puede editarlos a través de
+la `Tools -> Tilesets and pallets` menú.
 
-## Global groups
-Also, you can create the groups of tilesets which will always be displayed in the tileset box.
+## Grupos globales
+Además, puede crear los grupos de mosaicos que siempre se mostrarán en el cuadro de mosaicos.
 
 <Note type="tip">
-Note: If you want to create a category, do save the tileset group with a new category name, 
-typed manually: it will appear automatically.
+Nota: Si desea crear una categoría, guarde el grupo de mosaicos con un nuevo nombre de categoría,
+escrito manualmente: aparecerá automáticamente.
 </Note>
 
 <ImageZoom

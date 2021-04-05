@@ -1,29 +1,29 @@
-# Level Entrances Properties toolbox
+# Caja de herramientas Propiedades de entradas de nivel
 
-This toolbox allow to you edit properties of one item or item group.
+Esta caja de herramientas le permite editar las propiedades de un elemento o grupo de elementos.
 
 ![levelItemProps](../screenshots/WorldEditing/LevelItemProps.png)
 
-**Position** - Displaying current coordinated of selected item.
+**Posición**: - muestra la coordinación actual del elemento seleccionado.
 
-**Level ID** - ID of level item which defined in the global configuration.
+**ID de nivel**: - ID del elemento de nivel que se definió en la configuración global.
 
-**Array ID** - the connection indes of selected item.
+**ID de matriz**: - las indes de conexión del elemento seleccionado.
 
-**Background path** - under level point image will be displayed path image
+**Ruta de fondo**: - la imagen del punto bajo el nivel se mostrará como la imagen de la ruta
 
-**Big Background path** - under level point image will be displayed same path image, but with larger size
+**Ruta de fondo grande**: - la imagen del punto bajo el nivel se mostrará con la misma imagen de ruta, pero con un tamaño más grande
 
-**Always visible** - with this option the level point will be displayed always. If this flag disabled, level point will be shown only when player open path to them.
+**Siempre visible**: - con esta opción, el punto de nivel se mostrará siempre. Si esta bandera está desactivada, el punto de nivel se mostrará solo cuando el jugador abra el camino hacia ellos.
 
-**Game start point** - the important option which needed for definition of the player initial position on game begin. This point must exist on the world map if you creating the world map based episode (if you creating hub-based episode, this point is not need).
+**Punto de inicio del juego**: - la opción importante que se necesita para definir la posición inicial del jugador en el inicio del juego. Este punto debe existir en el mapa mundial si crea el episodio basado en el mapa mundial (si crea un episodio basado en el centro, este punto no es necesario).
 
-**Level file** - defining the target level file.
+**Archivo de nivel**: - definición del archivo de nivel de destino.
 
-**Level Title** - This is a level title which will be displayed in the game process when player stand over this level item.
+**Título de nivel**: - este es un título de nivel que se mostrará en el proceso del juego cuando el jugador se pare sobre este elemento de nivel.
 
-**Enter to door #** - defining the warp Array ID, where player will be entered after start level. If value is 0, the player start level from it's default start point.
+**Ingrese a la puerta #** - definiendo el ID de matriz de warp, donde se ingresará al jugador después del nivel de inicio. Si el valor es 0, el nivel de inicio del jugador desde su punto de inicio predeterminado.
 
-**Open paths by exits** - defining the <span class="ref_result">condition for open path per each side of level point.</span>
+**Rutas abiertas por salidas**: - define la condición <span class="ref_result"> para ruta abierta por cada lado del punto de nivel. </span>
 
-**Goto coorditanes** - If these values are set, this point will teleport playable character to defined location. Also you can select target point in the interactive mode when you press the "Set" button.
+**Ir a coorditanes**: - si se establecen estos valores, este punto teletransportará al personaje jugable a la ubicación definida. También puede seleccionar el punto de destino en el modo interactivo cuando presiona el botón "Set".

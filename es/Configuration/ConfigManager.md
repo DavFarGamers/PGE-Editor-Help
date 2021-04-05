@@ -1,8 +1,8 @@
-# Configuration Manager
-Configuration Manager allows you to control and select the global game configurations.
+# Administrador de configuración
+Configuration Manager te permite controlar y seleccionar las configuraciones globales del juego.
 
-## Configuration status
-This dialog allows you to check states of current game configuration and find errors if they exist.
+## Estado de configuración
+Este cuadro de diálogo te permite comprobar los estados de la configuración actual del juego y encontrar errores, si existen.
 
 ![007_configStatus](screenshots/Tools/007_configStatus.png)
 
@@ -12,23 +12,23 @@ This dialog allows you to check states of current game configuration and find er
   :border="true"
 />
 
-## Reload global configuration
-This feature allows reloading global configuration settings without restarting of application. 
-This useful for apply edited configs into the opened project.
+## Recargar configuración global
+Esta función permite volver a cargar los ajustes de configuración global sin reiniciar la aplicación.
+Esto es útil para aplicar configuraciones editadas en el proyecto abierto.
 
 ![ReloadConfig](screenshots/Tools/ReloadConfig_menu.png)
 
-## Run a configure tool
-Some configuration packages may contain the special configuration tool that gives a set of 
-extra actions you can perform. 
-[You can read detailed information about configure tool here](https://wohlsoft.ru/pgewiki/Configure.js_(Config_pack)).
+## Ejecuta una herramienta de configuración
+Algunos paquetes de configuración pueden contener la herramienta de configuración especial que proporciona un conjunto de
+acciones adicionales que puede realizar.
+[Puede leer información detallada sobre la herramienta de configuración aquí] (https://wohlsoft.ru/pgewiki/Configure.js_ (Config_pack)).
 
 ![RunConfigTool](screenshots/Tools/RunConfigTool.png)
 
-## Change configuration
-You can work with other game configurations. To switch the Configuration Package, you need
-to open the menu item: `Tools -> Global Configuration -> Change configuration...` After
-the switch of configuration, you need to restart the editor to start work with the new
-configuration package.
+## Cambiar configuración
+Puede trabajar con otras configuraciones de juegos. Para cambiar el paquete de configuración, necesita
+para abrir el elemento del menú:`Tools -> Global Configuration -> Change configuration...` Después
+el interruptor de configuración, debe reiniciar el editor para comenzar a trabajar con el nuevo
+paquete de configuración.
 
 ![ConfigChange](screenshots/Tools/ConfigChange.png)

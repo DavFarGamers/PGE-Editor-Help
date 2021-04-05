@@ -1,31 +1,31 @@
-# Search browser
+# Navegador de búsqueda
 
-**Search browser** - The toolbox contains a list of available items to add to the current level section or the world map.
+**Navegador de búsqueda**: la caja de herramientas contiene una lista de elementos disponibles para agregar a la sección de nivel actual o al mapa mundial.
 
-Click a necessary object in the list to pick it up for adding to the level or world map.
+Haga clic en un objeto necesario en la lista para recogerlo y agregarlo al nivel o al mapa del mundo.
 
-For convenience, the toolbox contains a list of groups used for the large packs of items organizing, categories used for an item organizing with their type and role.
+Para mayor comodidad, la caja de herramientas contiene una lista de grupos utilizados para la organización de paquetes grandes de elementos, categorías utilizadas para la organización de un elemento con su tipo y función.
 
 **Notes**:
-- To show elements with a <u>custom graphics</u> on current level, you can open the **\[custom\]** category.
-- If a level contains no customized items, the list of the **\[custom\]** the category will be empty.
-- For new-created levels/world maps to reload custom resources, you should reload your level (by F8 key) after saving it on the disk.
+- Para mostrar elementos con un <u>custom graphics</u> en el nivel actual, puede abrir el **\[custom\]** categoría.
+- Si un nivel no contiene elementos personalizados, la lista de **\[custom\]** la categoría estará vacía.
+- Para que los niveles / mapas del mundo recién creados recarguen recursos personalizados, debe volver a cargar su nivel (con la tecla F8) después de guardarlo en el disco.
 
 
-_Search Browser_
+_Buscar navegador_
 
 ![0toolbox_items](screenshots/LevelEditing/Items/0toolbox_items.png)
 
-Also, you can find any necessary item in the list by its name or by ID. Use the wrench icon menu to open the filtering and sorting settings.
+Además, puede encontrar cualquier elemento necesario en la lista por su nombre o por ID. Utilice el menú del icono de llave inglesa para abrir la configuración de filtrado y clasificación.
 
 
-_Item search: by name and by ID_
+_Búsqueda de artículos: por nombre y por ID_
 
 ![0toolbox_items_filter1](screenshots/LevelEditing/Items/0toolbox_items_filter1.png) ![0toolbox_items_filter2](screenshots/LevelEditing/Items/0toolbox_items_filter2.png)
 
-You can drag and move any toolboxes and resize them as you want.
+Puede arrastrar y mover cualquier caja de herramientas y cambiar su tamaño como desee.
 
-_Vertical view of the Search Browser_
+_Vista vertical del navegador de búsqueda_
 
 <ImageZoom
 alt="0toolbox_items_pos1"
@@ -33,7 +33,7 @@ url="screenshots/LevelEditing/Items/0toolbox_items_pos1.png"
 :border="true"
 />
 
-_Horisontal view of item toolbox_
+_Vista horizontal de la caja de herramientas del elemento_
 
 <ImageZoom
 alt="0toolbox_items_pos2"

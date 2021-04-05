@@ -1,59 +1,59 @@
-# SMBX - What is it?
+# SMBX - ¿Qué es?
 
-## History
+## Historia
 
-In the year 2009, Andrew "Redigit" Spinks began work on the game: Super Mario Brothers X. 
-Gradually the game gathered a following among fans of the Mario game series.
+En el año 2009, Andrew "Redigit" Spinks comenzó a trabajar en el juego: Super Mario Brothers X.
+Poco a poco, el juego fue ganando seguidores entre los fanáticos de la serie de juegos de Mario.
 
 ![SMBXTitleScreen](images/smbx_scr.png)
 
-In my opinion, it is perhaps one of the all-time best Mario fan games. It combined 
-gameplay elements from games such as Super Mario Bros, by Super Mario Bros. 2, SMB 3, 
-Super Mario World, and the Legend of Zelda, etc. The built-in level editor allows 
-the user to not only edit levels, along with an engine to debug them in real time, 
-but also allows the player to create full-fledged episodes with a plot!
+En mi opinión, es quizás uno de los mejores juegos para fanáticos de Mario de todos los tiempos. Se combinó
+elementos de juegos como Super Mario Bros, Super Mario Bros.2, Super Mario Bros.3,
+Super Mario World y The Legend of Zelda, etc. El editor de niveles integrado permite
+el usuario no solo editar niveles, junto con un motor para depurarlos en tiempo real,
+¡pero también le permite al jugador crear episodios completos con una trama!
 
-Unfortunately in 2011, Redigit received a call from the lawyers of Nintendo, 
-who threatened him and demanded he remove SMBX and stop any further development. 
-After some time, the supermariobrothers.org domain was also taken over by Nintendo. 
-So such a remarkable project was killed.
+Desafortunadamente, en 2011, Redigit recibió una llamada de los abogados de Nintendo,
+quien lo amenazó y exigió que eliminara SMBX y detuviera cualquier desarrollo posterior.
+Después de un tiempo, Nintendo también se hizo cargo del dominio supermariobrothers.org.
+Así que un proyecto tan notable fue aniquilado.
 
-But even so, it continued to played. A lot of "episodes" have been made for SMBX, 
-and the game is still very popular. However, the game was not perfect. The game would 
-often overload the processor to 100%, even when the user is not performing tasks 
-or using other programs.
+Pero aun así, se siguió jugando. Se han creado muchos "episodios" para SMBX,
+y el juego sigue siendo muy popular. Sin embargo, el juego no fue perfecto. El juego lo haría
+a menudo sobrecarga el procesador al 100%, incluso cuando el usuario no está realizando tareas
+o usando otros programas.
 
-There were several attempts to revive the project, but they all failed.
+Hubo varios intentos de revivir el proyecto, pero todos fracasaron.
 
-The main mistake: **the game was published UNDER A COPYRIGHTED BRAND**.
+El principal error: **el juego fue publicado BAJO UNA MARCA CON DERECHOS DE AUTOR**.
 
 ![brandTheft](images/brand_theft.png)
 
-Redigit was making money off SMBX with ads located in the SMBX installer,
-on his forums, and on his website. Redigit was making money with
-Nintendo's brand and characters, without permission. Nintendo didn't
-approve of this and therefore SMBX was shut down.
+Redigit estaba ganando dinero con SMBX con anuncios ubicados en el instalador de SMBX,
+en sus foros y en su sitio web. Redigit estaba ganando dinero con
+Marca y personajes de Nintendo, sin permiso. Nintendo no lo hizo
+aprobar esto y, por lo tanto, SMBX se cerró.
 
-## SMBX now
-As of now, SMBX is still in demand and receives new levels, graphics, and even episodes.
-Because of this high demand, LunaDLL has started to be developed in the 2013'th year.
-A time later, the LunaLua project was founded by Kevsoft from off the source code for
-LunaDLL: the LunaDLL with Lua support. In 2015, Horikawa Otane desired to unify the
-chaos of extensions and development tools are existing separately into a united project.
-The project was called SMBX 2.0 and was released in December 2015 as Open Beta. It's the
-union of various development tools, extensions, and lua scripts.
+## SMBX ahora
+A partir de ahora, SMBX todavía está en demanda y recibe nuevos niveles, gráficos e incluso episodios.
+Debido a esta alta demanda, LunaDLL comenzó a desarrollarse en el año 2013.
+Un tiempo después, el proyecto LunaLua fue fundado por Kevsoft a partir del código fuente de
+LunaDLL: LunaDLL con soporte Lua. En 2015, Horikawa Otane deseaba unificar el
+el caos de extensiones y herramientas de desarrollo existen por separado en un proyecto unido.
+El proyecto se llamó SMBX 2.0 y se lanzó en diciembre de 2015 como Open Beta. Es el
+unión de varias herramientas de desarrollo, extensiones y scripts lua.
 
-## Source code
-For a long time, the source code was never published. However, since 10 years after 
-last release, In February 2, 2020, the original source code of SMBX 1.3 has been 
-finally released and published on GitHub with a MIT license. In March 2020, the TheXTech
-project has been released by Wohlstand as a modern and cross-platform port of SMBX Engine.
+## Código fuente
+Durante mucho tiempo, el código fuente nunca se publicó. Sin embargo, desde 10 años después
+última versión, el 2 de febrero de 2020, el código fuente original de SMBX 1.3 ha sido
+finalmente lanzado y publicado en GitHub con una licencia MIT. En marzo de 2020, TheXTech
+Wohlstand ha lanzado el proyecto como un puerto moderno y multiplataforma de SMBX Engine.
 
 
-## Links
-* [Read more about SMBX](https://wohlsoft.ru/pgewiki/Super_Mario_Bros._X)
-* [Another article about SMBX](http://gaming.wikia.com/wiki/Super_Mario_Bros._X)
-* [Official SMBX Forums](https://www.supermariobrosx.org/forums/) 
-* [Source code opening announcement](https://www.supermariobrosx.org/forums/viewtopic.php?f=69&t=25160)
-* [TheXTech - the modern port of SMBX game](https://wohlsoft.ru/forum/viewtopic.php?f=5&t=3677)
-* [The Official site for SMBX2 Project](http://codehaus.wohlsoft.ru/)
+## Enlaces
+* [Leer más sobre SMBX](https://wohlsoft.ru/pgewiki/Super_Mario_Bros._X)
+* [Otro artículo sobre SMBX](http://gaming.wikia.com/wiki/Super_Mario_Bros._X)
+* [Foros oficiales de SMBX](https://www.supermariobrosx.org/forums/) 
+* [Anuncio de apertura del código fuente](https://www.supermariobrosx.org/forums/viewtopic.php?f=69&t=25160)
+* [TheXTech: el puerto moderno del juego SMBX](https://wohlsoft.ru/forum/viewtopic.php?f=5&t=3677)
+* [El sitio oficial del proyecto SMBX2](http://codehaus.wohlsoft.ru/)

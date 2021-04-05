@@ -1,72 +1,72 @@
-# How to make levels
+# Cómo hacer niveles
 
 ![HowToLevels](Intro/QuickStart/HowToMakeLevels.png)
 
-**Levels** - are a total space available to the player(s) during the
-course of completing a discrete objective.
+** Niveles **: - es un espacio total disponible para los jugadores durante el
+curso de completar un objetivo discreto.
 
 
-To start make levels, first of all you need open the 
-`"File" -> "New" -> "Level"` menuitem. When you did it you will see the
-main editing interface which contains editing space where you will
-need to place objects.
+Para comenzar a hacer niveles, primero debes abrir el
+`"File" -> "New" -> "Level"` opción del menú. Cuando lo hiciste, verás el
+interfaz de edición principal que contiene espacio de edición donde podrá
+necesidad de colocar objetos.
 
 
-If you wish to work with existing level, you can open the "File" -> "Open"
-menu and select necessary file in the explorer. To open file, you also can 
-drag & drop a file into the window of the Editor directly. You can associate
-all supported by PGE Editor files with the Editor inside of the
-`"Tools" -> "Application Settings"` menu to open them from a file manager by
-double-clicking on them.
+Si desea trabajar con el nivel existente, puede abrir el "Archivo" -> "Abrir"
+menú y seleccione el archivo necesario en el explorador. Para abrir el archivo, también puede
+arrastre y suelte un archivo en la ventana del Editor directamente. Puedes asociar
+todo compatible con archivos PGE Editor con el editor dentro del
+`"Tools" -> "Application Settings"` menú para abrirlos desde un administrador de archivos por
+haciendo doble clic en ellos.
 
-To build a level you need to place any items which you can found in the
-special item toolbox. Also, you are able to set settings of section: size, 
-choose background image, and use any background music. You will need to open 
-the section settings toolbox where you can find any properties for a current
-section.
+Para construir un nivel, debe colocar cualquier elemento que pueda encontrar en el
+caja de herramientas de artículos especiales. Además, puede establecer la configuración de la sección: tamaño,
+elija la imagen de fondo y use cualquier música de fondo. Necesitarás abrir
+la caja de herramientas de configuración de la sección donde puede encontrar las propiedades de una corriente
+sección.
 
-**Every level must have:**
+**Cada nivel debe tener:**
 
-* **Title of level** - The name of level which showing in the world map
-or in the battle mode. You will be asked for it when you will try to save level.
-Or you can edit them in the "Level" -> "Properties" menu.
-* **Player's start/spawn point** where player will appear on level beginning.
-Instead of spawn points you can put any warps, however, this level
-can be started by entering of a specific warp by it's ID (for example, enter 
-to this level from another level or enter it from the world map)! When level has 
-no start points and entrance warp specified, it will fail with an error!
-* **Exit from the level**: this is a special NPC which triggers the exit and ends
-the level with a successful result. Without exits player will be unable 
-to quit the level. There are possible level exit types: 
-  * **Standard exits**: are finishing level when one of them was taken by
-  player. In the SMBX64 configurations there are a NPC-11(Card roulette),
+* **Título del nivel**: el nombre del nivel que se muestra en el mapa mundial
+o en el modo batalla. Se te pedirá cuando intentes salvar el nivel.
+O puede editarlos en el "Level" -> "Properties" menú.
+* **Punto de inicio/generación del jugador** donde el jugador aparecerá al comienzo del nivel.
+En lugar de puntos de generación, puede poner cualquier deformación, sin embargo, este nivel
+se puede iniciar ingresando una deformación específica por su ID (por ejemplo, ingrese
+a este nivel desde otro nivel o ingrese desde el mapa del mundo)! Cuando el nivel tiene
+no se especifican puntos de inicio ni deformación de entrada, ¡fallará con un error!
+* **Salida del nivel**: este es un NPC especial que activa la salida y finaliza
+el nivel con un resultado exitoso. Sin salidas, el jugador no podrá
+para salir del nivel. Hay posibles tipos de salida de nivel:
+* **Salidas estándar**: son nivel de finalización cuando una de ellas fue tomada por
+   jugador. In the SMBX64 configurations there are a NPC-11(Card roulette),
   NPC-16 (Dungeon ball), NPC-41 (Crystal sphare), NPC-197 (Goal tape),
   NPC-97 (Star).
-  * **Secret exit**: in the SMBX64 configurations it is a combination of
-  NPC-31 (key) and BGO-35 (key hole). To activate this exit player
-  should contact by carried key with key hole.
-  * **Offscreen exit**: This type of exit doesn't require any required items 
-  placed. Instead, you will need to set the flag for the section where player will be
-  able to quit the level when it will walk out of screen.
-  * **Warp exit**: this is a warp with a single entrance point and has the
-  'level exit' flag enabled. The level will be completed when player will
-  enter into this warp. Warps can be used to make an ability to go between
-  different levels or even go into a specific world map positions through 
-  a level. If world map coordinates wasn't specified, player will return 
-  the same world map position where was entered this level, or will exit through 
-  the same level through the same warp point where was entered (At the hub-based
-  episodes).
-  * **End game exit**: This type of exit will trigger the end of episode.
-  You can call it via the special event command which can be set through
-  the 'events' toolbox.
-  * **Boss defeat exit**: Some NPC can spawn an exit item when you defeat them. 
-  In the SMBX64 standard there are NPC-15 (boom-boom) that will spawn the NPC-16 (Dungeon ball);
-  The NPC-39 (Birdo) will spawn the NPC-41 (Crystal sphare);
-  Defeating of the NPC-86 (Bowser IIIrd) will run the End of Episode. 
-  To enable the spawning of exit item, NPC must have the "Set as boss" flag enabled!
+  * **Salida secreta**: en las configuraciones SMBX64 es una combinación de
+  NPC-31 (llave) y BGO-35 (ojo de cerradura). Para activar este reproductor de salida
+   debe contactar con la llave llevada con el orificio de la cerradura.
+  * **Salida fuera de pantalla**: este tipo de salida no requiere ningún elemento obligatorio
+   metido. En su lugar, deberá establecer la bandera para la sección donde el jugador estará
+   capaz de salir del nivel cuando saldrá de la pantalla.
+  * **Salida de urdimbre**: esta es una urdimbre con un solo punto de entrada y tiene la
+   Indicador de 'salida de nivel' habilitado. El nivel se completará cuando el jugador
+   entrar en esta urdimbre. Los warps se pueden usar para hacer una habilidad para ir entre
+   diferentes niveles o incluso entrar en posiciones específicas del mapa del mundo a través de
+   un nivel. Si no se especificaron las coordenadas del mapa mundial, el jugador regresará
+   la misma posición en el mapa del mundo donde se ingresó a este nivel, o saldrá por
+   el mismo nivel a través del mismo punto de deformación donde se ingresó (en el centro
+   episodios).
+  * **Salida de fin de juego**: este tipo de salida activará el final del episodio.
+   Puede llamarlo a través del comando de evento especial que se puede configurar a través de
+   la caja de herramientas de 'eventos'.
+  * **Salida de derrota de jefe**: algunos NPC pueden generar un elemento de salida cuando los derrotas.
+   En el estándar SMBX64 hay NPC-15 (boom-boom) que generarán el NPC-16 (Dungeon ball);
+   El NPC-39 (Birdo) generará el NPC-41 (Crystal sphare);
+   La derrota del NPC-86 (Bowser IIIrd) ejecutará el final del episodio.
+   Para habilitar la aparición del elemento de salida, ¡el NPC debe tener habilitada la bandera "Establecer como jefe"!
 
 
-_Level editing interface_
+_Interfaz de edición de nivel_
 
 <ImageZoom 
   alt="EditorInterface"
@@ -75,59 +75,59 @@ _Level editing interface_
 />
 
 
-## Level units and items
+## Elementos y unidades de nivel
 
-**The main level unit is a section**. Section - is a separated sub-area of
-level which have it's own settings: music, background, physics, etc.
-Player can move between sections via special points called as **warps**. All sections
-placed in a united space, therefore you can see many sections in one space,
-however, you can change settings for one section at same time.
-
-
-### Items
-
-**[Items](../../EditLevel/Items)** - are a main content of every level. To make the level you should
-place items to build the universe of the level.
-
-<u>Click to the name of item type to learn more about them:</u>
-
-**[Blocks](../../EditLevel/Items#blocks)** - are a solid objects which are 
-tiles with its shape and size. The main construction material of which level 
-consists. The majority of blocks interacts from players on whom it can stand
-about which the player can hit which can be a limiting wall. There are blocks
-which hurts to the game character on touch, and some are may to kill it
-instantly, and also able to destroy other objects which have touched them. 
-There are special blocks with own algorithm of interaction with the player. 
-For example: switch, switching wall, what changing his state from lock to 
-unlock and back; switches between player characters and character limit blocks, 
-what allows walk through them only for one of characters, for other characters
-these blocks working as normal, etc. As there is a special type of blocks
-which can have any size. This is a Sizable blocks.
-
-**[Background objects](../../EditLevel/Items#bgo)** - are scenery. However, some 
-of BGO can have special features: platform movement rails, which will guide the movement 
-of "platforms" (NPC-based objects), reverse block that will turn the moving platform back. 
-Some BGO allows a player to climb on them. BGO can be background and foreground.
-Foreground BGO placing over all other level items.
-
-**[Non-playable characters](../../EditLevel/Items#npc)** - are a main game unit, they build
-the game process: there are enemies, friends, items, power-ups, sceneries, etc.
-Every NPC have own algorithm which can be programmed.
-
-**[Warp/Door points](../../EditLevel/Items#warps)** - are a special units which allow a player 
-to teleport from the first warp point (Entrance) to the second (Exit). 
-Player can teleport between different places of the same section, and also, player can go between 
-different sections. This is the only one way to go between different sections. However, there are
-exceptions: some NPC can generate the way between different sections.
-
-**[Physical environment area](../../EditLevel/Items#physical-environments)** (Water, Quicksand, etc.) - this is a
-special unit which declares the physical environment inside its area.
+**La unidad del nivel principal es una sección**. Sección - es una subárea separada de
+nivel que tiene su propia configuración: música, fondo, física, etc.
+El jugador puede moverse entre secciones a través de puntos especiales llamados **warps**. Todas las secciones
+colocados en un espacio unido, por lo tanto, puede ver muchas secciones en un espacio,
+sin embargo, puede cambiar la configuración de una sección al mismo tiempo.
 
 
-### Special units
-**[Layers](../../EditLevel/Layers)** - are groups of items which can be used for the fast access to
-them by special events and for group actions over items are members of a layer.
+### Artículos
 
-**[Events](../../EditLevel/Events)** - are simple programming units of the level which can dynamically 
-affect the game process options. For example: section settings, hide/show objects on target layers,
-move objects of the layer, make the scrolling of a section, etc.
+**[Elementos](../../EditLevel/Items)** - son el contenido principal de cada nivel. Para hacer el nivel debes
+colocar elementos para construir el universo del nivel.
+
+<u>Haga clic en el nombre del tipo de elemento para obtener más información sobre ellos:</u>
+
+**[Bloques](../../EditLevel/Items#blocks)** - son objetos sólidos que son
+azulejos con su forma y tamaño. El principal material de construcción de qué nivel
+Consiste. La mayoría de los bloques interactúan con los jugadores sobre los que puede colocarse.
+sobre el que el jugador puede golpear, lo que puede ser un muro limitante. Hay bloques
+que duele al personaje del juego al tocarlo, y algunos pueden matarlo
+instantáneamente, y también capaz de destruir otros objetos que los hayan tocado.
+Hay bloques especiales con algoritmo propio de interacción con el jugador.
+Por ejemplo: interruptor, interruptor de pared, lo que cambia su estado de bloqueo a
+desbloquear y volver; cambia entre personajes de jugador y bloques de límite de caracteres,
+lo que permite caminar a través de ellos solo para uno de los personajes, para otros personajes
+estos bloques funcionan normalmente, etc. Como hay un tipo especial de bloques
+que puede tener cualquier tamaño. Este es un bloque de tamaño considerable.
+
+**[Objetos de fondo](../../EditLevel/Items#bgo)** - son escenarios. Sin embargo, algunos
+de BGO puede tener características especiales: rieles de movimiento de la plataforma, que guiarán el movimiento
+de "plataformas" (objetos basados en NPC), bloque inverso que hará retroceder la plataforma móvil.
+Algunos BGO permiten que un jugador se suba a ellos. BGO puede ser de fondo y de primer plano.
+Colocación de BGO en primer plano sobre todos los demás elementos de nivel.
+
+**[Personajes no jugables](../../EditLevel/Items#npc)** - son una unidad principal del juego, construyen
+el proceso del juego: hay enemigos, amigos, objetos, potenciadores, escenarios, etc.
+Cada NPC tiene su propio algoritmo que se puede programar.
+
+**[Warp/Door points](../../EditLevel/Items#warps)** - son unidades especiales que permiten a un jugador
+para teletransportarse desde el primer punto de deformación (Entrada) al segundo (Salida).
+El jugador puede teletransportarse entre diferentes lugares de la misma sección, y también, el jugador puede ir entre
+diferentes secciones. Ésta es la única forma de pasar de una sección a otra. Sin embargo, hay
+excepciones: algunos NPC pueden generar el camino entre diferentes secciones.
+
+**[Área del entorno físico](../../EditLevel/Items#Physical-Environments)**(Agua, arenas movedizas, etc.): - este es un
+Unidad especial que declara el entorno físico dentro de su área.
+
+
+### Unidades especiales
+**[Capas](../../EditLevel/Layers)**: - son grupos de elementos que se pueden utilizar para acceder rápidamente a
+ellos por eventos especiales y para acciones de grupo sobre elementos son miembros de una capa.
+
+**[Eventos](../../EditLevel/Events)**: - son unidades de programación simples del nivel que pueden
+afectar las opciones del proceso del juego. Por ejemplo: configuración de sección, ocultar / mostrar objetos en capas de destino,
+mover objetos de la capa, hacer el scroll de una sección, etc.

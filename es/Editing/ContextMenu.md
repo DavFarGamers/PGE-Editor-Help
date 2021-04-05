@@ -1,9 +1,9 @@
-# Context menu
+# Menú de contexto
 
-Every item has its context menu. It can be opened by clicking the right mouse button (lefthander mouse - by left mouse button) while the cursor is over an item on the scene, or over a selected group.
+Cada elemento tiene su menú contextual. Se puede abrir haciendo clic con el botón derecho del mouse (mouse izquierdo - con el botón izquierdo del mouse) mientras el cursor está sobre un elemento de la escena o sobre un grupo seleccionado.
 
-By a context menu, you can change some of the basic settings of one item or of all selected items. You can change the layer of the current item(s). Also, you will find the ability for the quick creation of a new layer for a selected group of item(s). Context menu of warp points allows you to quickly jump to the opposite side of a warp entry.
+Mediante un menú contextual, puede cambiar algunas de las configuraciones básicas de un elemento o de todos los elementos seleccionados. Puede cambiar la capa de los elementos actuales. Además, encontrará la capacidad para la creación rápida de una nueva capa para un grupo seleccionado de elementos. El menú contextual de puntos de deformación le permite saltar rápidamente al lado opuesto de una entrada de deformación.
 
-## See also
-* [Level specific context menu](/EditLevel/ContextMenu)
-* [World map specific context menu](/EditWorld/ContextMenu)
+## Ver también
+* [Menú contextual específico del nivel](/EditLevel/ContextMenu)
+* [Menú contextual específico del mapa mundial](/EditWorld/ContextMenu)

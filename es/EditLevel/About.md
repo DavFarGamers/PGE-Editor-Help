@@ -1,27 +1,27 @@
-# About levels
+# Acerca de los niveles
 
-**Levels** - is the total space available to players during the completing a discrete objective.
+** Niveles **: es el espacio total disponible para los jugadores durante la realización de un objetivo discreto.
 
-Here you can make levels for your game.
+Aquí puedes crear niveles para tu juego.
 
-The main level unis is a **section**. Section - is a separated sub-area of a level which have their settings: music, background, physics, etc. A player can move between different sections through the special points called warps (doors, pipes, or instant teleports). All level sections are in a single space, and you can see many sections at one moment, however, you can set settings only for the current section.
+La unidad de nivel principal es una ** sección **. Sección: es una subárea separada de un nivel que tiene su configuración: música, fondo, física, etc. Un jugador puede moverse entre diferentes secciones a través de puntos especiales llamados warps (puertas, tuberías o teletransportes instantáneos). Todas las secciones de nivel están en un solo espacio y puede ver muchas secciones en un momento, sin embargo, puede establecer la configuración solo para la sección actual.
 
-**Blocks** - are solid objects which are tiles with shape and size. Blocks are the main construction material of which level consists. The majority of blocks interact from players on whom it can stand about which the player can hit which can be a limiting wall. There are blocks the touch to which hurt to the game character, and some are capable to kill instantly not only it but also to destroy other objects which have touched them. There are special blocks with their algorithm of interaction with the player. For example, switch, switching wall, changing its state from lock to unlock and back; switches between player characters and character limit blocks, what allows a walk through them only for one of the characters, for other characters these blocks working as normal, etc. As there is a special type of blocks which can have any size. This is a Sizable block.
+** Bloques **: son objetos sólidos que son mosaicos con forma y tamaño. Los bloques son el principal material de construcción del que consta el nivel. La mayoría de los bloques interactúan con los jugadores sobre los que puede pararse y el jugador puede golpear, lo que puede ser un muro limitante. Hay bloques cuyo toque lastima al personaje del juego, y algunos son capaces de matar instantáneamente no solo a él sino también a destruir otros objetos que los hayan tocado. Hay bloques especiales con su algoritmo de interacción con el jugador. Por ejemplo, cambiar, cambiar de pared, cambiar su estado de bloqueo a desbloqueo y viceversa; cambia entre personajes de jugador y bloques de límite de caracteres, lo que permite recorrerlos solo para uno de los personajes, para otros personajes estos bloques funcionan normalmente, etc. Ya que hay un tipo especial de bloques que pueden tener cualquier tamaño. Este es un bloque considerable.
 
-**Background objects** - are a sceneries. But some BGO can have special features: platform movement paths (rails) will define movement paths for moving "platforms," a reverse block that will revert the platform's speed. Some BGO allows climbing on them. BGO can be background and foreground. Foreground BGO placing over all other level items.
+** Objetos de fondo **: son escenarios. Pero algunos BGO pueden tener características especiales: las rutas de movimiento de la plataforma (rieles) definirán las rutas de movimiento para las "plataformas" en movimiento, un bloque inverso que revertirá la velocidad de la plataforma. Algunos BGO permiten subirse a ellos. BGO puede ser de fondo y de primer plano. Colocación de BGO en primer plano sobre todos los demás elementos de nivel.
 
-**Non-playable characters** - are the main game unit, what building the game process: there are enemies, friends, items, power-ups, scenery, etc. Each NPC has an algorithm and can be programmed.
+** Personajes no jugables **: son la unidad principal del juego, lo que construye el proceso del juego: hay enemigos, amigos, elementos, potenciadores, escenarios, etc. Cada NPC tiene un algoritmo y se puede programar.
 
-**Warps** - are special units, which allows a player to teleport from the first warp point (Entrance) to the second (Exit). The player can teleport between different places of one section, and also the player can teleport between sections. This is one way to enter another section, but exclusion is some NPCs which can generate warp to other section.
+** Warps **: son unidades especiales que permiten a un jugador teletransportarse desde el primer punto warp (Entrada) al segundo (Salida). El jugador puede teletransportarse entre diferentes lugares de una sección, y también el jugador puede teletransportarse entre secciones. Esta es una forma de ingresar a otra sección, pero la exclusión es de algunos NPC que pueden generar deformaciones a otra sección.
 
-**Physical environment area** (Water, Quicksand, etc.) - this is a special unit that defining the physical environment inside its rectangle.
+** Área de entorno físico ** (agua, arenas movedizas, etc.): esta es una unidad especial que define el entorno físico dentro de su rectángulo.
 
-**Layers** - are groups of items that can be used for fast access to them by special events.
+** Capas **: son grupos de elementos que se pueden usar para acceder rápidamente a ellos en eventos especiales.
 
-**Events** - are special data of level which can dynamically define and change the game process options. For example, section settings, hide/show objects on target layers, move objects on a layer, made scrolling of section, etc.
+** Eventos **: son datos especiales de nivel que pueden definir y cambiar dinámicamente las opciones del proceso del juego. Por ejemplo, la configuración de la sección, ocultar / mostrar objetos en las capas de destino, mover objetos en una capa, hacer el desplazamiento de la sección, etc.
 
 
-_Level editing interface_
+_Interfaz de edición de nivel_
 
 <ImageZoom
 alt="005_levelEditingSpace"
@@ -29,15 +29,15 @@ url="screenshots/LevelEditing/005_levelEditingSpace.png"
 :border="true"
 />
 
-<u>**Each level should have**</u>:
+<u>**Cada nivel debe tener**</u>:
 
-* **Title of level** - The name of the level which showing on the world map or in the battle mode. You will be asked for it when you will try to save the level. Or you can edit them in the `Level -> Properties` menu.
-* **Player's start/spawn point** where the player can start its walk. Also, you can put instead of them any warps, but you will able to start this level
-  when you have entered them with the definition of entrance warp ID! If you will put no start points, you will haven't able to start level!
-* **Exit from level**: this is a special NPC that triggers the exit and ends the level with a successful result. Without exits, the player will not be able to exit from your level.
-  * **Standard exits**: ends level when one of them was taken by the player. In the SMBX64 configurations are  NPC-11(Card roulette), NPC-16 (Dungeon ball), NPC-41 (Crystal sphere), NPC-197 (Goal tape), NPC-97 (Star).
-  * **Secret exit**: in the SMBX64 configurations is a combination of NPC-31 (key) and BGO-35 (asshole). To activate this exit player should contact by carried a key with a keyhole.
-  * **Off-screen exit**: This exit is not required any special items, you need to enable a flag on the section where the player will exit from the level when it will walk out of the screen.
-  * **Warp exit**: this is a warp that has alone entrance point. The level will be ended when a player will enter into them. Also, warps can be used to make warps between different levels or even warp to specific world map coordinates. If coordinates will not be defined, the player will exit from the level into the same position where the player was entered into level or will exit from the level through the same warp point where it entered via hub level.
-  * **End game exit**: This exit will trigger the end of the episode. You can call it via special event command.
-  * **Boss fight exit**: Some NPC's can spawn exit item after defeating them. In the SMBX64 standard, there are NPC-15 (boom-boom) will spawn NPC-16 (Dungeon ball), NPC-39 (Birdo) will spawn NPC-41 (Crystal sphere), NPC-86 (Bowser IIIrd) will activate end of the episode. To enable spawning of the exit you should enable the "Set as boss" flag for this NPC!
+* ** Título del nivel **: el nombre del nivel que se muestra en el mapa mundial o en el modo de batalla. Se te pedirá cuando intentes guardar el nivel. O puede editarlos en el menú `Nivel -> Propiedades`.
+* ** Punto de inicio / generación del jugador ** donde el jugador puede comenzar su caminata. Además, puedes poner en su lugar cualquier deformación, pero podrás comenzar este nivel
+  cuando los haya ingresado con la definición de ID de deformación de entrada. Si no pones puntos de inicio, ¡no podrás comenzar el nivel!
+* ** Salida del nivel **: este es un NPC especial que activa la salida y finaliza el nivel con un resultado exitoso. Sin salidas, el jugador no podrá salir de su nivel.
+  * ** Salidas estándar **: finaliza el nivel cuando el jugador toma una de ellas. En las configuraciones SMBX64 son NPC-11 (Ruleta de cartas), NPC-16 (Dungeon ball), NPC-41 (Esfera de cristal), NPC-197 (Cinta de meta), NPC-97 (Estrella).
+  * ** Salida secreta **: en las configuraciones SMBX64 hay una combinación de NPC-31 (clave) y BGO-35 (imbécil). Para activar esta salida, el jugador debe contactar por llevar una llave con ojo de cerradura.
+  * ** Salida fuera de la pantalla **: esta salida no requiere ningún elemento especial, debe habilitar una bandera en la sección donde el jugador saldrá del nivel cuando saldrá de la pantalla.
+  * ** Warp exit **: se trata de un warp que tiene un solo punto de entrada. El nivel terminará cuando un jugador entre en ellos. Además, las deformaciones se pueden utilizar para hacer deformaciones entre diferentes niveles o incluso deformar a coordenadas específicas del mapa del mundo. Si no se definirán las coordenadas, el jugador saldrá del nivel a la misma posición en la que el jugador ingresó al nivel o saldrá del nivel a través del mismo punto de deformación donde ingresó a través del nivel del concentrador.
+  * ** Fin de salida del juego **: esta salida activará el final del episodio. Puede llamarlo mediante un comando de evento especial.
+  * ** Salida de la pelea de jefes **: Algunos NPC pueden generar un elemento de salida después de derrotarlos. En el estándar SMBX64, hay NPC-15 (boom-boom) que generará NPC-16 (Bola de mazmorra), NPC-39 (Birdo) generará NPC-41 (Esfera de cristal), NPC-86 (Bowser IIIrd) se activará final del episodio. ¡Para habilitar el desove de la salida, debe habilitar la bandera "Establecer como jefe" para este NPC!

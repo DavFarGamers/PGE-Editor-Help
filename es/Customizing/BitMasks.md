@@ -1,49 +1,49 @@
-# Transparency bit masks
-When targeting graphics for the vanilla SMBX engine, you should use the special pair of graphics that contains the front
-and mask pictures ready for usage with the Bit Blit algorithm. The [PNG2GIFs](/Tools/Console/PNG2GIFs) utility can be used to simplify the
-conversion of images.
+# Máscaras de bits de transparencia
+Al apuntar a gráficos para el motor vanilla SMBX, debe usar el par especial de gráficos que contiene el frente
+y enmascarar imágenes listas para su uso con el algoritmo Bit Blit. La [PNG2GIFs](/Tools/Console/PNG2GIFs) la utilidad se puede utilizar para simplificar la
+conversión de imágenes.
 
 
-## Generic bit masks
-In computer science, a mask or bitmask is data that is used for bitwise operations, particularly in a bit field. 
-Using a mask, multiple bits in a byte, nibble, word etc. can be set either on, off or inverted from on to off 
-(or vice versa) in a single bitwise operation. 
+## Máscaras de bits genéricas
+En informática, una máscara o máscara de bits son datos que se utilizan para operaciones bit a bit, particularmente en un campo de bits.
+Con una máscara, se pueden activar, desactivar o invertir varios bits en un byte, nibble, palabra, etc.
+(o viceversa) en una sola operación bit a bit.
 
-## Image masks
-In computer graphics, when a given image is intended to be placed over a background, the transparent areas can be 
-specified through a binary mask. This way, for each intended image there are actually two bitmaps: the actual 
-image, in which the unused areas are given a pixel value with all bits set to 0s, and an additional mask, in which 
-the correspondent image areas are given a pixel value of all bits set to 0s and the surrounding areas a value of all
-bits set to 1s. In the sample at right, black pixels have the all-zero bits and white pixels have the all-one bits.
+## Máscaras de imagen
+En los gráficos por computadora, cuando se pretende colocar una imagen determinada sobre un fondo, las áreas transparentes se pueden
+especificado a través de una máscara binaria. De esta forma, para cada imagen deseada hay en realidad dos mapas de bits: el
+imagen, en la que las áreas no utilizadas reciben un valor de píxel con todos los bits establecidos en 0, y una máscara adicional, en la que
+las áreas de imagen correspondientes reciben un valor de píxel de todos los bits establecidos en 0 y las áreas circundantes un valor de todos
+bits establecidos en 1s. En la muestra de la derecha, los píxeles negros tienen todos los bits cero y los píxeles blancos tienen todos los bits uno.
 
-At run time, to put the image on the screen over the background, the program first masks the screen pixel's bits with
-the image mask at the desired coordinates using the bitwise AND operation. This preserves the background pixels of the
-transparent areas while resets with zeros the bits of the pixels which will be obscured by the overlapped image.
+En tiempo de ejecución, para poner la imagen en la pantalla sobre el fondo, el programa primero enmascara los bits del píxel de la pantalla con
+la máscara de imagen en las coordenadas deseadas utilizando la operación AND bit a bit. Esto conserva los píxeles de fondo de la
+áreas transparentes mientras restablece con ceros los bits de los píxeles que serán oscurecidos por la imagen superpuesta.
 
-Then, the program renders the image pixel's bits by combining them with the background pixel's bits using the
-bitwise OR operation. This way, the image pixels are appropriately placed while keeping the background surrounding
-pixels preserved. The result is a perfect compound of the image over the background. 
+Luego, el programa renderiza los bits del píxel de la imagen combinándolos con los bits del píxel de fondo usando el
+operación OR bit a bit. De esta manera, los píxeles de la imagen se colocan de manera adecuada mientras se mantiene el fondo alrededor
+píxeles conservados. El resultado es una combinación perfecta de la imagen sobre el fondo.
 
 ![src](screenshots/Tools/console/GIFs2PNG/example_src1.gif) ![srcm](screenshots/Tools/console/GIFs2PNG/example_src1m.gif)
 
-This technique is used for painting pointing device cursors, in typical 2-D videogames for characters, bullets and
-so on (the sprites), for GUI icons, and for video titling and other image mixing applications.
+Esta técnica se utiliza para pintar los cursores del dispositivo señalador, en los típicos videojuegos 2-D para personajes, viñetas y
+así sucesivamente (los sprites), para los íconos GUI, y para títulos de video y otras aplicaciones de mezcla de imágenes.
 
-Although related (due to being used for the same purposes), transparent colors and alpha channels are techniques
-which do not involve the image pixel mixage by binary masking. 
+Aunque relacionados (debido a que se utilizan para los mismos fines), los colores transparentes y los canales alfa son técnicas
+que no implican la mezcla de píxeles de la imagen mediante enmascaramiento binario. 
 
-## Lazily-made masks
+## Lazily-made mascaras
 
-Lazily-made / Noob-made / noob drawing / result of lazy effort - These are pairs of an image and mask, created
-via simple copies of the original image, with a white color.
+Lazily-made / Noob-made / noob drawing / result of lazy effort - Estos son pares de una imagen y una máscara, creados
+mediante copias simples de la imagen original, con un color blanco.
 
 ![lazyFront](screenshots/Tools/console/LazyFix/example_src1.gif) ![lazyBack](screenshots/Tools/console/LazyFix/example_src1m.gif)
 
-This is a bad method that it's not recommended for sprite making. Instead, use the [PNG2GIFs](/Tools/Console/PNG2GIFs) 
-utility to convert PNG image into the valid bit-mask ready front and mask pair. If you have a dozen of lazily-made
-graphics, you can fix the by using the special [LazyFix Tool](/Tools/Console/LazyFixTool) utility.
+Este es un mal método que no se recomienda para la creación de sprites. En su lugar, utilice el [PNG2GIFs](/Tools/Console/PNG2GIFs) 
+utilidad para convertir la imagen PNG en el par de máscara y frontal listo para máscara de bits válida. Si tienes una docena de perezosos
+gráficos, puede arreglar el usando el especial [LazyFix Tool](/Tools/Console/LazyFixTool) utilidad.
 
 
 ## Links 
-* [Wikipedia article about bit masks](https://en.wikipedia.org/wiki/Mask_(computing)#Image_masks)
-* [Bit Blit explanation](https://en.wikipedia.org/wiki/Bit_blit)
+* [Artículo de Wikipedia sobre máscaras de bits](https://en.wikipedia.org/wiki/Mask_(computing)#Image_masks)
+* [Explicación de Bit Blit](https://en.wikipedia.org/wiki/Bit_blit)

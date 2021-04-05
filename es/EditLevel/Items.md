@@ -1,6 +1,6 @@
-# Level Items
+# Elementos de nivel
 
-**Items** - main content and part of many levels. There is construction material, sceneries, items, characters, etc.
+** Elementos **: contenido principal y parte de muchos niveles. Hay material de construcción, paisajes, elementos, personajes, etc.
 
 <u>**Avalilable item types:**</u>
 * [Blocks](#blocks)
@@ -10,11 +10,11 @@
 * [Physical environments (Known in SMBX as Water/Quicksand)](#physical-environments)
 * [Player's start points](#player-points)
 
-## Blocks
+## Bloques
 
-**Blocks** - are solid objects which are tiles with shape and size. Blocks are the main construction material of which level consists. The majority of blocks interact from players on whom it can stand about which the player can hit which can be a limiting wall. There are blocks the touch to which hurt to the game character, and some are capable to kill instantly not only it but also to destroy other objects which have touched them. There are special blocks with their algorithm of interaction with the player. For example, switch, switching wall, changing its state from lock to unlock and back; switches between player characters and character limit blocks, what allows a walk through them only for one of the characters, for other characters these blocks working as normal, etc. As there is a special type of blocks which can have any size. This is a Sizable block.
+** Bloques **: son objetos sólidos que son mosaicos con forma y tamaño. Los bloques son el principal material de construcción del que consta el nivel. La mayoría de los bloques interactúan con los jugadores sobre los que puede pararse y el jugador puede golpear, lo que puede ser un muro limitante. Hay bloques cuyo toque lastima al personaje del juego, y algunos son capaces de matar instantáneamente no solo a él sino también a destruir otros objetos que los hayan tocado. Hay bloques especiales con su algoritmo de interacción con el jugador. Por ejemplo, cambiar, cambiar de pared, cambiar su estado de bloqueo a desbloqueo y viceversa; cambia entre personajes de jugador y bloques de límite de caracteres, lo que permite recorrerlos solo para uno de los personajes, para otros personajes estos bloques funcionan normalmente, etc. Ya que hay un tipo especial de bloques que pueden tener cualquier tamaño. Este es un bloque considerable.
 
-_Placing of blocks_
+_Colocación de bloques_
 
 <ImageZoom
 alt="place_blocks"
@@ -24,7 +24,7 @@ width="200px"
 />
 
 
-_Block context menu_
+_Menú contextual de bloque_
 
 <ImageZoom
 alt="BlockContext"
@@ -38,20 +38,20 @@ width="200px"
 
 **Each block have flags:**
 
-* **Invisible** - Make the block invisible. It will appear once it will get a hit from the bottom side. This flag useful for a place on the map secret bonuses or build barriers for a move up.
-* **Slippery** - The block's top surface will be slippery.
-* **Change contained NPC** - Open NPC selection dialog for change block content.
+* **Invisible**: haz que el bloque sea invisible. Aparecerá una vez que reciba un golpe desde la parte inferior. Esta bandera es útil para un lugar en el mapa, bonificaciones secretas o para construir barreras para un ascenso.
+* **Resbaladizo**: la superficie superior del bloque estará resbaladiza.
+* **Cambiar NPC contenido** - Abrir cuadro de diálogo de selección de NPC para cambiar el contenido del bloque.
 
-* **Layer** - here was defined the layer which is the owner of this block.
-  All items at first are members of the "Default" layer.
+* **Capa** - aquí se definió la capa que es propietaria de este bloque.
+   Todos los elementos al principio son miembros de la capa "Predeterminada".
 
-**Each block have the event slots:**
+**Cada bloque tiene los espacios para eventos:**
 
-* **Destroyed** - this slot activating if a block was been broken, crushed, destroyed, etc.
-* **Hit** - This slot activating if blocks were being hit, kicked, beat from the side or bottom.
-* **Layer is empty** - (In SMBX this slot was called "<u>No more objects in layer</u>") this slot activating when was activated the "destroyed" slot and when layer which owner of this block is haven't other objects.
+* **Destruido**: esta ranura se activa si un bloque se ha roto, aplastado, destruido, etc.
+* **Hit**: esta ranura se activa si los bloques están siendo golpeados, pateados, golpeados desde el costado o desde abajo.
+* **La capa está vacía** - (En SMBX, esta ranura se llamaba "<u>No más objetos en la capa</u>") esta ranura se activa cuando se activa la ranura "destruida" y cuando la capa cuyo propietario de este bloque es no tiene otros objetos.
 
-_Block Properties toolbox_
+_Caja de herramientas de propiedades de bloque_
 
 <ImageZoom
 alt="Props_Block"
@@ -60,11 +60,11 @@ width="200px"
 :border="true"
 />
 
-### Sizable blocks
+### Bloques considerables
 
-It's a special type of block that can have any size. Unlike standard locks, this block placing by rectangle drawing, and its size is defining by the size of the rectangle when you release the mouse key:
+Es un tipo especial de bloque que puede tener cualquier tamaño. A diferencia de las cerraduras estándar, este bloque se coloca por dibujo de rectángulo, y su tamaño se define por el tamaño del rectángulo cuando suelta la tecla del mouse:
 
-_Drawing of sizable blocks_
+_Dibujo de bloques considerables_
 
 <ImageZoom
 alt="DrawSizableBlock"
@@ -74,24 +74,24 @@ width="200px"
 />
 
 
-These blocks can be resized. Unlike standard blocks, these blocks displaying in the low background layer and displaying always under BGO (but some BGO in the exception can be shown under sizable blocks).
+Estos bloques se pueden cambiar de tamaño. A diferencia de los bloques estándar, estos bloques se muestran en la capa de fondo baja y se muestran siempre en BGO (pero algunos BGO en la excepción se pueden mostrar en bloques de tamaño considerable).
 
-To start resizing, you should open the "Resize" context menu item and you will see a blue rectangle which a "sizer". Move corner dots or sides to define the new size of the block. When you are done resizing press the ENTER key to accept the new size, and then the block will have a new size. If you will press the ESC key you will cancel resizing and the block will keep it's current it's size.
+Para comenzar a cambiar el tamaño, debe abrir el elemento del menú contextual "Resize" y verá un rectángulo azul con un "sizer". Mueva los puntos o los lados de las esquinas para definir el nuevo tamaño del bloque. Cuando haya terminado de cambiar el tamaño, presione la tecla ENTER para aceptar el nuevo tamaño, y luego el bloque tendrá un nuevo tamaño. Si presiona la tecla ESC, cancelará el cambio de tamaño y el bloque mantendrá su tamaño actual.
 
 <Note type="tip">
-Note: If you wish to get more features of the resize box (green net which defined the new size of the section), click inside of them by the right mouse button.
+Nota: Si desea obtener más funciones del cuadro de cambio de tamaño (red verde que definió el nuevo tamaño de la sección), haga clic dentro de ellos con el botón derecho del mouse.
 </Note>
 
-The context menu has actions:
+El menú contextual tiene acciones:
 
-* **Cut top here** - moves the top boundary of the box to the current mouse position
-* **Cut left here** - moves left boundary of the box to the current mouse position
-* **Cut right here** - moves the right boundary of the box to the current mouse position
-* **Cut bottom here** - moves the bottom boundary of the box to the current mouse position
-* **Don't snap to grid** - disables grid snapping on moving of box boundaries
-* **Disable minimal size limit** - gives the ability to set size less than minimally available size
+* **Cortar la parte superior aquí**: mueve el límite superior del cuadro a la posición actual del mouse
+* **Cortar a la izquierda aquí**: mueve el límite izquierdo del cuadro a la posición actual del mouse
+* **Cortar aquí**: mueve el límite derecho del cuadro a la posición actual del mouse
+* **Cortar la parte inferior aquí**: mueve el límite inferior del cuadro a la posición actual del mouse
+* **No ajustar a la cuadrícula**: deshabilita el ajuste de la cuadrícula al mover los límites del cuadro
+* **Deshabilitar el límite de tamaño mínimo**: brinda la posibilidad de establecer un tamaño menor que el tamaño mínimo disponible
 
-_Resizing of sizable blocks_
+_Cambio de tamaño de bloques considerables_
 
 <ImageZoom
 alt="ResizeBlock2"
@@ -102,9 +102,9 @@ width="200px"
 
 ## BGO
 
-**Background objects** - is a sceneries. But some BGO can have special features: platform movement paths will define movement paths for moving "platforms", reverse block, which will revert the platform's speed. Some BGO allows climbing on them. BGO can be background and foreground. Foreground BGO placing over all other level items.
+** Objetos de fondo ** - es un escenario. Pero algunos BGO pueden tener características especiales: las rutas de movimiento de la plataforma definirán las rutas de movimiento para las "plataformas" en movimiento, bloqueo inverso, que revertirá la velocidad de la plataforma. Algunos BGO permiten subirse a ellos. BGO puede ser de fondo y de primer plano. Colocación de BGO en primer plano sobre todos los demás elementos de nivel.
 
-_Placing of BGO_
+_Colocación de BGO_
 
 <ImageZoom
 alt="PlacingBGO"
@@ -114,7 +114,7 @@ width="200px"
 />
 
 
-_BGO Context menu_
+_BGO Menu contextual_
 
 <ImageZoom
 alt="BGO_Context"
@@ -123,20 +123,20 @@ width="200px"
 :border="true"
 />
 
-### BGO Properties
+### Propiedades BGO
 
-Each BGO now has only two options:
+Cada BGO ahora tiene solo dos opciones:
 
-* **Layer** - here defined the layer, what is the owner of this BGO. All items at first are members of the "Default" layer.
+* **Layer** - aquí se define la capa, cuál es el dueño de este BGO. Todos los elementos al principio son miembros de la capa "Predeterminada".
 
-* **Z-Layer** - defining the displaying priority: over or under other items. (Available only for LVLX format)
-* **Z-Offset** - This is a helpful value that allows to order of BGOs which displaying over/under each other. (Available only for LVLX format)
+* **Z-Layer** - definir la prioridad de visualización: por encima o por debajo de otros elementos. (Disponible solo para formato LVLX)
+* **Z-Offset** - Este es un valor útil que permite ordenar los BGO que se muestran uno encima / debajo del otro. (Disponible solo para formato LVLX)
 
-* **Sorting priority** - The special option using only for SMBX64-LVL file format saving process as a workaround, but not save into them.
+* **Sorting priority** - La opción especial que se usa solo para el proceso de guardado del formato de archivo SMBX64-LVL como solución alternativa, pero no se guarda en ellos.
 
-This option can be used only as a hack of SMBX to force display background BGO as foreground. This option doesn't define Z-value, which is the real render priority value. This option defining the sequence of array items for BGO in the file.
+Esta opción solo se puede usar como un truco de SMBX para forzar la visualización de fondo BGO como primer plano. Esta opción no define el Z-value, que es el valor real de prioridad de procesamiento. Esta opción define la secuencia de elementos de la matriz para BGO en el archivo.
 
-_BGO Properties toolbox_
+_Caja de herramientas BGO Properties_
 
 <ImageZoom
 alt="BGO_Context"
@@ -144,22 +144,22 @@ url="screenshots/LevelEditing/Items/Props_BGO.png"
 :border="true"
 />
 
-### Hack: Z-Order in SMBX
+### Hack: Z-Order en SMBX
 
-Legacy SMBX Engine doesn't support customization of Z-order natively. However, it's possible with a workaround. This working ONLY if you saving into SMBX file format. And will not saving in them. After reopening the same file you need to define this value again.
+El motor SMBX heredado no admite la personalización del orden Z de forma nativa. Sin embargo, es posible con una solución alternativa. Esto funciona SOLO si guarda en formato de archivo SMBX. Y no salvará en ellos. Después de volver a abrir el mismo archivo, debe definir este valor nuevamente.
 
 
-**1)** All data, include BGOs, in files written in defined sequence:
+**1)** Todos los datos, incluidos los BGO, en archivos escritos en una secuencia definida:
 
 ![Pseudo-foregroundBGO-1](screenshots/LevelEditing/Items/bgo_hack/Pseudo-foregroundBGO-1.png)
 
-**2)** When we using the sort priority value, we will tell to BGO's place, at the beginning, middle, or at the end of the array:
+**2)** Cuando usamos el valor de prioridad de clasificación, le diremos el lugar de BGO, al principio, en el medio o al final de la matriz:
 
 ![Pseudo-foregroundBGO-2](screenshots/LevelEditing/Items/bgo_hack/Pseudo-foregroundBGO-2.png)
 
-SMBX render algorithm displaying BGOs by special groups - layers, and BGO order is very important for this case. So, if we are will do a change of the order, we are will let a first BGO, which marked as "Foreground", to make all next BGOs be foreground too, even if there is hasn't a "foreground" flag. Knowing this thing is possible to force display any background BGOs as foreground.
+El algoritmo de renderizado SMBX que muestra BGO por grupos especiales: capas y el orden de BGO es muy importante para este caso. Entonces, si vamos a hacer un cambio de orden, dejaremos un primer BGO, que está marcado como "Primer plano", para hacer que todos los siguientes BGO también estén en primer plano, incluso si no hay una bandera de "primer plano". Sabiendo esto, es posible forzar la visualización de cualquier BGO de fondo como primer plano.
 
-**3)** To allow this feature work, you must place to the map any of true "Foreground" BGO in any position (if your level has no those BGO's, place one of them out of the section to get it on the level space). This trick requires one of foreground BGO under our BGO's which we are want to make foreground too.
+**3)** Para permitir que esta característica funcione, debe colocar en el mapa cualquier BGO de "primer plano" verdadero en cualquier posición (si su nivel no tiene esos BGO, coloque uno de ellos fuera de la sección para obtenerlo en el espacio de nivel). Este truco requiere uno de BGO en primer plano debajo de nuestro BGO, que también queremos poner en primer plano.
 
 <ImageZoom
 alt="001_bgo_hack"
@@ -170,15 +170,15 @@ width="200px"
 
 
 <Note type="warning">
-Don't forget, that if you saving the file into SMBX1...64 LVL format, on
-next, open this file you must to redefine the sorting priority value
-again, because it doesn't save into SMBX level file. Backup saved into
-LVLX file format is suggested.
+No olvide que si guarda el archivo en formato SMBX1 ... 64 LVL, en
+A continuación, abra este archivo, debe redefinir el valor de prioridad de clasificación.
+de nuevo, porque no se guarda en el archivo de nivel SMBX. Copia de seguridad guardada en
+Se sugiere el formato de archivo LVLX.
 </Note>
 
 
-**Result of BGO hack in action**
-__(bush in the right drawn over playable characters)__
+**Resultado del truco de BGO en acción**
+__(arbusto a la derecha dibujado sobre personajes jugables)__
 
 <ImageZoom
 alt="Foreground_BGO"
@@ -188,9 +188,9 @@ width="200px"
 />
 
 ## NPC
-**Non-playable characters** - is the main game unit that building the game process: there are enemies, friends, items, power-ups, sceneries, etc. Each NPC has it's an algorithm and can be programmed.
+**Personajes no jugables**: es la unidad principal del juego que construye el proceso del juego: hay enemigos, amigos, elementos, potenciadores, escenarios, etc. Cada NPC tiene su algoritmo y se puede programar.
 
-_Placing of NPC's_
+_Colocación de NPC_
 
 <ImageZoom
 alt="PlacingNPC"
@@ -200,7 +200,7 @@ width="200px"
 />
 
 
-_Context menu of NPC_
+_Menú contextual de NPC_
 
 <ImageZoom
 alt="NPC_Direction"
@@ -209,20 +209,20 @@ width="200px"
 :border="true"
 />
 
-### NPC Properties
+### Propiedades de NPC
 
-Each NPC has switches and flags:
+Cada NPC tiene interruptores y banderas:
 
-* Default direction - NPC will start its movement in a defined direction. The direction option can have other names and values, for example, the name "Activation state" and values "On"/"Off", etc. Dependent on the algorithm and global settings.
-* Friendly - NPC won't communicate with playable characters and with other NPC's. Friendly NPC's can't be killed, can't hurt player, can't be taken or grabbed. Playable characters and other NPC's can't stay on top of the friendly NPCs.
-* Not movable - NPC will be idle irrespective of its algorithm.
-* Set as boss - (inside of SMBX this option calling as "Legacy Boss") This is a special flag that automatically enables special events for some bosses which supports them. For example: if NPC has the activated "Boss" flag, will be changed background music to the boss's theme and when the boss will be defeat, will be spawned a special bonus item or the game will be completed.
-* Talk message - The message which will be displayed when a player will try to talk with this NPC. After displaying this message will be activated event slot.
-* Generator - Making NPC generator. From the one point will be spawned new NPC's every each defined time delay.
-  * Generator type - Warp - NPC will be smoothly warped. Projectile - NPC will be appeared by sharply shoot.
-  * Generator direction - defining the direction of the spawn of NPC
+* Dirección predeterminada: el NPC comenzará su movimiento en una dirección definida. La opción de dirección puede tener otros nombres y valores, por ejemplo, el nombre "Estado de activación" y los valores "Activado" / "Desactivado", etc. Depende del algoritmo y la configuración global.
+* Amigable: los NPC no se comunicarán con los personajes jugables ni con otros NPC. Los NPC amistosos no se pueden matar, no pueden lastimar al jugador, no se pueden tomar ni agarrar. Los personajes jugables y otros NPC no pueden estar al tanto de los NPC amistosos.
+* No movible: NPC estará inactivo independientemente de su algoritmo.
+* Establecer como jefe - (dentro de SMBX esta opción se llama "Jefe heredado") Esta es una bandera especial que habilita automáticamente eventos especiales para algunos jefes que los apoyan. Por ejemplo: si el NPC tiene activada la bandera de "Jefe", se cambiará la música de fondo al tema del jefe y cuando el jefe sea derrotado, se generará un elemento de bonificación especial o se completará el juego.
+* Mensaje de conversación: el mensaje que se mostrará cuando un jugador intente hablar con este NPC. Después de mostrar este mensaje, se activará la ranura de eventos.
+* Generador - Haciendo generador de NPC. A partir de un punto, se generarán nuevos NPC en cada retraso de tiempo definido.
+  * Tipo de generador - Warp - NPC se deformará suavemente. Proyectil: aparecerá un NPC disparando bruscamente.
+  * Dirección del generador: define la dirección de la generación de NPC
 
-_Message box editing_
+_Edición de cuadro de mensaje_
 
 <ImageZoom
 alt="MessageBox"
@@ -232,31 +232,31 @@ width="200px"
 />
 
 <Note type="tip">
-Note: Don't forget: all new-line characters will not work correctly 
-with SMBX Engine (but will work in Moondust Engine natively).
-As a workaround for SMBX Engine, use the extra-spaces to cause a words wrap.
+Nota: No olvide: todos los caracteres de nueva línea no funcionarán correctamente.
+con SMBX Engine (pero funcionará en Moondust Engine de forma nativa).
+Como solución alternativa para SMBX Engine, utilice los espacios adicionales para provocar un ajuste de palabras.
 </Note>
 
 
-Some NPCs can have a special value:
+Algunos NPC pueden tener un valor especial:
 
-* **Contents** - this option has an ID of other NPC included in this NPC. Available for NPCs which marker as "containers".
-* **Spinbox with numeric value** - Some NPCs can have the numeric special value, for example, the position of the fire-bar segment.
-* **Special combo-box** - some NPCs can have switchable algorithms that can set individual NPCs algorithm from the list.
+* **Contenido**: esta opción tiene un ID de otro NPC incluido en este NPC. Disponible para NPC que se marcan como "contenedores".
+* **Spinbox con valor numérico**: algunos NPC pueden tener el valor especial numérico, por ejemplo, la posición del segmento de la barra de fuego.
+* **Cuadro combinado especial**: algunos NPC pueden tener algoritmos intercambiables que pueden establecer algoritmos de NPC individuales de la lista.
 
-* **Layer** - here is defined the layer which is an owner of this NPC. All items at first are members of the "Default" layer.
-* **Attach layer** - This is a special option: all static items are members of an attached layer, will move together with this NPC.
-
-
-Each NPC has the event slots:
-
-* **Activate** - This slot activating then NPC will appear on the player's visible zone.
-* **Death** - This slot activating then NPC will be defeat, destroyed, kicked, or taken (coins, power-ups, etc).
-* **Talk** - This slot activating them player was talked with this NPC.
-* **Layer is empty** - (In SMBX this option is named as "No more objects in layer") this slot activating when activated the "Death" slot and when on the same layer which is an owner if this NPC no more has any members.
+* **Capa**: aquí se define la capa que es propietaria de este NPC. Todos los elementos al principio son miembros de la capa "Predeterminada".
+* **Adjuntar capa**: esta es una opción especial: todos los elementos estáticos son miembros de una capa adjunta, se moverán junto con este NPC.
 
 
-_NPC Properties toolbox: Generator, NPC-Container, NPC-Container with spin box special value_
+Cada NPC tiene los espacios para eventos:
+
+* **Activar** - Esta ranura que se activa luego NPC aparecerá en la zona visible del jugador.
+* **Muerte**: esta ranura que se activa luego de NPC será derrotada, destruida, pateada o tomada (monedas, power-ups, etc.).
+* **Hablar** - Se habló con este NPC sobre esta ranura que activa al jugador.
+* **La capa está vacía** - (En SMBX esta opción se llama "No más objetos en la capa") esta ranura se activa cuando se activa la ranura "Muerte" y cuando está en la misma capa que es propietario si este NPC ya no tiene miembros.
+
+
+_Caja de herramientas de propiedades de PNJ: Generador, Contenedor de PNJ, Contenedor de PNJ con valor especial de cuadro de giro_
 
 <ImageZoom
 alt="Props_NPC_generator"
@@ -277,15 +277,15 @@ width="100px"
 
 
 
-### NPC-Containers
+### Contenedores NPC
 
-Everyone who worked with Legacy SMBX Engine, knows the "Egg", "Buried", "Bubble" and "Lakuti" flags. These flags packing selected items into the special NPC which calling as Container. The container can have included into them NPC's which can be extracted when the container will be destroyed or will be spawned by the container before it will be destroyed.
+Todos los que trabajaron con Legacy SMBX Engine conocen las banderas "Egg", "Buried", "Bubble" y "Lakuti". Estas banderas empaquetan artículos seleccionados en el NPC especial que llama como contenedor. El contenedor puede haber incluido en ellos NPC que se pueden extraer cuando el contenedor será destruido o será generado por el contenedor antes de que sea destruido.
 
-In the SMBX we are pressing the "Bubble=Yes" or "Buried=Yes" to place "Packed into the herb" or "Packet into the bubble" NPC.
+En el SMBX, estamos presionando "Burbuja = Sí" o "Enterrado = Sí" para colocar el NPC "Empacado en la hierba" o "Paquete en la burbuja".
 
-In PGE-Editor you can edit Containers. And therefore, for example, Herb will be more useful in the SMB2 group, because "The Lakutus are throwing Lakitus!" in the SMBX - is a secret tab that needs a lot of actions to open. Even in the PGE-Editor same "tab" is a non-secret "group". To place "burred" items, we should select the "herb" item and set its content before we will place them or you can set contents to already placed items by editing its properties. In the PGE secrets are absent - all Free and Open Source!
+En PGE-Editor puede editar contenedores. Y por lo tanto, por ejemplo, Herb será más útil en el grupo SMB2, porque "¡Los Lakutus están lanzando Lakitus!" en SMBX: es una pestaña secreta que necesita muchas acciones para abrirse. Incluso en el PGE-Editor, la misma "pestaña" es un "grupo" no secreto. Para colocar elementos "rebajados", debemos seleccionar el elemento "hierba" y establecer su contenido antes de que los coloquemos o puede establecer el contenido de los elementos ya colocados editando sus propiedades. En el PGE los secretos están ausentes: ¡todos son gratuitos y de código abierto!
 
-If we will pick up any NPC from the "Containers" category and they will be placed on the map with empty contents:
+Si recogemos algún NPC de la categoría "Contenedores" y se colocarán en el mapa con contenido vacío:
 
 <ImageZoom
 alt="001_placed_containers"
@@ -294,10 +294,10 @@ width="200px"
 :border="true"
 />
 
-But how to place them with contents?
+Pero, ¿cómo colocarlos con contenido?
 
-For already placed containers we can select alone or a group of NPC-Containers
-and open the "Properties" item of the context menu:
+Para contenedores ya colocados podemos seleccionar solo o un grupo de NPC-Containers
+y abra el elemento "Propiedades" del menú contextual:
 
 <ImageZoom
 alt="002_Open_props"
@@ -306,8 +306,8 @@ width="200px"
 :border="true"
 />
 
-Now we should click to the **\[empty\]** button to select target NPC as "content"
-of this container(s):
+Ahora deberíamos hacer clic en el **\[empty\]** botón para seleccionar el NPC objetivo como "contenido"
+de este contenedor(s):
 
 <ImageZoom
 alt="003_choice_included"
@@ -316,7 +316,7 @@ width="200px"
 :border="true"
 />
 
-Here you can select the necessary NPC which will be included in our container(s):
+Aquí puede seleccionar el NPC necesario que se incluirá en nuestro(s) contenedor(s):
 
 <ImageZoom
 alt="004_select_contain"
@@ -325,7 +325,7 @@ width="200px"
 :border="true"
 />
 
-Done, now the Bubble has the gold key as content:
+Listo, ahora la burbuja tiene la llave dorada como contenido:
 
 <ImageZoom
 alt="005_NPC_included"
@@ -334,7 +334,7 @@ width="200px"
 :border="true"
 />
 
-Same operations to set Butterfly's bullets:
+Las mismas operaciones para configurar las balas de Butterfly:
 
 <ImageZoom
 alt="008_lakitu_with_contains"
@@ -343,7 +343,7 @@ width="200px"
 :border="true"
 />
 
-And same to set the content of egg:
+Y lo mismo para configurar el contenido de huevo:
 
 <ImageZoom
 alt="009_egg"
@@ -352,9 +352,9 @@ width="200px"
 :border="true"
 />
 
-But how to place the container with already included content?
+Pero, ¿cómo colocar el contenedor con contenido ya incluido?
 
-**1)** Take necessary NPC from the item toolbox:<br/>
+**1)** Toma el NPC necesario de la caja de herramientas del artículo:<br/>
 <ImageZoom
 alt="006_placing_container"
 url="screenshots/LevelEditing/Items/NPC-Container/006_placing_container.png"
@@ -362,8 +362,8 @@ width="200px"
 :border="true"
 />
 
-**2)** Set in the opened Properties window contents of NPC and after place them
-to the map:
+**2)** Establecer en el contenido de la ventana Propiedades abierta de NPC y luego colocarlos
+al mapa:
 <ImageZoom
 alt="007_herb_with_contains"
 url="screenshots/LevelEditing/Items/NPC-Container/007_herb_with_contains.png"
@@ -371,10 +371,10 @@ width="200px"
 :border="true"
 />
 
-### Generators
+### Generadores
 
-Generator flag in the Properties dialog will make generator (or re-spawning
-point) of selected NPC
+La bandera del generador en el cuadro de diálogo Propiedades hará que el generador (o la reaparición
+punto) del NPC seleccionado
 
 <ImageZoom
 alt="Props_NPC_generator"
@@ -383,16 +383,16 @@ width="200px"
 :border="true"
 />
 
-* **NPC** will be appeared every time delay by two methods: warp and projectile.
-* **Warp** - NPC will appear smoothy and will start its regular movement on appearance.
-* **Projectile** - NPC will be sharply shooted from the generator.
+* **NPC** aparecerá cada retraso de tiempo por dos métodos: warp y proyectil.
+* **Warp**: el NPC se verá suave y comenzará su movimiento regular al aparecer.
+* **Proyectil** - NPC será disparado bruscamente desde el generador.
 
 
-In SMBX Editor generators haven't markers. In PGE Editor each generator have
-his marker as generator direction arrow:
+En SMBX Editor, los generadores no tienen marcadores. En PGE Editor, cada generador tiene
+su marcador como flecha de dirección del generador:
 
 
-_Generator types_
+_Tipos de generadores_
 
 <ImageZoom
 alt="Generator_types"
@@ -401,7 +401,7 @@ width="200px"
 :border="true"
 />
 
-_Generators in action_
+_Generadores en acción_
 
 <ImageZoom
 alt="Generators_in_action"
@@ -411,12 +411,12 @@ width="200px"
 />
 
 
-## Warps
+## Deformaciones
 
-**Warps** - are special units that giving to the player ability to teleport
-from the first warp point (Entrance) to the second (Exit). The player can teleport between different places of a single section, but also the player can teleport between different sections. This is one way to enter another section, but exclusion is some NPCs that can spawn a warp to another section.
+** Warps **: son unidades especiales que le dan al jugador la capacidad de teletransportarse
+desde el primer punto de deformación (Entrada) hasta el segundo (Salida). El jugador puede teletransportarse entre diferentes lugares de una sola sección, pero también el jugador puede teletransportarse entre diferentes secciones. Esta es una forma de ingresar a otra sección, pero la exclusión es algunos NPC que pueden generar una deformación a otra sección.
 
-_Warps and Doors toolbox_
+_Caja de herramientas para puertas y ventanas_
 
 <ImageZoom
 alt="001_warpList"
@@ -425,10 +425,10 @@ width="200px"
 :border="true"
 />
 
-All warp entries are shown in the special list:
+Todas las entradas de warp se muestran en la lista especial:
 
-In the SMBX all warps entries are hidden and you can't see them. In the
-PGE-Editor is possible to get a full list of warps:
+En SMBX, todas las entradas de warps están ocultas y no puede verlas. En el
+PGE-Editor es posible obtener una lista completa de warps:
 
 <ImageZoom
 alt="LevelGlobalWarpList"
@@ -437,7 +437,7 @@ width="200px"
 :border="true"
 />
 
-_Context menu of warp point_
+_Menú contextual del punto de deformación_
 
 <ImageZoom
 alt="WarpContextMenu"
@@ -446,46 +446,45 @@ width="200px"
 :border="true"
 />
 
-### Properties
+### Propiedades
 
-**Warps have next flags:**
+**Warps tienen siguientes banderas:**
 
-* **No Vehicles** - (In SMBX this option was named as "No Yoshi") When a playable character will enter into this warp, he/she will exit without a vehicle (Vehicle will be returned when a player will exit from this level).
-* **Allow items** - (In SMBX this option was named as "Allow NPC") With this flag playable character can get the carryed item through this warp. Without this flag, items will be leaven about the entrance of this warp.
-* **Locked** - This flag will close the door with a lock. To open this warp player should take a key. When the key was applied, the warp will be opened for entering.
-* **Need a bomb** - This flag will close the door with a lock. To open this warp need to explode lock with any explosive projectile, bomb, etc. When an explosion happens around, a warp will be opened for entering.
-* **Special state only** - This flag will disallow entering of players in any states except one special (which defined in the configuration)
-* **Two-way warp** - Allows players entering into this warp from both sides.
+* **Sin vehículos** - (En SMBX esta opción se llamaba "No Yoshi") Cuando un personaje jugable entra en esta urdimbre, saldrá sin un vehículo (el vehículo se devolverá cuando un jugador salga de este nivel).
+* **Permitir elementos** - (En SMBX esta opción se llamaba "Permitir NPC") Con esta bandera, el personaje jugable puede obtener el elemento transportado a través de esta urdimbre. Sin esta bandera, los elementos estarán fermentados alrededor de la entrada de esta urdimbre.
+* **Bloqueado**: esta bandera cerrará la puerta con un candado. Para abrir este reproductor warp conviene coger una llave. Cuando se aplicó la clave, la urdimbre se abrirá para ingresar.
+* **Necesita una bomba**: esta bandera cerrará la puerta con una cerradura. Para abrir esta urdimbre es necesario hacer explotar la cerradura con cualquier proyectil explosivo, bomba, etc. Cuando ocurra una explosión, se abrirá una urdimbre para entrar.
+* **Solo estado especial**: esta bandera no permitirá la entrada de jugadores en cualquier estado excepto en uno especial (que se define en la configuración)
+* **Warp bidireccional**: permite a los jugadores entrar en este warp desde ambos lados.
 
-**Special flags**
+**Banderas especiales**
 
-* **Level entrance** - this option allows to use alone point. With this flag impossible to enter in this warp, this warp can be used just for entrance into this level, for example, from a world map or another level with the definition of target warp ID.
-* **Level exit** - this option allows to use alone point. When the playable character enters into this warp, level exiting will be caused.
+* **Nivel de entrada** - esta opción permite utilizar un solo punto. Con esta bandera imposible de ingresar en esta urdimbre, esta urdimbre se puede usar solo para ingresar a este nivel, por ejemplo, desde un mapa del mundo u otro nivel con la definición de ID de deformación objetivo.
+* **Salida de nivel** - esta opción permite utilizar un solo punto. Cuando el personaje jugable entra en esta deformación, se producirá una salida de nivel.
 
-**Values and options**
+** Valores y opciones **
 
-Stars lock. Stars - are a collectible conventional units which are identifies entrance permissions to specific warps / rooms / sections / levels. There are can be used to make games more interested in a quest to find those units. In various games, stars are has a different name. For example, in the A2XT game,
-there are leeks.
+Bloqueo de estrellas. Estrellas: son unidades convencionales coleccionables que identifican permisos de entrada a urdimbres / habitaciones / secciones / niveles específicos. Se pueden usar para hacer que los juegos estén más interesados ​​en una búsqueda para encontrar esas unidades. En varios juegos, las estrellas tienen un nombre diferente. Por ejemplo, en el juego A2XT,
+hay puerros.
 
-* **Stars needed** - This is a limit of star number. The player can enter into this warp when he/she collect a defined number of stars.
-* **Need a stars message** - Show this message in an attempt to enter into this warp without a necessary number of stars.
-* **Don't show stars number** - if this warp follows to another level, several stars on the target level are will not be shown.
-* **X** and **Y** - This is an exit to the world map with target coordinates. If coordinates are defined, this warp will be an exit into the world map with teleporting to the target point by coordinates.
-* **Warp type** - Definition of the warp type: Instant, Pipe, Door, or Portal.
-* **Pipe directions** - This is a direction of the warp, which can be used for "pipe" warp type only.
-* **Warp type** - Definition of the warp type: Instant, Pipe, or Door.
-* **Pipe directions** - This is a direction of the warp, which can be used for "pipe" warp type only.
-* **Level file name** - This is a definition of the entrance into another level file to make a warp into them.
-* **Door #** - (In the SMBX this option was named as "Warp to"). If the value is 0 (Normal entrance) player will start the target level from his(her) default start point, else the player will enter into level by target warp point by ID.
-
+* **Se necesitan estrellas**: este es un límite de número de estrellas. El jugador puede entrar en esta urdimbre cuando recolecta un número definido de estrellas.
+* **Necesita un mensaje de estrellas**: muestre este mensaje en un intento de entrar en esta urdimbre sin un número necesario de estrellas.
+* **No mostrar el número de estrellas**: si esta deformación sigue a otro nivel, no se mostrarán varias estrellas en el nivel objetivo.
+* **X** e **Y**: esta es una salida al mapa mundial con las coordenadas del objetivo. Si se definen las coordenadas, esta deformación será una salida al mapa mundial con teletransportación al punto objetivo por coordenadas.
+* **Tipo de deformación**: definición del tipo de deformación: Instantáneo, Tubería, Puerta o Portal.
+* **Direcciones de la tubería**: esta es una dirección de la urdimbre, que se puede utilizar solo para el tipo de urdimbre "tubería".
+* **Tipo de deformación**: definición del tipo de deformación: Instantánea, Tubería o Puerta.
+* **Direcciones de la tubería**: esta es una dirección de la urdimbre, que se puede utilizar solo para el tipo de urdimbre "tubería".
+* **Nombre de archivo de nivel**: esta es una definición de la entrada a otro archivo de nivel para hacer una deformación en ellos.
+* **Door #** - (En SMBX, esta opción fue nombrada como "Warp to"). Si el valor es 0 (entrada normal), el jugador comenzará el nivel objetivo desde su punto de inicio predeterminado, de lo contrario, el jugador entrará en el nivel por punto de deformación objetivo por ID.
 <Note type="tip">
-Note: If you were removed some warp entry (entries), to re-count warp IDs you should reload level (press F8 key)!
+Nota: Si se eliminó alguna entrada de warp (entradas), para volver a contar las ID de warp, debe volver a cargar el nivel (presione la tecla F8).
 </Note> 
 
 
-### Warp types
+### Tipos de deformación
 
-The warps have three types: Instant, Pipe, Door, and Portal **(which is not available in SMBX 1.3)**.
+Los warps tienen tres tipos: Instantáneo, Pipe, Door y Portal **(que no está disponible en SMBX 1.3)**.
 
 <ImageZoom
 alt="006_WarpTypes"
@@ -494,9 +493,9 @@ width="200px"
 :border="true"
 />
 
-**Instant or Portal** - Player will immediately teleport once they touch the warp entrance point. The difference between "Instant" and "Portal" types:
-* The "Instant" warp resets the X speed after teleport.
-* The "Portal" warp keeps the same motion/flying speed after teleport.
+**Instantáneo o Portal**: el jugador se teletransportará inmediatamente una vez que toque el punto de entrada warp. La diferencia entre los tipos "Instantáneo" y "Portal":
+* La deformación "Instantánea" restablece la velocidad X después del teletransporte.
+* La deformación "Portal" mantiene el mismo movimiento / velocidad de vuelo después del teletransporte.
 
 <ImageZoom
 alt="008_Instants"
@@ -505,7 +504,7 @@ width="200px"
 :border="true"
 />
 
-**Door** - The player can enter into this warp only when it is contacted with the entrance point and when a player will press the UP key.
+**Puerta**: el jugador puede entrar en esta urdimbre solo cuando se contacta con el punto de entrada y cuando un jugador presione la tecla ARRIBA.
 
 <ImageZoom
 alt="007_Doors"
@@ -515,7 +514,7 @@ width="200px"
 />
 
 
-**Pipe** - this is a directional warp. To enter into this warp player need to contact the entrance warp point and press the key equal to the defined direction. The player will be exited from the exit point with a defined exit direction.
+**Tubería**: esta es una urdimbre direccional. Para ingresar a este warp, el jugador necesita contactar el punto de warp de entrada y presionar la tecla igual a la dirección definida. El jugador saldrá del punto de salida con una dirección de salida definida.
 
 <ImageZoom
 alt="009_Pipes1"
@@ -534,15 +533,15 @@ width="200px"
 :border="true"
 />
 
-### Create the warp entry
+### Crea la entrada warp
 
-Each warp has its entry. At first, you need to add a new warp entry into the list:
+Cada urdimbre tiene su entrada. Al principio, debe agregar una nueva entrada de deformación a la lista:
 
 ![002_addWarp](screenshots/LevelEditing/Warps/002_addWarp.png)
 
-And now, you can place points (or you can define warp options before).
+Y ahora, puede colocar puntos (o puede definir opciones de deformación antes).
 
-To place an entrance or exit point, you should press the "Set Entrance" to place or jump to, if already placed, the entrance point
+Para colocar un punto de entrada o salida, debe presionar "Establecer entrada" para colocar o saltar, si ya está colocado, el punto de entrada.
 
 <ImageZoom
 alt="003_setEntrance"
@@ -551,7 +550,7 @@ width="200px"
 :border="true"
 />
 
-and "Set Exit" to place or jump to, if already placed, exit point.
+y "Establecer salida" para colocar o saltar al punto de salida, si ya lo ha hecho.
 
 <ImageZoom
 alt="004_setExit"
@@ -561,10 +560,10 @@ width="200px"
 />
 
 <Note type="tip">
-If the grayed checkbox at the left side of the button is set, that means the entrance/exit point has already been placed. The press on the button will result in the camera jump to the location of the placed point.
+Si la casilla de verificación gris en el lado izquierdo del botón está configurada, eso significa que el punto de entrada / salida ya se ha colocado. Al presionar el botón, la cámara saltará a la ubicación del punto colocado.
 </Note>
 
-_Placing of the Exit warp point to the map_
+_Colocación del punto de deformación de salida en el mapa_
 
 <ImageZoom
 alt="005_setExit"
@@ -575,23 +574,23 @@ width="200px"
 
 
 <Note type="warning">
-Don't forget to set up warp settings!
+¡No olvide configurar los ajustes de deformación!
 </Note>
 
 <Note type="tip">
-Note: the warp entry must have both placed points or warp entry will
-be marked as broken and will not be saved into the file.
-Exclusion: You can have single-point warp entries when they are have
-one of those flags: "Level Exit" or "Level entrance".
+Nota: la entrada warp debe tener ambos puntos colocados o la entrada warp
+se marcará como roto y no se guardará en el archivo.
+Exclusión: puede tener entradas de deformación de un solo punto cuando se tienen
+una de esas banderas: "Nivel de salida" o "Nivel de entrada".
 </Note>
 
 
-### Two-way warp
+### bidireccional warp
 
-To make two-way warps just use a "Two-side warp" check box, and the player will be able to enter this warp from both sides.
+Para hacer deformaciones bidireccionales simplemente use la casilla de verificación "Deformación de dos lados", y el jugador podrá ingresar a esta deformación desde ambos lados.
 
 <Note type="warning">
-Legacy SMBX Engine and 38A older than 1.4.3 doesn't support that. If you targeting your levels to the legacy engines, you should make a second warp entry with opposite point placements:
+Legacy SMBX Engine y 38A anteriores a 1.4.3 no lo admiten. Si apunta sus niveles a los motores heredados, debe realizar una segunda entrada warp con ubicaciones de puntos opuestos:
 </Note>
 
 <ImageZoom
@@ -602,13 +601,13 @@ width="200px"
 />
 
 
-### Locked warp
+### Bloqueado warp
 
-Locked warp - is a warp with a closed entrance which possible to open with a key:
+bloqueado warp - es una urdimbre con una entrada cerrada que se puede abrir con una llave:
 
 ![018_locked_door](screenshots/LevelEditing/Warps/018_locked_door.png)
 
-To make a locked door, you need to set the "Locked" flag into the 'checked' state:
+Para hacer una puerta cerrada, debe configurar la bandera "Bloqueado" en el estado "marcado":
 
 <ImageZoom
 alt="019_Locked_door"
@@ -617,11 +616,11 @@ width="200px"
 :border="true"
 />
 
-### Star limited warp
+### limitada en estrella warp
 
-To enter into this warp you must have a specified number of stars!
+¡Para entrar en esta urdimbre debes tener un número específico de estrellas!
 
-_Locked door_
+_Puerta cerrada_
 
 <ImageZoom
 alt="020_Stared_door"
@@ -631,7 +630,7 @@ width="200px"
 />
 
 
-To lock warp entrance with stars, you must set the count of stars value, needed for the ability to enter into this warp:
+Para bloquear la entrada de la urdimbre con estrellas, debe establecer el valor de recuento de estrellas, necesario para poder entrar en esta urdimbre:
 
 <ImageZoom
 alt="021_Stared_door"
@@ -641,11 +640,11 @@ width="200px"
 />
 
 
-### Level entrance and exit
+### Nivel de entrada y salida
 
-There are special flags that allowing to place alone warp point.
+Hay banderas especiales que permiten colocar un solo punto de deformación.
 
-**Level entrance** - allows placing alone exit point. Set this flag if you wish to use this warp as an entrance into this level. With this flag, the warp will have no entrance point.
+**Nivel de entrada** - permite colocar solo el punto de salida. Establezca esta bandera si desea utilizar esta urdimbre como una entrada a este nivel. Con esta bandera, la urdimbre no tendrá punto de entrada.
 
 <ImageZoom
 alt="014_entrance_to_level"
@@ -654,8 +653,8 @@ width="200px"
 :border="true"
 />
 
-**Level Exit** - allows placing alone entrance point. The level will be exited
-when a player will enter into this warp.
+**Nivel de salida** - permite colocar un solo punto de entrada. Se saldrá del nivel
+cuando un jugador entrará en esta urdimbre.
 
 <ImageZoom
 alt="013_Exit_from_level"
@@ -665,18 +664,18 @@ width="200px"
 />
 
 
-### Warp to another level
+### Deformar a otro nivel
 
 
-The player will be entered into another level if he(she) enter into this warp.
+El jugador entrará en otro nivel si él (ella) entra en esta urdimbre.
 
-You should simply define the level filename in the Level file field. You also can browse the level file and select the necessary file from the list
+Simplemente debe definir el nombre del archivo de nivel en el campo Archivo de nivel. También puede examinar el archivo de nivel y seleccionar el archivo necesario de la lista.
 
 ![016_target_warp_ID](screenshots/LevelEditing/Warps/016_target_warp_ID.png)
 
-The number of the door will show: where the player must be entered. If the value is a zero - the player will start the level from his(her) default start point.
+El número de la puerta mostrará: donde se debe ingresar el jugador. Si el valor es cero, el jugador comenzará el nivel desde su punto de inicio predeterminado.
 
-_Level file list of the same folder which contains editing level file_
+_Lista de archivos de nivel de la misma carpeta que contiene el archivo de nivel de edición_
 
 <ImageZoom
 alt="015_warp_to_another_level"
@@ -686,15 +685,15 @@ width="200px"
 />
 
 
-### Warp to the world map
+### Deformar al mapa del mundo
 
-You also can create the exit to specified coordinates of the world map. You need to simply define the world map coordinates to make the exit point into the world map:
+También puede crear la salida a coordenadas específicas del mapa mundial. Simplemente debe definir las coordenadas del mapa mundial para convertir el punto de salida en el mapa mundial:
 
-You also can press the "Set" button and select a target point on the world map in interactive mode!
+¡También puede presionar el botón "Establecer" y seleccionar un punto de destino en el mapa mundial en modo interactivo!
 
 ![017_World_map_coordinates](screenshots/LevelEditing/Warps/017_World_map_coordinates.png)
 
-_World map point selection dialog_
+_Cuadro de diálogo de selección de puntos del mapa mundial_
 
 <ImageZoom
 alt="GotoWorldMap"
@@ -704,36 +703,36 @@ width="200px"
 />
 
 
-## Physical environments
-**Physical environments** (Water, Quicksand, etc.) - there are a special
-units that defining the physical environment inside of their rectangular area.
+## Entornos físicos
+**Entornos físicos** (agua, arenas movedizas, etc.): hay un especial
+Unidades que definen el entorno físico dentro de su área rectangular.
 
-**Available environment types:**
-* **Water** - a swimmable liquid environment.
-* **Quicksand** - is a loose substance environment. Everything stuck inside it with a low ability to jump. To escape from it, need to apply any effort to jump.
-* **Gravitational field** - **\[WIP\]** neutral environment (which keeps global environment or environment of other environment rectangles) which slows or redirects a gravitation coefficient.
-* **Touch event (Once)** - **\[WIP\]** neutral environment which once triggers a specific event when the playable character touches this environment.
-* **Touch event (Every frame)** - **\[WIP\]** neutral environment which triggers event every game loop while playable character keeps contact with this environments.
-* **NPC Touch event (Once)** - **\[WIP\]** neutral environment which once triggers a specific event when any NPC touches this environment.
-* **NPC Touch event (Every frame)** - **\[WIP\]** neutral environment which triggers event every game loop while any NPC keeps contact with this environments.
-* **Mouse click event** - **\[WIP\]** neutral environment that triggers an event when a player will click it with a mouse pointer.
-* **Collision script** - **\[WIP\]**
-* **Mouse click script** - **\[WIP\]** neutral environment which executes a script function when a player will click it with a mouse pointer.
-* **Collision event** - **\[WIP\]**
-* **Air chamber** - Air environment which overrides other physical environments with air environment.
+**Tipos de entornos disponibles:**
+* **Agua**: un entorno líquido apto para nadar.
+* **Quicksand** - es un entorno de sustancias sueltas. Todo se atascó en su interior con poca capacidad para saltar. Para escapar de él, es necesario aplicar cualquier esfuerzo para saltar.
+* **Campo gravitacional** - **\[WIP\]** entorno neutral (que mantiene el entorno global o el entorno de otros rectángulos de entorno) que ralentiza o redirige un coeficiente de gravitación.
+* **Toque evento (Una vez)** - **\[WIP\]** entorno neutral que una vez desencadena un evento específico cuando el personaje jugable toca este entorno.
+* **Toque el evento (cada cuadro)** - **\[WIP\]** entorno neutral que activa el evento en cada bucle del juego mientras el personaje jugable se mantiene en contacto con este entorno.
+* **Evento NPC Touch (Una vez)** - **\[WIP\]** entorno neutral que una vez desencadena un evento específico cuando cualquier NPC toca este entorno.
+* **Evento NPC Touch (Cada cuadro)** - **\[WIP\]** entorno neutral que activa el evento en cada bucle del juego mientras cualquier NPC se mantiene en contacto con estos entornos.
+* **Evento de clic del mouse** - **\[WIP\]** entorno neutral que desencadena un evento cuando un jugador hace clic en él con el puntero del mouse.
+* **Secuencia de comandos de colisión** - **\[WIP\]**
+* **Secuencia de comandos de clic del mouse** - **\[WIP\]** entorno neutral que ejecuta una función de secuencia de comandos cuando un jugador hace clic en ella con el puntero del mouse.
+* **Evento de colisión** - **\[WIP\]**
+* **Cámara de aire**: entorno de aire que anula otros entornos físicos con un entorno de aire.
 
 <Note type="warning">
-Important: Legacy SMBX Engine and SMBX2 support only two types of physical environments: Water and Quicksand. SMBX 1.3 and SMBX2 doesn't support other physical environment types. Only PGE Engine and SMBX-38A.
+Importante: Legacy SMBX Engine y SMBX2 solo admiten dos tipos de entornos físicos: agua y arenas movedizas. SMBX 1.3 y SMBX2 no son compatibles con otros tipos de entornos físicos. Solo motor PGE y SMBX-38A.
 </Note>
 
-Because the Physical environment zone is a sizable element, the placing process is going by rectangle drawing. To place them, you need to select on toolbar one of two icons:
+Debido a que la zona del entorno físico es un elemento considerable, el proceso de colocación se realiza mediante un dibujo rectangular. Para colocarlos, debe seleccionar en la barra de herramientas uno de los dos íconos:
 
 ![DW](screenshots/LevelEditing/Physics/draw_water.png) ![DQ](screenshots/LevelEditing/Physics/draw_sand.png)
 
-<span style="color: blue;">Blue</span> - draw water zone,
-<span style="color: #fde910;">Yellow</span> - draw quicksand zone.
+<span style="color: blue;">Blue</span> - dibujar zona de agua,
+<span style="color: #fde910;">Yellow</span> - dibujar la zona de arenas movedizas.
 
-Placed physical environment rectangles: Green - water, Yellow - quicksand
+Rectángulos del entorno físico colocados: verde - agua, amarillo - arenas movedizas
 
 <ImageZoom
 alt="05_paced_areas"
@@ -742,7 +741,7 @@ width="200px"
 :border="true"
 />
 
-You can change the environment type of the placed rectangle by a context menu:
+Puede cambiar el tipo de entorno del rectángulo colocado mediante un menú contextual:
 
 <ImageZoom
 alt="06_change_type"
@@ -752,22 +751,22 @@ width="200px"
 />
 
 
-Also, you can easily resize an environment rectangle:
+Además, puede cambiar fácilmente el tamaño de un rectángulo de entorno:
 
-To start resizing, you should open the "Resize" context menu item and you will see a yellow rectangle which a "sizer". Move corner dots or sides to define the new size of the block. When you are done resizing press the ENTER key to accept the new size, and then the block will have a new size. If you will press the ESC key you will cancel resizing and the block will keep it's current it's size.
+Para comenzar a cambiar el tamaño, debe abrir el elemento del menú contextual "Cambiar tamaño" y verá un rectángulo amarillo que es un "medidor". Mueva los puntos o los lados de las esquinas para definir el nuevo tamaño del bloque. Cuando haya terminado de cambiar el tamaño, presione la tecla ENTER para aceptar el nuevo tamaño, y luego el bloque tendrá un nuevo tamaño. Si presiona la tecla ESC, cancelará el cambio de tamaño y el bloque mantendrá su tamaño actual.
 
 <Note type="tip">
-Note: If you wish to get more features of resizer box (green net which defined
-new size of the section), click inside of them by right mouse button.
+Nota: Si desea obtener más funciones del cuadro de cambio de tamaño (red verde que definió
+nuevo tamaño de la sección), haga clic dentro de ellos con el botón derecho del mouse.
 </Note> 
 
-**The context menu has actions**
-* **Cut top here** - moves the top boundary of the box to the current mouse position
-* **Cut left here** - moves left boundary of the box to the current mouse position
-* **Cut right here** - moves the right boundary of the box to the current mouse position
-* **Cut bottom here** - moves the bottom boundary of the box to the current mouse position
-* **Don't snap to grid** - disables grid snapping on moving of box boundaries
-* **Disable minimal size limit** - gives the ability to set size less than minimally available size
+**El menú contextual tiene acciones**
+* **Cortar la parte superior aquí**: mueve el límite superior del cuadro a la posición actual del mouse
+* **Cortar a la izquierda aquí**: mueve el límite izquierdo del cuadro a la posición actual del mouse
+* **Cortar aquí**: mueve el límite derecho del cuadro a la posición actual del mouse
+* **Cortar la parte inferior aquí**: mueve el límite inferior del cuadro a la posición actual del mouse
+* **No ajustar a la cuadrícula**: deshabilita el ajuste de la cuadrícula al mover los límites del cuadro
+* **Deshabilitar el límite de tamaño mínimo**: brinda la posibilidad de establecer un tamaño menor que el tamaño mínimo disponible
 
 <ImageZoom
 alt="PhysEnvResizing"
@@ -776,14 +775,14 @@ width="200px"
 :border="true"
 />
 
-## Player points
+## Puntos de jugador
 
-This is a point that defines an initial position of a playable character on the level. Every time you starting a level, the playable character will appear at this point.
+Este es un punto que define la posición inicial de un personaje jugable en el nivel. Cada vez que comienzas un nivel, el personaje jugable aparecerá en este punto.
 
-To place a player point, you need to click one of the toolbar buttons (![P1](screenshots/LevelEditing/players/player1_start.png) or ![P2](screenshots/LevelEditing/players/player2_start.png)): where is red - it's for a 1'st player and the green for 2'nd.
+Para colocar un punto de jugador, debe hacer clic en uno de los botones de la barra de herramientas (![P1](screenshots/LevelEditing/players/player1_start.png) o ![P2](screenshots/LevelEditing/players/player2_start.png)): ¿Dónde está el rojo? Es para el 1er jugador y el verde para el 2º.
 
-In the editor start points will be shown as flags (They are may look different with a dependence on a currently used UI theme):
+En el editor, los puntos de inicio se mostrarán como banderas (pueden verse diferentes dependiendo de un tema de interfaz de usuario utilizado actualmente):
 
 ![PlayerPoints](screenshots/LevelEditing/Items/Player_startPoints_2.png)
 
-If points will not be defined, the level will automatically end, because it hasn't available playable characters on the level. Also, you can use doors as the player's start points, but you need to define the array index of this door in the world map or on another level.
+Si no se definen los puntos, el nivel terminará automáticamente, porque no hay personajes jugables disponibles en el nivel. Además, puedes usar puertas como puntos de inicio del jugador, pero necesitas definir el índice de matriz de esta puerta en el mapa mundial o en otro nivel.

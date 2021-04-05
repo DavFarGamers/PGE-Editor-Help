@@ -1,15 +1,15 @@
-# Clipboard
+# Portapapeles
 
-You can copy, cut, and paste every block, BGO, NPC, or physical environment area in the level editor and any object on the world map.
+Puede copiar, cortar y pegar cada bloque, BGO, NPC o área del entorno físico en el editor de niveles y cualquier objeto en el mapa mundial.
 
-If you want to paste anything, your cursor changes the look into a paste icon, and you enter paste-mode. In this mode, you can paste your copied items. Items will appear at the top-left corner of your cursor.
+Si desea pegar algo, el cursor cambia el aspecto a un icono de pegar y entra en el modo pegar. En este modo, puede pegar sus elementos copiados. Los elementos aparecerán en la esquina superior izquierda de su cursor.
 
-_Place selecting cursor for paste operation_
+_Coloque el cursor de selección para la operación de pegado_
 
 ![PasteCursor](screenshots/Interface/cur_pasta.png)
 
 
-_Copyed and pasted item group_
+_Grupo de elementos copiado y pegado_
 
 <ImageZoom 
   alt="Copy"

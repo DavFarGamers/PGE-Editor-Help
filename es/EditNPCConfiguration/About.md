@@ -1,61 +1,61 @@
-# What is NPC.txt?
-## Overview
-NPC.txt is a custom configuration file which have name like npc-12.txt, npc-46.txt and contains the some parameters for custom NPC. The NPC.txt came from SMBX 1.3 and this is a part of SMBX64 standard.
-## Parameters
-The NPC.txt have limited options for using, and PGE can use more options than SMBX. Unknown options will be ignored by SMBX.
+# ¿Qué es NPC.txt?
+## Visión de conjunto
+NPC.txt es un archivo de configuración personalizado que tiene un nombre como npc-12.txt, npc-46.txt y contiene algunos parámetros para NPC personalizado. El NPC.txt proviene de SMBX 1.3 y es parte del estándar SMBX64.
+## Parámetros
+El NPC.txt tiene opciones limitadas de uso, y PGE puede usar más opciones que SMBX. SMBX ignorará las opciones desconocidas.
 
-| SMBX64 Standard Parameters | Description | Values |
+| Parámetros estándar SMBX64 | Descripción | Valores |
 |---------|-------------|--------|
-| gfxoffsetx | Moves the graphic in the x direction | [+/- numbers] |
-| gfxoffsety | Moves the graphic in the y direction | [+/- numbers] |
-| width | NPC's width | [+numbers] | 
-| height | NPC's height | [+numbers] |
-| gfxwidth | NPC's graphics width | [+numbers] | 
-| gfxheight | NPC's graphics height | [+numbers] |
-| score | Score you get by killing: 0 10 100 200 400 800 1000 2000 4000 8000 1up 2up 3up 5up | [0-13] |
-| playerblock | Makes NPCs act like blocks to the players | [1,0] |
-| playerblocktop | Makes the player able to stand on the NPC | [1,0] |
-| npcblock | Makes the NPC act like a block to other NPCs | [1,0] |
-| npcblocktop | Makes NPCs able to stand on the NPC | [1,0] |
-| grabside | Gives the player the ability to grab NPCs from the side | [1,0] |
-| grabtop | Gives Mario the ability to grab NPC's like shy guys | [1,0] |
-| jumphurt | If set to 1, the player gets hit from landing on the enemy | [1,0] |
-| nohurt | If set to 1, the NPC doesn't hurt you |[1,0] |
-| noblockcollision | If set to 1, the NPC doesn't interact with blocks | [1,0] |
-| cliffturn | If set to 1, enemy turn on a cliff | [1,0] |
-| noyoshi | If set to 1 you can't eat the NPC | [1,0] |
-| foreground | If set to 1, the NPC is in front of everything | [1,0] |
-| speed | Speed multiplier: how fast the NPC moves (the number is what the speed is multiplied by: 0 = no speed, 1 = default, 2 = twice as fast as default, 3 = thrice as fast etc. Negative values make it move backwards | [+/-numbers] |
-| nofireball | If set to 1, the NPC can't be killed by fireballs | [1,0] |
-| noiceball | If set to 1, enemy can't freeze when an ice ball touches it | [1,0] |
-| nogravity | If set to 1, the NPC walks in the air | [1,0] |
-| frames | Sets the number of frames the NPC should have | [+number] |
-| framespeed | Frame speed modificator: how fast the NPC animates (0-7 are eighths of the default speed, 8 is the default speed and 9 and bigger are the default speeds multiplied | [+numbers] |
-| framestyle | Names the style the frames should switch | [0-2] |
+| gfxoffsetx | Mueve el gráfico en la dirección x | [+/- numbers] |
+| gfxoffsety | Mueve el gráfico en la dirección y| [+/- numbers] |
+| width | Ancho de NPC | [+numbers] | 
+| height | Altura del NPC | [+numbers] |
+| gfxwidth | Ancho de gráficos de NPC | [+numbers] | 
+| gfxheight | Altura de los gráficos del NPC | [+numbers] |
+| score | Puntuación que obtienes matando: 0 10 100 200 400 800 1000 2000 4000 8000 1up 2up 3up 5up | [0-13] |
+| playerblock | Hace que los NPC actúen como bloques para los jugadores. | [1,0] |
+| playerblocktop | Hace que el jugador pueda pararse en el NPC. | [1,0] |
+| npcblock | Hace que el NPC actúe como un bloqueo para otros NPC | [1,0] |
+| npcblocktop | Hace que los NPC puedan pararse sobre el NPC | [1,0] |
+| grabside | Le da al jugador la capacidad de agarrar NPC desde el costado. | [1,0] |
+| grabtop | Le da a Mario la habilidad de agarrar NPC como chicos tímidos. | [1,0] |
+| jumphurt | Si se establece en 1, el jugador recibe un golpe al aterrizar sobre el enemigo. | [1,0] |
+| nohurt | Si se establece en 1, el NPC no te hace daño. |[1,0] |
+| noblockcollision | Si se establece en 1, el NPC no interactúa con los bloques. | [1,0] |
+| cliffturn | Si se establece en 1, el enemigo gira en un acantilado | [1,0] |
+| noyoshi | Si se establece en 1, no se puede comer al NPC | [1,0] |
+| foreground | Si se establece en 1, el NPC está delante de todo. | [1,0] |
+| speed | Multiplicador de velocidad: qué tan rápido se mueve el NPC (el número es lo que la velocidad se multiplica por: 0 = sin velocidad, 1 = defecto, 2 = El doble de rápido que el predeterminado, 3 = tres veces más rápido, etc. Los valores negativos hacen que se mueva hacia atrás | [+/-numbers] |
+| nofireball | Si se establece en 1, las bolas de fuego no pueden matar al NPC. | [1,0] |
+| noiceball | Si se establece en 1, el enemigo no se puede congelar cuando una bola de hielo lo toca. | [1,0] |
+| nogravity | Si se establece en 1, el NPC camina en el aire. | [1,0] |
+| frames | Establece el número de fotogramas que debe tener el NPC | [+number] |
+| framespeed | Modificador de velocidad de fotogramas: qué tan rápido se anima el NPC (0-7 Son octavos de la velocidad predeterminada, 8 es la velocidad predeterminada y 9 y más grandes son las velocidades predeterminadas multiplicadas | [+numbers] |
+| framestyle | Nombra el estilo que deben cambiar los marcos | [0-2] |
 
-| Framestyle | Description |
+| Framestyle | Descripción |
 |---------|-------------|
-| framestyle=0 |Acts like a goomba, means, both left and right movement use the same sprite |
-| framestyle=1 |The NPC have sprites for both left and right, the first half of the sprite sheet is for left movement, the later half is for the right movement |
-| framestyle=2 |NPC has both left and right movement, and upside down movement for when the NPC is grabbed (such as the SMB2 enemies) |
+| framestyle=0 |Actúa como un goomba, es decir, tanto el movimiento hacia la izquierda como hacia la derecha usan el mismo sprite |
+| framestyle=1 |El NPC tiene sprites tanto para la izquierda como para la derecha, la primera mitad de la hoja de sprites es para el movimiento a la izquierda, la última mitad es para el movimiento a la derecha |
+| framestyle=2 |NPC tiene movimiento tanto a la izquierda como a la derecha, y movimiento al revés para cuando se agarra al NPC (como los enemigos SMB2) |
 
-| Extended Parameters (doesn't work in smbx) | Description | Values |
+| Parámetros extendidos (no funciona en smbx) | Descripción | Valores |
 |---------|-------------|--------|
-| nohammer |If set to 1, enemy can't be killed by hammer |[1,0] |
-| noshell |If set to 1, enemy can't be killed by shell or other NPCs |[1,0] |
-| name |Defines the NPC's name which will be used in the editor |["string"] |
-| health |Defines the health value of NPC. Useful for creation of powerful enemies or bosses |[+numbers] |
-| grid |Re-defines alignment grid size for this NPC in the editor |[+numbers] |
-| gridoffsetx |Defines horisontal offset at aligned by grid coordinate value in the editor |[+/-numbers] |
-| gridoffsety |Defines vertical offset at aligned by grid coordinate value in the editor |[+/-numbers] |
-| gridalign |Defines align mode in the editor: 0 - at center of the global cell, 1 - at edge of the global cell |[0,1] |
-| image |Defines the sprite image file name in the editor. Allows to have a custom image file names |["string"] |
-| script |Custom NPC-AI Algorithm script in PGE |["string"] |
+| nohammer |Si se establece en 1, el enemigo no puede morir con un martillo. |[1,0] |
+| noshell |Si se establece en 1, el enemigo no puede ser asesinado por proyectiles u otros NPC. |[1,0] |
+| name |Define el nombre del NPC que se utilizará en el editor. |["string"] |
+| health |Define el valor de salud de NPC. Útil para la creación de poderosos enemigos o jefes. |[+numbers] |
+| grid |Vuelve a definir el tamaño de la cuadrícula de alineación para este NPC en el editor. |[+numbers] |
+| gridoffsetx |Define el desplazamiento horizontal alineado por el valor de coordenadas de la cuadrícula en el editor |[+/-numbers] |
+| gridoffsety |Define el desplazamiento vertical alineado por el valor de las coordenadas de la cuadrícula en el editor |[+/-numbers] |
+| gridalign |Define el modo de alineación en el editor: 0 - en el centro de la celda global, 1 - en el borde de la celda global |[0,1] |
+| image |Define el nombre del archivo de imagen del sprite en el editor. Permite tener un nombre de archivo de imagen personalizado |["string"] |
+| script |Secuencia de comandos personalizada del algoritmo NPC-AI en PGE |["string"] |
 
 <Note type="warning">
-Original SMBX have a bug: do not use decimal values in NPC codes if you want use them with SMBX.
-It causes crashing of SMBX for some people. In the Moondust, X-Tech, SMBX2, and SMBX-38A this bug is absence, 
-and you have a full freedom for use decimal values. But if you want use decimal values for vanilla SMBX,
-you must have in the "International standards" settings the dot "." character instead a comma "," character 
-as decimal separator.
+SMBX original tiene un error: no use valores decimales en códigos NPC si desea usarlos con SMBX.
+Causa el bloqueo de SMBX para algunas personas. En Moondust, X-Tech, SMBX2 y SMBX-38A, este error es ausencia,
+y tiene total libertad para usar valores decimales. Pero si desea utilizar valores decimales para SMBX de vainilla,
+debe tener en la configuración de "Estándares internacionales" el punto "." carácter en lugar de una coma "," carácter
+como separador decimal.
 </Note>

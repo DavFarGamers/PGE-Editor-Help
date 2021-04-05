@@ -1,9 +1,9 @@
-# Welcome to Moondust Editor!
+# ¡Bienvenido a Moondust Editor!
 
 ![Logo](images/splash_editor.png)
 
-This manual contains almost complete information about
-Moondust (originally PGE) Editor component.
+Este manual contiene información casi completa sobre
+Componente Editor de Moondust (originalmente PGE).
 
-**Are you new in Editor?** We suggest you [read this article](Intro/QuickStart/WhatIsEditor) 
-to learn the basics and get introduced to the Editor.
+**¿Eres nuevo en Editor?** Te sugerimos[read this article](Intro/QuickStart/WhatIsEditor) 
+para aprender los conceptos básicos y familiarizarse con el editor.
