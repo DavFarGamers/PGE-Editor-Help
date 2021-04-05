@@ -5,5 +5,5 @@
 Este manual contiene información casi completa sobre
 Componente Editor de Moondust (originalmente PGE).
 
-**¿Eres nuevo en Editor?** Te sugerimos [leer este artículo] (Intro/QuickStart/WhatIsEditor) 
+**¿Eres nuevo en Editor?** Te sugerimos[leer este articulo](Intro/QuickStart/WhatIsEditor) 
 para aprender los conceptos básicos y familiarizarse con el editor.
